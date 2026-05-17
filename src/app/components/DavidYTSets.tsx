@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { examSetsDavidYT } from '../data/parseQuestionsDavidYT';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
@@ -21,6 +21,7 @@ export default function DavidYTSets() {
   const totalQuestions = examSetsDavidYT.reduce((sum, set) => sum + set.questions.length, 0);
   const [refreshKey, setRefreshKey] = useState(0);
   const [statsMap, setStatsMap] = useState<Map<number, ExamStats>>(new Map());
+  const location = useLocation();
 
   useEffect(() => {
     const loadStats = async () => {
@@ -32,7 +33,7 @@ export default function DavidYTSets() {
       setStatsMap(newStatsMap);
     };
     loadStats();
-  }, [refreshKey]);
+  }, [refreshKey, location.key]); // Use location.key instead of pathname - it changes on every navigation
 
   const handleResetAll = async () => {
     for (const set of examSetsDavidYT) {

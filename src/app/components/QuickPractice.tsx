@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { examSets25 } from '../data/parseQuestions25';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
@@ -21,6 +21,7 @@ export default function QuickPractice() {
   const totalQuestions = examSets25.reduce((sum, set) => sum + set.questions.length, 0);
   const [refreshKey, setRefreshKey] = useState(0);
   const [statsMap, setStatsMap] = useState<Map<number, ExamStats>>(new Map());
+  const location = useLocation();
 
   useEffect(() => {
     const loadStats = async () => {
@@ -32,7 +33,7 @@ export default function QuickPractice() {
       setStatsMap(newStatsMap);
     };
     loadStats();
-  }, [refreshKey]);
+  }, [refreshKey, location.key]);
 
   const handleResetAll = async () => {
     for (const set of examSets25) {
