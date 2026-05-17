@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { examSetsRamD, Question } from '../data/parseQuestionsRamD';
 import { Button } from './ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { ArrowLeft, CheckCircle, XCircle, RotateCcw } from 'lucide-react';
+import { ArrowLeft, CheckCircle, XCircle, RotateCcw, ArrowUp } from 'lucide-react';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -21,6 +21,11 @@ export default function RamDExam() {
   const { setId } = useParams();
   const examSet = examSetsRamD.find(set => set.id === Number(setId));
   const [answers, setAnswers] = useState<Map<number, number>>(new Map());
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   useEffect(() => {
     if (examSet) {
@@ -35,6 +40,23 @@ export default function RamDExam() {
       saveExamSetProgressDebounced(examSet.id + 2000, answers);
     }
   }, [answers, examSet]);
+
+  // Scroll to top when opening a new practice set
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
+  // Show back-to-top button when near bottom
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollHeight = document.documentElement.scrollHeight;
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const clientHeight = window.innerHeight;
+      setShowBackToTop(scrollTop + clientHeight >= scrollHeight - 200);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   if (!examSet) {
     return (
@@ -194,6 +216,17 @@ export default function RamDExam() {
         <div>
           {examSet.questions.map((question, index) => renderQuestion(question, index))}
         </div>
+
+        {/* Back to Top Button */}
+        {showBackToTop && (
+          <Button
+            onClick={scrollToTop}
+            className="fixed bottom-6 right-6 z-50 rounded-full shadow-lg bg-green-600 hover:bg-green-700"
+            size="icon"
+          >
+            <ArrowUp className="size-5" />
+          </Button>
+        )}
       </div>
     </div>
   );

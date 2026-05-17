@@ -4,7 +4,7 @@ import { examSets, Question } from '../data/questions';
 import { Button } from './ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Progress } from './ui/progress';
-import { ArrowLeft, CheckCircle2, XCircle, AlertCircle, RotateCcw } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, XCircle, AlertCircle, RotateCcw, ArrowUp } from 'lucide-react';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -24,6 +24,11 @@ export default function Exam() {
   
   // Track which questions have been answered and what was selected
   const [answers, setAnswers] = useState<Map<number, number>>(new Map());
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   // Load saved progress on mount
   useEffect(() => {
@@ -40,6 +45,23 @@ export default function Exam() {
       saveExamSetProgressDebounced(examSet.id, answers);
     }
   }, [answers, examSet]);
+
+  // Scroll to top when opening a new practice set
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
+  // Show back-to-top button when near bottom
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollHeight = document.documentElement.scrollHeight;
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const clientHeight = window.innerHeight;
+      setShowBackToTop(scrollTop + clientHeight >= scrollHeight - 200);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   if (!examSet) {
     return (
@@ -148,6 +170,17 @@ export default function Exam() {
               </div>
             </CardContent>
           </Card>
+        )}
+
+        {/* Back to Top Button */}
+        {showBackToTop && (
+          <Button
+            onClick={scrollToTop}
+            className="fixed bottom-6 right-6 z-50 rounded-full shadow-lg bg-indigo-600 hover:bg-indigo-700"
+            size="icon"
+          >
+            <ArrowUp className="size-5" />
+          </Button>
         )}
       </div>
     </div>
