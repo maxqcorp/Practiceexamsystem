@@ -16,7 +16,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from './ui/alert-dialog';
-import { getExamSetProgress, saveExamSetProgress, clearExamSetProgress } from '../utils/storage';
+import { getExamSetProgress, saveExamSetProgressDebounced, clearExamSetProgress } from '../utils/storage';
 
 export default function Exam() {
   const { setId } = useParams();
@@ -34,10 +34,10 @@ export default function Exam() {
     }
   }, [examSet]);
 
-  // Save progress whenever answers change
+  // Save progress whenever answers change (debounced)
   useEffect(() => {
     if (examSet && answers.size > 0) {
-      saveExamSetProgress(examSet.id, answers);
+      saveExamSetProgressDebounced(examSet.id, answers);
     }
   }, [answers, examSet]);
 
@@ -55,7 +55,9 @@ export default function Exam() {
   }
 
   const handleAnswerClick = (questionId: number, optionIndex: number) => {
-    setAnswers(new Map(answers.set(questionId, optionIndex)));
+    const newAnswers = new Map(answers);
+    newAnswers.set(questionId, optionIndex);
+    setAnswers(newAnswers);
   };
 
   const handleReset = async () => {

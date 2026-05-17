@@ -15,7 +15,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from './ui/alert-dialog';
-import { getExamSetProgress, saveExamSetProgress, clearExamSetProgress } from '../utils/storage';
+import { getExamSetProgress, saveExamSetProgressDebounced, clearExamSetProgress } from '../utils/storage';
 
 export default function RamDExam() {
   const { setId } = useParams();
@@ -32,7 +32,7 @@ export default function RamDExam() {
 
   useEffect(() => {
     if (examSet && answers.size > 0) {
-      saveExamSetProgress(examSet.id + 2000, answers);
+      saveExamSetProgressDebounced(examSet.id + 2000, answers);
     }
   }, [answers, examSet]);
 
@@ -51,7 +51,9 @@ export default function RamDExam() {
 
   const handleAnswerSelect = (questionId: number, answerIndex: number) => {
     if (answers.has(questionId)) return;
-    setAnswers(new Map(answers.set(questionId, answerIndex)));
+    const newAnswers = new Map(answers);
+    newAnswers.set(questionId, answerIndex);
+    setAnswers(newAnswers);
   };
 
   const handleReset = async () => {
