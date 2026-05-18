@@ -147,6 +147,9 @@ export async function saveProgress(progress: ExamProgress): Promise<void> {
 
 // Force immediate sync to cloud (call before logout)
 export async function forceSyncProgress(): Promise<boolean> {
+  // Cancel any pending debounced cloud saves — we're about to do it ourselves with the latest local state
+  flushPendingCloudSaves();
+
   const localProgress = loadLocalProgress();
   if (Object.keys(localProgress).length === 0) return true;
 
@@ -166,29 +169,52 @@ export async function getExamSetProgress(examSetId: number): Promise<Map<number,
 }
 
 export async function saveExamSetProgress(examSetId: number, answers: Map<number, number>): Promise<void> {
-  const allProgress = await loadProgress();
+  // Read local only — avoids cloud round-trip and the background-sync race in loadProgress()
+  const allProgress = loadLocalProgress();
   allProgress[examSetId] = Object.fromEntries(answers);
   await saveProgress(allProgress);
 }
 
-// Debounced version to prevent rapid-fire saves
-const pendingSaves = new Map<number, ReturnType<typeof setTimeout>>();
+// Debounce only the cloud sync. Local writes happen immediately so the answer
+// is never lost if the user navigates away or logs out before the timer fires.
+const pendingCloudSaves = new Map<number, ReturnType<typeof setTimeout>>();
 
-export function saveExamSetProgressDebounced(examSetId: number, answers: Map<number, number>, delay = 100): Promise<void> {
+export function saveExamSetProgressDebounced(examSetId: number, answers: Map<number, number>, delay = 300): Promise<void> {
+  // Synchronous local write — guarantees persistence even if cloud sync is pending
+  const allProgress = loadLocalProgress();
+  allProgress[examSetId] = Object.fromEntries(answers);
+  saveLocalProgress(allProgress);
+
   return new Promise((resolve) => {
-    const existingTimeout = pendingSaves.get(examSetId);
+    const existingTimeout = pendingCloudSaves.get(examSetId);
     if (existingTimeout) {
       clearTimeout(existingTimeout);
     }
 
     const timeoutId = setTimeout(async () => {
-      await saveExamSetProgress(examSetId, answers);
-      pendingSaves.delete(examSetId);
+      pendingCloudSaves.delete(examSetId);
+      try {
+        await saveProgressToCloud(loadLocalProgress());
+      } catch (error) {
+        console.error('Error syncing progress to cloud:', error);
+        try {
+          localStorage.setItem(PENDING_CLOUD_SYNC_KEY, Date.now().toString());
+        } catch (e) {
+          // ignore
+        }
+      }
       resolve();
     }, delay);
 
-    pendingSaves.set(examSetId, timeoutId);
+    pendingCloudSaves.set(examSetId, timeoutId);
   });
+}
+
+function flushPendingCloudSaves(): void {
+  for (const timeoutId of pendingCloudSaves.values()) {
+    clearTimeout(timeoutId);
+  }
+  pendingCloudSaves.clear();
 }
 
 export async function clearExamSetProgress(examSetId: number): Promise<void> {
