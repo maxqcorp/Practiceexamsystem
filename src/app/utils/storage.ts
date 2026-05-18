@@ -1,6 +1,7 @@
 // Storage utility for persisting exam progress
 // Uses a normalized relational table (user_progress) instead of JSON blobs.
 // Falls back to localStorage if Supabase is unavailable or user is not logged in.
+// v2 - force rebuild
 import { supabase } from './supabase/client';
 
 const LOCAL_STORAGE_KEY = 'practice-exam-progress';
