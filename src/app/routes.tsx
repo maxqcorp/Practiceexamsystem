@@ -9,6 +9,7 @@ import RamDSets from "./components/RamDSets";
 import RamDExam from "./components/RamDExam";
 import DavidYTSets from "./components/DavidYTSets";
 import DavidYTExam from "./components/DavidYTExam";
+import ReviewExam from "./components/ReviewExam";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { AuthProvider } from "./contexts/AuthContext";
 
@@ -63,6 +64,10 @@ export const router = createBrowserRouter([
       {
         path: "/davidyt/:setId",
         element: <ProtectedRoute><DavidYTExam /></ProtectedRoute>,
+      },
+      {
+        path: "/review/:source",
+        element: <ProtectedRoute><ReviewExam /></ProtectedRoute>,
       },
     ],
   },

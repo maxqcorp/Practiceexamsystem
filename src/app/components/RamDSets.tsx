@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { examSetsRamD } from '../data/parseQuestionsRamD';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
-import { BookOpen, FileText, PlayCircle, RefreshCw, ArrowLeft, RotateCcw } from 'lucide-react';
+import { BookOpen, FileText, PlayCircle, RefreshCw, ArrowLeft, RotateCcw, AlertCircle } from 'lucide-react';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -16,11 +16,13 @@ import {
   AlertDialogTrigger,
 } from './ui/alert-dialog';
 import { getExamStats, clearExamSetProgress, ExamStats } from '../utils/storage';
+import { getWrongAnswerSummary } from '../utils/review';
 
 export default function RamDSets() {
   const totalQuestions = examSetsRamD.reduce((sum, set) => sum + set.questions.length, 0);
   const [refreshKey, setRefreshKey] = useState(0);
   const [statsMap, setStatsMap] = useState<Map<number, ExamStats>>(new Map());
+  const [wrongAnswerCount, setWrongAnswerCount] = useState(0);
   const location = useLocation();
 
   useEffect(() => {
@@ -31,6 +33,9 @@ export default function RamDSets() {
         newStatsMap.set(set.id, stats);
       }
       setStatsMap(newStatsMap);
+
+      const summary = await getWrongAnswerSummary('ramd', examSetsRamD);
+      setWrongAnswerCount(summary.totalWrong);
     };
     loadStats();
   }, [refreshKey, location.key]);
@@ -88,6 +93,29 @@ export default function RamDSets() {
             Your progress is automatically saved and will persist across sessions
           </p>
         </div>
+
+        {/* Review Wrong Answers Card */}
+        {wrongAnswerCount > 0 && (
+          <Card className="mb-8 border-2 border-red-200 bg-red-50 hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <div className="flex items-center gap-2 mb-2">
+                <AlertCircle className="size-6 text-red-600" />
+                <CardTitle className="text-xl text-red-800">Review Wrong Answers</CardTitle>
+              </div>
+              <CardDescription className="text-red-700">
+                You have {wrongAnswerCount} incorrect answer{wrongAnswerCount > 1 ? 's' : ''} across all RamD sets. Review them to improve!
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Link to="/review/ramd">
+                <Button className="w-full bg-red-600 hover:bg-red-700">
+                  <AlertCircle className="size-4 mr-2" />
+                  Review {wrongAnswerCount} Wrong Answer{wrongAnswerCount > 1 ? 's' : ''}
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
+        )}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {examSetsRamD.map((set) => {
