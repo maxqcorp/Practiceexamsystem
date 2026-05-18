@@ -1,5 +1,6 @@
 // Storage utility for persisting exam progress
-// Falls back to localStorage if Supabase is unavailable or user is not logged in
+// Uses a normalized relational table (user_progress) instead of JSON blobs.
+// Falls back to localStorage if Supabase is unavailable or user is not logged in.
 import { supabase } from './supabase/client';
 
 const LOCAL_STORAGE_KEY = 'practice-exam-progress';
@@ -17,12 +18,36 @@ export interface ExamStats {
   total: number;
 }
 
+// --------------------------------------------------------------------------
+// Exam-set ID helpers
+// Components pass offset IDs to avoid collisions. We decode them into a clean
+// (source, set_id) pair for the relational table.
+// --------------------------------------------------------------------------
+function decodeExamSetId(examSetId: number): { source: string; setId: number } {
+  if (examSetId >= 3000) return { source: 'davidyt', setId: examSetId - 3000 };
+  if (examSetId >= 2000) return { source: 'ramd',    setId: examSetId - 2000 };
+  if (examSetId >= 1000) return { source: 'quick25', setId: examSetId - 1000 };
+  return { source: 'main50', setId: examSetId };
+}
+
+function encodeExamSetId(source: string, setId: number): number {
+  if (source === 'davidyt') return setId + 3000;
+  if (source === 'ramd')    return setId + 2000;
+  if (source === 'quick25') return setId + 1000;
+  return setId; // main50
+}
+
+// --------------------------------------------------------------------------
+// Auth helper
+// --------------------------------------------------------------------------
 async function getCurrentUserId(): Promise<string | null> {
   const { data: { session } } = await supabase.auth.getSession();
   return session?.user?.id || null;
 }
 
-// Load from localStorage
+// --------------------------------------------------------------------------
+// localStorage cache (offline-first)
+// --------------------------------------------------------------------------
 function loadLocalProgress(): ExamProgress {
   try {
     const raw = localStorage.getItem(LOCAL_STORAGE_KEY);
@@ -35,7 +60,6 @@ function loadLocalProgress(): ExamProgress {
   return {};
 }
 
-// Save to localStorage
 function saveLocalProgress(progress: ExamProgress): void {
   try {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(progress));
@@ -44,51 +68,136 @@ function saveLocalProgress(progress: ExamProgress): void {
   }
 }
 
+function saveLocalProgressForSet(examSetId: number, answers: Map<number, number>): void {
+  const allProgress = loadLocalProgress();
+  allProgress[examSetId] = Object.fromEntries(answers);
+  saveLocalProgress(allProgress);
+}
+
+// --------------------------------------------------------------------------
+// Legacy KV-store helpers (for one-time migration)
+// --------------------------------------------------------------------------
+async function loadProgressFromKVStore(userId: string, localProgress: ExamProgress): Promise<ExamProgress> {
+  const { data, error } = await supabase
+    .from('kv_store_b9034bdd')
+    .select('value')
+    .eq('key', `progress-${userId}`)
+    .maybeSingle();
+
+  if (error) {
+    console.error('Error loading progress from legacy KV store:', error);
+    return localProgress;
+  }
+
+  const cloudProgress = (data?.value as ExamProgress) || {};
+
+  // Merge: local wins (offline-first)
+  const mergedProgress: ExamProgress = { ...cloudProgress };
+  for (const examSetId in localProgress) {
+    const localSet = localProgress[examSetId];
+    const cloudSet = cloudProgress[Number(examSetId)] || {};
+    mergedProgress[Number(examSetId)] = { ...cloudSet, ...localSet };
+  }
+
+  return mergedProgress;
+}
+
+async function migrateOldProgressToNewTable(userId: string, progress: ExamProgress): Promise<void> {
+  try {
+    const rows: Array<{
+      user_id: string;
+      exam_source: string;
+      exam_set_id: number;
+      question_id: number;
+      selected_answer: number;
+    }> = [];
+
+    for (const examSetIdStr in progress) {
+      const examSetId = Number(examSetIdStr);
+      const { source, setId } = decodeExamSetId(examSetId);
+      const questions = progress[examSetId];
+      for (const questionIdStr in questions) {
+        rows.push({
+          user_id: userId,
+          exam_source: source,
+          exam_set_id: setId,
+          question_id: Number(questionIdStr),
+          selected_answer: questions[questionIdStr],
+        });
+      }
+    }
+
+    if (rows.length > 0) {
+      const { error } = await supabase
+        .from('user_progress')
+        .upsert(rows, { onConflict: 'user_id, exam_source, exam_set_id, question_id' });
+
+      if (error) {
+        console.error('Error migrating old progress to new table:', error);
+      } else {
+        console.log(`Migrated ${rows.length} answers from KV store to user_progress`);
+      }
+    }
+  } catch (error) {
+    console.error('Error during migration:', error);
+  }
+}
+
+// --------------------------------------------------------------------------
+// Load progress (relational table with KV fallback + auto-migration)
+// --------------------------------------------------------------------------
 export async function loadProgress(): Promise<ExamProgress> {
-  // Always load from localStorage first (fast, works offline)
   const localProgress = loadLocalProgress();
 
   try {
     const userId = await getCurrentUserId();
     if (!userId) {
-      // Not logged in: return localStorage only
       return localProgress;
     }
 
-    // Try to load from Supabase
-    const { data, error } = await supabase
-      .from('kv_store_b9034bdd')
-      .select('value')
-      .eq('key', `progress-${userId}`)
-      .maybeSingle();
+    // Query the new normalized table
+    const { data: rows, error } = await supabase
+      .from('user_progress')
+      .select('exam_source, exam_set_id, question_id, selected_answer')
+      .eq('user_id', userId);
 
     if (error) {
-      console.error('Error loading progress from Supabase:', error);
-      // Fall back to localStorage
-      return localProgress;
+      console.error('Error loading progress from user_progress:', error);
+      return loadProgressFromKVStore(userId, localProgress);
     }
 
-    const cloudProgress = data?.value || {};
+    const cloudProgress: ExamProgress = {};
+    for (const row of rows || []) {
+      const examSetId = encodeExamSetId(row.exam_source, row.exam_set_id);
+      if (!cloudProgress[examSetId]) {
+        cloudProgress[examSetId] = {};
+      }
+      cloudProgress[examSetId][row.question_id] = row.selected_answer;
+    }
 
-    // Merge: prefer localStorage if it has more data (user answered more questions locally)
-    // This handles the case where user answered questions while offline
+    // If nothing in the new table yet, check the legacy KV store and migrate
+    if (Object.keys(cloudProgress).length === 0) {
+      const oldProgress = await loadProgressFromKVStore(userId, localProgress);
+      if (Object.keys(oldProgress).length > 0) {
+        await migrateOldProgressToNewTable(userId, oldProgress);
+      }
+      return oldProgress;
+    }
+
+    // Merge: local wins (offline-first)
     const mergedProgress: ExamProgress = { ...cloudProgress };
     for (const examSetId in localProgress) {
       const localSet = localProgress[examSetId];
-      const cloudSet = cloudProgress[examSetId] || {};
-      const mergedSet = { ...cloudSet, ...localSet };
-      mergedProgress[Number(examSetId)] = mergedSet;
+      const cloudSet = cloudProgress[Number(examSetId)] || {};
+      mergedProgress[Number(examSetId)] = { ...cloudSet, ...localSet };
     }
 
-    // If local had extra data, sync back to cloud
-    const localKeys = Object.keys(localProgress);
-    const cloudKeys = Object.keys(cloudProgress);
-    const needsSync = localKeys.some(
+    // If local has extra data, sync back to cloud in the background
+    const needsSync = Object.keys(localProgress).some(
       (key) => Object.keys(localProgress[Number(key)]).length > Object.keys(cloudProgress[Number(key)] || {}).length
     );
 
     if (needsSync) {
-      // Don't await - let it happen in background
       saveProgressToCloud(mergedProgress).catch(console.error);
     }
 
@@ -99,24 +208,45 @@ export async function loadProgress(): Promise<ExamProgress> {
   }
 }
 
-// Save to Supabase only (background sync)
+// --------------------------------------------------------------------------
+// Save to Supabase relational table
+// --------------------------------------------------------------------------
 async function saveProgressToCloud(progress: ExamProgress): Promise<void> {
   const userId = await getCurrentUserId();
   if (!userId) return;
 
-  const { error } = await supabase
-    .from('kv_store_b9034bdd')
-    .upsert(
-      {
-        key: `progress-${userId}`,
-        value: progress,
-      },
-      { onConflict: 'key' }
-    );
+  const rows: Array<{
+    user_id: string;
+    exam_source: string;
+    exam_set_id: number;
+    question_id: number;
+    selected_answer: number;
+  }> = [];
 
-  if (error) {
-    console.error('Error saving progress to cloud:', error);
-    throw error;
+  for (const examSetIdStr in progress) {
+    const examSetId = Number(examSetIdStr);
+    const { source, setId } = decodeExamSetId(examSetId);
+    const questions = progress[examSetId];
+    for (const questionIdStr in questions) {
+      rows.push({
+        user_id: userId,
+        exam_source: source,
+        exam_set_id: setId,
+        question_id: Number(questionIdStr),
+        selected_answer: questions[questionIdStr],
+      });
+    }
+  }
+
+  if (rows.length > 0) {
+    const { error } = await supabase
+      .from('user_progress')
+      .upsert(rows, { onConflict: 'user_id, exam_source, exam_set_id, question_id' });
+
+    if (error) {
+      console.error('Error saving progress to cloud:', error);
+      throw error;
+    }
   }
 
   // Clear pending sync flag on success
@@ -127,16 +257,16 @@ async function saveProgressToCloud(progress: ExamProgress): Promise<void> {
   }
 }
 
+// --------------------------------------------------------------------------
+// Public save API
+// --------------------------------------------------------------------------
 export async function saveProgress(progress: ExamProgress): Promise<void> {
-  // Always save to localStorage first (fast, reliable)
   saveLocalProgress(progress);
 
-  // Then try to sync to Supabase
   try {
     await saveProgressToCloud(progress);
   } catch (error) {
     console.error('Error syncing progress to cloud:', error);
-    // Mark as pending sync so we can retry later
     try {
       localStorage.setItem(PENDING_CLOUD_SYNC_KEY, Date.now().toString());
     } catch (e) {
@@ -147,7 +277,6 @@ export async function saveProgress(progress: ExamProgress): Promise<void> {
 
 // Force immediate sync to cloud (call before logout)
 export async function forceSyncProgress(): Promise<boolean> {
-  // Cancel any pending debounced cloud saves — we're about to do it ourselves with the latest local state
   flushPendingCloudSaves();
 
   const localProgress = loadLocalProgress();
@@ -162,28 +291,63 @@ export async function forceSyncProgress(): Promise<boolean> {
   }
 }
 
+// --------------------------------------------------------------------------
+// Per-exam-set helpers
+// --------------------------------------------------------------------------
 export async function getExamSetProgress(examSetId: number): Promise<Map<number, number>> {
-  const allProgress = await loadProgress();
-  const examProgress = allProgress[examSetId] || {};
-  return new Map(Object.entries(examProgress).map(([k, v]) => [parseInt(k), v]));
+  // Always start with local data (fast + offline support)
+  const localProgress = loadLocalProgress();
+  const localSet = localProgress[examSetId] || {};
+  const result = new Map<number, number>(Object.entries(localSet).map(([k, v]) => [parseInt(k), v]));
+
+  try {
+    const userId = await getCurrentUserId();
+    if (!userId) {
+      return result;
+    }
+
+    const { source, setId } = decodeExamSetId(examSetId);
+    const { data: rows, error } = await supabase
+      .from('user_progress')
+      .select('question_id, selected_answer')
+      .eq('user_id', userId)
+      .eq('exam_source', source)
+      .eq('exam_set_id', setId);
+
+    if (error) {
+      console.error('Error loading exam set progress:', error);
+      // Fall back to legacy KV load via loadProgress (which handles migration)
+      const allProgress = await loadProgress();
+      const examProgress = allProgress[examSetId] || {};
+      return new Map(Object.entries(examProgress).map(([k, v]) => [parseInt(k), v]));
+    }
+
+    // Merge DB rows on top of local (local wins for offline-first)
+    for (const row of rows || []) {
+      // Only add from DB if local doesn't already have this question
+      if (!result.has(row.question_id)) {
+        result.set(row.question_id, row.selected_answer);
+      }
+    }
+
+    return result;
+  } catch (error) {
+    console.error('Error loading exam set progress:', error);
+    return result;
+  }
 }
 
 export async function saveExamSetProgress(examSetId: number, answers: Map<number, number>): Promise<void> {
-  // Read local only — avoids cloud round-trip and the background-sync race in loadProgress()
-  const allProgress = loadLocalProgress();
-  allProgress[examSetId] = Object.fromEntries(answers);
-  await saveProgress(allProgress);
+  saveLocalProgressForSet(examSetId, answers);
+  await saveProgress(loadLocalProgress());
 }
 
-// Debounce only the cloud sync. Local writes happen immediately so the answer
-// is never lost if the user navigates away or logs out before the timer fires.
+// Debounce only the cloud sync. Local writes happen immediately.
 const pendingCloudSaves = new Map<number, ReturnType<typeof setTimeout>>();
 
 export function saveExamSetProgressDebounced(examSetId: number, answers: Map<number, number>, delay = 300): Promise<void> {
   // Synchronous local write — guarantees persistence even if cloud sync is pending
-  const allProgress = loadLocalProgress();
-  allProgress[examSetId] = Object.fromEntries(answers);
-  saveLocalProgress(allProgress);
+  saveLocalProgressForSet(examSetId, answers);
 
   return new Promise((resolve) => {
     const existingTimeout = pendingCloudSaves.get(examSetId);
@@ -218,9 +382,30 @@ function flushPendingCloudSaves(): void {
 }
 
 export async function clearExamSetProgress(examSetId: number): Promise<void> {
-  const allProgress = await loadProgress();
+  // Clear localStorage immediately
+  const allProgress = loadLocalProgress();
   delete allProgress[examSetId];
-  await saveProgress(allProgress);
+  saveLocalProgress(allProgress);
+
+  // Clear from cloud
+  try {
+    const userId = await getCurrentUserId();
+    if (!userId) return;
+
+    const { source, setId } = decodeExamSetId(examSetId);
+    const { error } = await supabase
+      .from('user_progress')
+      .delete()
+      .eq('user_id', userId)
+      .eq('exam_source', source)
+      .eq('exam_set_id', setId);
+
+    if (error) {
+      console.error('Error clearing cloud progress:', error);
+    }
+  } catch (error) {
+    console.error('Error clearing exam set progress:', error);
+  }
 }
 
 export async function getAttemptedCount(examSetId: number): Promise<number> {
