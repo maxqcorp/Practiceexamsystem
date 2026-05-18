@@ -3,6 +3,7 @@
 import { supabase } from './supabase/client';
 
 const LOCAL_STORAGE_KEY = 'practice-exam-progress';
+const PENDING_CLOUD_SYNC_KEY = 'practice-exam-pending-sync';
 
 export interface ExamProgress {
   [examSetId: number]: {
@@ -115,6 +116,14 @@ async function saveProgressToCloud(progress: ExamProgress): Promise<void> {
 
   if (error) {
     console.error('Error saving progress to cloud:', error);
+    throw error;
+  }
+
+  // Clear pending sync flag on success
+  try {
+    localStorage.removeItem(PENDING_CLOUD_SYNC_KEY);
+  } catch (e) {
+    // ignore
   }
 }
 
@@ -122,12 +131,31 @@ export async function saveProgress(progress: ExamProgress): Promise<void> {
   // Always save to localStorage first (fast, reliable)
   saveLocalProgress(progress);
 
-  // Then try to sync to Supabase in background
+  // Then try to sync to Supabase
   try {
     await saveProgressToCloud(progress);
   } catch (error) {
     console.error('Error syncing progress to cloud:', error);
-    // Local storage already saved, so progress is not lost
+    // Mark as pending sync so we can retry later
+    try {
+      localStorage.setItem(PENDING_CLOUD_SYNC_KEY, Date.now().toString());
+    } catch (e) {
+      // ignore
+    }
+  }
+}
+
+// Force immediate sync to cloud (call before logout)
+export async function forceSyncProgress(): Promise<boolean> {
+  const localProgress = loadLocalProgress();
+  if (Object.keys(localProgress).length === 0) return true;
+
+  try {
+    await saveProgressToCloud(localProgress);
+    return true;
+  } catch (error) {
+    console.error('Force sync failed:', error);
+    return false;
   }
 }
 
@@ -146,7 +174,7 @@ export async function saveExamSetProgress(examSetId: number, answers: Map<number
 // Debounced version to prevent rapid-fire saves
 const pendingSaves = new Map<number, ReturnType<typeof setTimeout>>();
 
-export function saveExamSetProgressDebounced(examSetId: number, answers: Map<number, number>, delay = 300): Promise<void> {
+export function saveExamSetProgressDebounced(examSetId: number, answers: Map<number, number>, delay = 100): Promise<void> {
   return new Promise((resolve) => {
     const existingTimeout = pendingSaves.get(examSetId);
     if (existingTimeout) {

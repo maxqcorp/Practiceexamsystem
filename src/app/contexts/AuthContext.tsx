@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { supabase } from '../utils/supabase/client';
+import { forceSyncProgress } from '../utils/storage';
 
 interface User {
   id: string;
@@ -111,6 +112,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   };
 
   const logout = async () => {
+    // Force sync progress to cloud before signing out
+    await forceSyncProgress();
     await supabase.auth.signOut();
     setUser(null);
   };
