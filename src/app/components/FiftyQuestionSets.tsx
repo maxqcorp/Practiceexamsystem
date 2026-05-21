@@ -15,7 +15,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from './ui/alert-dialog';
-import { getExamStats, clearExamSetProgress, ExamStats } from '../utils/storage';
+import { getExamStats, clearExamSetProgress, clearWrongAnswersForSet, ExamStats } from '../utils/storage';
 import { getWrongAnswerSummary } from '../utils/review';
 
 export default function FiftyQuestionSets() {
@@ -23,6 +23,7 @@ export default function FiftyQuestionSets() {
   const [refreshKey, setRefreshKey] = useState(0);
   const [statsMap, setStatsMap] = useState<Map<number, ExamStats>>(new Map());
   const [wrongAnswerCount, setWrongAnswerCount] = useState(0);
+  const [wrongBySet, setWrongBySet] = useState<Map<number, number>>(new Map());
   const location = useLocation();
 
   useEffect(() => {
@@ -36,6 +37,7 @@ export default function FiftyQuestionSets() {
 
       const summary = await getWrongAnswerSummary('main50', examSets);
       setWrongAnswerCount(summary.totalWrong);
+      setWrongBySet(summary.bySet);
     };
     loadStats();
   }, [refreshKey, location.key]);
@@ -171,6 +173,36 @@ export default function FiftyQuestionSets() {
                       )}
                     </Button>
                   </Link>
+                  {(wrongBySet.get(set.id) || 0) > 0 && (
+                    <AlertDialog>
+                      <AlertDialogTrigger asChild>
+                        <Button variant="outline" size="sm" className="w-full mt-2 text-amber-600 border-amber-300 hover:bg-amber-50">
+                          <RotateCcw className="size-4 mr-2" />
+                          Reset {wrongBySet.get(set.id)} Wrong
+                        </Button>
+                      </AlertDialogTrigger>
+                      <AlertDialogContent>
+                        <AlertDialogHeader>
+                          <AlertDialogTitle>Reset wrong answers for {set.title}?</AlertDialogTitle>
+                          <AlertDialogDescription>
+                            This will clear only your incorrect answers in this set, keeping your correct answers intact. This action cannot be undone.
+                          </AlertDialogDescription>
+                        </AlertDialogHeader>
+                        <AlertDialogFooter>
+                          <AlertDialogCancel>Cancel</AlertDialogCancel>
+                          <AlertDialogAction
+                            onClick={async () => {
+                              await clearWrongAnswersForSet(set.id, set.questions);
+                              setRefreshKey(prev => prev + 1);
+                            }}
+                            className="bg-amber-600 hover:bg-amber-700"
+                          >
+                            Reset Wrong Answers
+                          </AlertDialogAction>
+                        </AlertDialogFooter>
+                      </AlertDialogContent>
+                    </AlertDialog>
+                  )}
                 </CardContent>
               </Card>
             );

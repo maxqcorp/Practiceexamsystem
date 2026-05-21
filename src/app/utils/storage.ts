@@ -409,6 +409,46 @@ export async function clearExamSetProgress(examSetId: number): Promise<void> {
   }
 }
 
+export async function clearWrongAnswersForSet(
+  examSetId: number,
+  questions: Array<{ id: number; correctAnswer: number }>
+): Promise<void> {
+  const progress = await getExamSetProgress(examSetId);
+  const wrongQuestionIds: number[] = [];
+
+  for (const [questionId, selectedAnswer] of progress) {
+    const question = questions.find(q => q.id === questionId);
+    if (question && selectedAnswer !== question.correctAnswer) {
+      wrongQuestionIds.push(questionId);
+      progress.delete(questionId);
+    }
+  }
+
+  // Save updated progress locally
+  saveLocalProgressForSet(examSetId, progress);
+
+  // Delete the wrong-answer rows from cloud as well
+  try {
+    const userId = await getCurrentUserId();
+    if (!userId || wrongQuestionIds.length === 0) return;
+
+    const { source, setId } = decodeExamSetId(examSetId);
+    const { error } = await supabase
+      .from('user_progress')
+      .delete()
+      .eq('user_id', userId)
+      .eq('exam_source', source)
+      .eq('exam_set_id', setId)
+      .in('question_id', wrongQuestionIds);
+
+    if (error) {
+      console.error('Error clearing wrong answers from cloud:', error);
+    }
+  } catch (error) {
+    console.error('Error clearing wrong answers:', error);
+  }
+}
+
 export async function getAttemptedCount(examSetId: number): Promise<number> {
   const examProgress = await getExamSetProgress(examSetId);
   return examProgress.size;
