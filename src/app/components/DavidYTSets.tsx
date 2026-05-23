@@ -1,30 +1,24 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { examSetsDavidYT } from '../data/parseQuestionsDavidYT';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
-import { BookOpen, FileText, PlayCircle, RefreshCw, ArrowLeft, RotateCcw, AlertCircle } from 'lucide-react';
+import { FileText, PlayCircle, RefreshCw, ArrowLeft, RotateCcw, BookOpen } from 'lucide-react';
 import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
+  AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent,
+  AlertDialogDescription, AlertDialogFooter, AlertDialogHeader,
+  AlertDialogTitle, AlertDialogTrigger,
 } from './ui/alert-dialog';
 import { getExamStats, clearExamSetProgress, clearWrongAnswersForSet, ExamStats } from '../utils/storage';
 import { getWrongAnswerSummary } from '../utils/review';
 
 export default function DavidYTSets() {
-  const totalQuestions = examSetsDavidYT.reduce((sum, set) => sum + set.questions.length, 0);
   const [refreshKey, setRefreshKey] = useState(0);
   const [statsMap, setStatsMap] = useState<Map<number, ExamStats>>(new Map());
   const [wrongAnswerCount, setWrongAnswerCount] = useState(0);
   const [wrongBySet, setWrongBySet] = useState<Map<number, number>>(new Map());
+  const [filter, setFilter] = useState<'all' | 'progress' | 'done' | 'new'>('all');
   const location = useLocation();
+  const totalQuestions = examSetsDavidYT.reduce((sum, set) => sum + set.questions.length, 0);
 
   useEffect(() => {
     const loadStats = async () => {
@@ -40,192 +34,196 @@ export default function DavidYTSets() {
       setWrongBySet(summary.bySet);
     };
     loadStats();
-  }, [refreshKey, location.key]); // Use location.key instead of pathname - it changes on every navigation
+  }, [refreshKey, location.key]);
 
   const handleResetAll = async () => {
     for (const set of examSetsDavidYT) {
       await clearExamSetProgress(set.id + 3000);
     }
-    setRefreshKey(prev => prev + 1);
+    setRefreshKey(k => k + 1);
   };
 
+  const filteredSets = examSetsDavidYT.filter(set => {
+    const stats = statsMap.get(set.id) || { attempted: 0, correct: 0, total: set.questions.length };
+    if (filter === 'progress') return stats.attempted > 0 && stats.attempted < stats.total;
+    if (filter === 'done') return stats.attempted === stats.total;
+    if (filter === 'new') return stats.attempted === 0;
+    return true;
+  });
+
+  const continueSet = examSetsDavidYT.find(set => {
+    const stats = statsMap.get(set.id);
+    return stats && stats.attempted > 0 && stats.attempted < stats.total;
+  });
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-amber-100 p-6">
-      <div className="max-w-6xl mx-auto">
-        <div className="mb-6 flex items-center justify-between">
+    <div className="min-h-screen bg-[#f8fafc] p-4 sm:p-6">
+      <div className="max-w-5xl mx-auto">
+
+        {/* Top nav */}
+        <div className="flex items-center justify-between mb-6">
           <Link to="/">
-            <Button variant="outline" size="sm">
-              <ArrowLeft className="size-4 mr-2" />
-              Back to Home
+            <Button variant="outline" size="sm" className="gap-1.5">
+              <ArrowLeft className="size-4" /> Home
             </Button>
           </Link>
           <AlertDialog>
             <AlertDialogTrigger asChild>
-              <Button variant="outline" size="sm" className="text-red-600 border-red-300 hover:bg-red-50">
-                <RotateCcw className="size-4 mr-2" />
-                Reset All Progress
+              <Button variant="outline" size="sm" className="text-red-600 border-red-200 hover:bg-red-50 gap-1.5">
+                <RotateCcw className="size-4" /> Reset All
               </Button>
             </AlertDialogTrigger>
             <AlertDialogContent>
               <AlertDialogHeader>
                 <AlertDialogTitle>Reset all David YT Practice sets?</AlertDialogTitle>
-                <AlertDialogDescription>
-                  This will clear all your answers and progress for all 10-question sets. This action cannot be undone.
-                </AlertDialogDescription>
+                <AlertDialogDescription>This clears all answers and progress. Cannot be undone.</AlertDialogDescription>
               </AlertDialogHeader>
               <AlertDialogFooter>
                 <AlertDialogCancel>Cancel</AlertDialogCancel>
-                <AlertDialogAction onClick={handleResetAll} className="bg-red-600 hover:bg-red-700">
-                  Reset All
-                </AlertDialogAction>
+                <AlertDialogAction onClick={handleResetAll} className="bg-red-600 hover:bg-red-700">Reset All</AlertDialogAction>
               </AlertDialogFooter>
             </AlertDialogContent>
           </AlertDialog>
         </div>
 
-        <div className="text-center mb-8">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <BookOpen className="size-12 text-orange-600" />
-            <h1 className="text-4xl font-bold text-gray-900">David YT Practice Mode</h1>
+        {/* Page title */}
+        <div className="mb-6">
+          <div className="flex items-center gap-2.5 mb-1">
+            <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-orange-100 text-orange-700 border border-orange-200">David YT Practice</span>
           </div>
-          <p className="text-lg text-gray-600 mb-2">
-            {totalQuestions} questions across {examSetsDavidYT.length} practice sets (10 questions each)
-          </p>
-          <p className="text-sm text-gray-500">
-            Your progress is automatically saved and will persist across sessions
-          </p>
+          <h1 className="text-xl font-semibold text-gray-900">David YT Practice Practice</h1>
+          <p className="text-sm text-gray-400 mt-0.5">{totalQuestions.toLocaleString()} questions · {examSetsDavidYT.length} sets</p>
         </div>
 
-        {/* Review Wrong Answers Card */}
+        {/* Questions to revisit */}
         {wrongAnswerCount > 0 && (
-          <Card className="mb-8 border-2 border-red-200 bg-red-50 hover:shadow-lg transition-shadow">
-            <CardHeader>
-              <div className="flex items-center gap-2 mb-2">
-                <AlertCircle className="size-6 text-red-600" />
-                <CardTitle className="text-xl text-red-800">Review Wrong Answers</CardTitle>
+          <Link to="/review/davidyt">
+            <div className="mb-4 flex items-center gap-3 bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 hover:bg-amber-100 transition-colors cursor-pointer">
+              <BookOpen className="size-5 text-amber-600 flex-shrink-0" />
+              <div className="flex-1 min-w-0">
+                <div className="text-sm font-semibold text-amber-900">Questions to Revisit</div>
+                <div className="text-xs text-amber-700">{wrongAnswerCount} incorrect answer{wrongAnswerCount !== 1 ? 's' : ''} ready for review</div>
               </div>
-              <CardDescription className="text-red-700">
-                You have {wrongAnswerCount} incorrect answer{wrongAnswerCount > 1 ? 's' : ''} across all David YT sets. Review them to improve!
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Link to="/review/davidyt">
-                <Button className="w-full bg-red-600 hover:bg-red-700">
-                  <AlertCircle className="size-4 mr-2" />
-                  Review {wrongAnswerCount} Wrong Answer{wrongAnswerCount > 1 ? 's' : ''}
-                </Button>
-              </Link>
-            </CardContent>
-          </Card>
+              <span className="text-xs font-semibold bg-amber-200 text-amber-800 px-2.5 py-1 rounded-full">Review →</span>
+            </div>
+          </Link>
         )}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {examSetsDavidYT.map((set) => {
-            const stats = statsMap.get(set.id) || { attempted: 0, correct: 0, total: set.questions.length };
-            const isStarted = stats.attempted > 0;
-            const progressPercentage = (stats.attempted / stats.total) * 100;
-            const scorePercentage = stats.attempted > 0 ? (stats.correct / stats.total) * 100 : 0;
-
-            return (
-              <Card key={set.id} className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="flex items-center gap-2 mb-2">
-                    <FileText className="size-5 text-orange-600" />
-                    <CardTitle>{set.title}</CardTitle>
+        {/* Continue card */}
+        {continueSet && (() => {
+          const stats = statsMap.get(continueSet.id)!;
+          const pct = Math.round((stats.attempted / stats.total) * 100);
+          return (
+            <Link to={`/davidyt/${continueSet.id}`}>
+              <div className="mb-4 flex items-center gap-3 bg-white border border-indigo-200 rounded-xl px-4 py-3 hover:border-indigo-400 hover:shadow-sm transition-all cursor-pointer">
+                <div className="flex-1 min-w-0">
+                  <div className="text-xs font-semibold text-indigo-500 uppercase tracking-wide mb-0.5">Continue where you left off</div>
+                  <div className="text-sm font-semibold text-gray-900">{continueSet.title}</div>
+                  <div className="flex items-center gap-2 mt-1.5">
+                    <div className="flex-1 bg-gray-100 rounded-full h-1.5">
+                      <div className="bg-indigo-500 h-1.5 rounded-full" style={{ width: `${pct}%` }} />
+                    </div>
+                    <span className="text-xs text-gray-400 flex-shrink-0">{stats.attempted}/{stats.total}</span>
                   </div>
-                  <CardDescription>
-                    {set.questions.length} questions
-                  </CardDescription>
+                </div>
+                <RefreshCw className="size-4 text-indigo-400 flex-shrink-0" />
+              </div>
+            </Link>
+          );
+        })()}
+
+        {/* Filter tabs */}
+        <div className="flex items-center gap-1 mb-4 bg-white border border-gray-200 rounded-lg p-1 w-fit">
+          {([['all', 'All'], ['progress', 'In Progress'], ['done', 'Completed'], ['new', 'Not Started']] as const).map(([key, label]) => (
+            <button
+              key={key}
+              onClick={() => setFilter(key)}
+              className={`px-3 py-1.5 rounded-md text-xs font-semibold transition-colors whitespace-nowrap ${
+                filter === key
+                  ? 'bg-indigo-600 text-white'
+                  : 'text-gray-500 hover:text-gray-700'
+              }`}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+
+        {/* Sets grid */}
+        {filteredSets.length === 0 ? (
+          <div className="text-center py-16 text-gray-400 text-sm">No sets match this filter.</div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {filteredSets.map(set => {
+              const stats = statsMap.get(set.id) || { attempted: 0, correct: 0, total: set.questions.length };
+              const isStarted = stats.attempted > 0;
+              const isDone = stats.attempted === stats.total;
+              const pct = Math.round((stats.attempted / stats.total) * 100);
+              const scorePct = stats.attempted > 0 ? Math.round((stats.correct / stats.total) * 100) : 0;
+              const wrongCount = wrongBySet.get(set.id) || 0;
+
+              return (
+                <div key={set.id} className="bg-white border border-gray-200 rounded-xl p-4 flex flex-col gap-3 hover:border-orange-300 hover:shadow-sm transition-all">
+                  {/* Set header */}
+                  <div className="flex items-start justify-between gap-2">
+                    <div className="flex items-center gap-2 min-w-0">
+                      <FileText className="size-4 text-orange-600 flex-shrink-0" />
+                      <span className="text-sm font-semibold text-gray-900 truncate">{set.title}</span>
+                    </div>
+                    {isDone && <span className="text-xs font-semibold text-green-700 bg-green-50 border border-green-200 px-2 py-0.5 rounded-full flex-shrink-0">✓ Done</span>}
+                  </div>
+
+                  {/* Progress */}
                   {isStarted && (
-                    <div className="mt-3 space-y-2">
-                      <div className="flex justify-between text-xs font-semibold">
-                        <span className="text-gray-700">Score: {stats.correct} / {stats.total}</span>
-                        <span className={`${scorePercentage >= 70 ? 'text-green-600' : scorePercentage >= 50 ? 'text-amber-600' : 'text-red-600'}`}>
-                          {Math.round(scorePercentage)}%
-                        </span>
+                    <div>
+                      <div className="flex justify-between text-xs text-gray-400 mb-1">
+                        <span>{stats.attempted}/{stats.total} answered</span>
+                        <span className={scorePct >= 70 ? 'text-green-600 font-semibold' : scorePct >= 50 ? 'text-amber-600 font-semibold' : 'text-red-500 font-semibold'}>{scorePct}%</span>
                       </div>
-                      <div className="flex justify-between text-xs text-gray-600">
-                        <span>Attempted: {stats.attempted} / {stats.total}</span>
-                        <span>{Math.round(progressPercentage)}%</span>
-                      </div>
-                      <div className="w-full bg-gray-200 rounded-full h-2">
-                        <div
-                          className="bg-orange-600 h-2 rounded-full transition-all"
-                          style={{ width: `${progressPercentage}%` }}
-                        />
+                      <div className="w-full bg-gray-100 rounded-full h-1.5">
+                        <div className="bg-orange-500 h-1.5 rounded-full transition-all" style={{ width: `${pct}%` }} />
                       </div>
                     </div>
                   )}
-                </CardHeader>
-                <CardContent>
-                  <Link to={`/davidyt/${set.id}`}>
-                    <Button className="w-full bg-orange-600 hover:bg-orange-700">
-                      {isStarted ? (
-                        <>
-                          <RefreshCw className="size-4 mr-2" />
-                          Resume Practice
-                        </>
-                      ) : (
-                        <>
-                          <PlayCircle className="size-4 mr-2" />
-                          Start Practice
-                        </>
-                      )}
-                    </Button>
-                  </Link>
-                  {(wrongBySet.get(set.id) || 0) > 0 && (
-                    <AlertDialog>
-                      <AlertDialogTrigger asChild>
-                        <Button variant="outline" size="sm" className="w-full mt-2 text-amber-600 border-amber-300 hover:bg-amber-50">
-                          <RotateCcw className="size-4 mr-2" />
-                          Reset {wrongBySet.get(set.id)} Wrong
-                        </Button>
-                      </AlertDialogTrigger>
-                      <AlertDialogContent>
-                        <AlertDialogHeader>
-                          <AlertDialogTitle>Reset wrong answers for {set.title}?</AlertDialogTitle>
-                          <AlertDialogDescription>
-                            This will clear only your incorrect answers in this set, keeping your correct answers intact. This action cannot be undone.
-                          </AlertDialogDescription>
-                        </AlertDialogHeader>
-                        <AlertDialogFooter>
-                          <AlertDialogCancel>Cancel</AlertDialogCancel>
-                          <AlertDialogAction
-                            onClick={async () => {
-                              await clearWrongAnswersForSet(set.id + 3000, set.questions);
-                              setRefreshKey(prev => prev + 1);
-                            }}
-                            className="bg-amber-600 hover:bg-amber-700"
-                          >
-                            Reset Wrong Answers
-                          </AlertDialogAction>
-                        </AlertDialogFooter>
-                      </AlertDialogContent>
-                    </AlertDialog>
+                  {!isStarted && (
+                    <p className="text-xs text-gray-400">{set.questions.length} questions</p>
                   )}
-                </CardContent>
-              </Card>
-            );
-          })}
-        </div>
 
-        <div className="mt-12 bg-white rounded-lg p-6 shadow-md">
-          <h2 className="text-xl font-semibold mb-3 text-gray-900">About David YT Practice Mode</h2>
-          <ul className="space-y-2 text-gray-700">
-            <li className="flex items-start gap-2">
-              <span className="text-orange-600 font-bold">•</span>
-              <span>Each set contains 10 questions for quick, bite-sized practice sessions</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-orange-600 font-bold">•</span>
-              <span>Ideal for daily practice and building consistent study habits</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-orange-600 font-bold">•</span>
-              <span>Your progress is tracked separately from other practice modes</span>
-            </li>
-          </ul>
-        </div>
+                  {/* Actions */}
+                  <div className="flex flex-col gap-1.5 mt-auto">
+                    <Link to={`/davidyt/${set.id}`}>
+                      <Button className="w-full bg-orange-600 hover:bg-orange-700 h-9 text-sm gap-1.5">
+                        {isStarted ? <><RefreshCw className="size-3.5" />{isDone ? 'Review' : 'Continue'}</> : <><PlayCircle className="size-3.5" />Start</>}
+                      </Button>
+                    </Link>
+                    {wrongCount > 0 && (
+                      <AlertDialog>
+                        <AlertDialogTrigger asChild>
+                          <Button variant="outline" size="sm" className="w-full h-8 text-xs text-amber-700 border-amber-200 hover:bg-amber-50 gap-1">
+                            <RotateCcw className="size-3" /> Reset {wrongCount} wrong
+                          </Button>
+                        </AlertDialogTrigger>
+                        <AlertDialogContent>
+                          <AlertDialogHeader>
+                            <AlertDialogTitle>Reset wrong answers for {set.title}?</AlertDialogTitle>
+                            <AlertDialogDescription>Clears only incorrect answers, keeping correct ones. Cannot be undone.</AlertDialogDescription>
+                          </AlertDialogHeader>
+                          <AlertDialogFooter>
+                            <AlertDialogCancel>Cancel</AlertDialogCancel>
+                            <AlertDialogAction
+                              onClick={async () => { await clearWrongAnswersForSet(set.id + 3000, set.questions); setRefreshKey(k => k + 1); }}
+                              className="bg-amber-600 hover:bg-amber-700"
+                            >Reset Wrong Answers</AlertDialogAction>
+                          </AlertDialogFooter>
+                        </AlertDialogContent>
+                      </AlertDialog>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
       </div>
     </div>
   );

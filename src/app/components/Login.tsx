@@ -64,14 +64,14 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 p-6 flex items-center justify-center">
+    <div className="min-h-screen bg-[#f8fafc] p-6 flex items-center justify-center">
       <div className="max-w-md w-full">
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <BookOpen className="size-12 text-indigo-600" />
-            <h1 className="text-4xl font-bold text-gray-900">Practice Exam System</h1>
+            <BookOpen className="size-8 text-indigo-600" />
+            <h1 className="text-2xl font-bold text-gray-900">Practice Exam System</h1>
           </div>
-          <p className="text-lg text-gray-600">
+          <p className="text-sm text-gray-500">
             Sign in to access your personalized practice sessions
           </p>
         </div>
@@ -189,23 +189,6 @@ export default function Login() {
           </CardContent>
         </Card>
 
-        <div className="mt-8 bg-white rounded-lg p-6 shadow-md">
-          <h2 className="text-lg font-semibold mb-3 text-gray-900">Why Create an Account?</h2>
-          <ul className="space-y-2 text-gray-700 text-sm">
-            <li className="flex items-start gap-2">
-              <span className="text-indigo-600 font-bold">✓</span>
-              <span>Track your progress across all practice modes</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-indigo-600 font-bold">✓</span>
-              <span>Resume exactly where you left off</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-indigo-600 font-bold">✓</span>
-              <span>Your data is saved securely and privately</span>
-            </li>
-          </ul>
-        </div>
       </div>
     </div>
   );

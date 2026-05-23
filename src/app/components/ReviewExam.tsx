@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Button } from './ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Progress } from './ui/progress';
 import { ArrowLeft, CheckCircle2, XCircle, AlertCircle, ArrowUp, RotateCcw, BookOpen } from 'lucide-react';
 import {
@@ -23,11 +22,11 @@ import { examSetsRamD } from '../data/parseQuestionsRamD';
 import { examSetsDavidYT } from '../data/parseQuestionsDavidYT';
 
 // Map source string to exam sets data
-const sourceMap: Record<string, { sets: Array<{ id: number; title: string; questions: ReviewQuestion[] }>; color: string; bgGradient: string; backLink: string; buttonClass: string }> = {
-  main50: { sets: examSets, color: 'indigo', bgGradient: 'from-blue-50 to-indigo-100', backLink: '/sets-50', buttonClass: 'bg-indigo-600 hover:bg-indigo-700' },
-  quick25: { sets: examSets25, color: 'purple', bgGradient: 'from-purple-50 to-pink-100', backLink: '/sets-25', buttonClass: 'bg-purple-600 hover:bg-purple-700' },
-  ramd: { sets: examSetsRamD, color: 'green', bgGradient: 'from-green-50 to-teal-100', backLink: '/sets-ramd', buttonClass: 'bg-green-600 hover:bg-green-700' },
-  davidyt: { sets: examSetsDavidYT, color: 'orange', bgGradient: 'from-orange-50 to-amber-100', backLink: '/sets-davidyt', buttonClass: 'bg-orange-600 hover:bg-orange-700' },
+const sourceMap: Record<string, { sets: Array<{ id: number; title: string; questions: ReviewQuestion[] }>; color: string; backLink: string; buttonClass: string }> = {
+  main50: { sets: examSets, color: 'indigo', backLink: '/sets-50', buttonClass: 'bg-indigo-600 hover:bg-indigo-700' },
+  quick25: { sets: examSets25, color: 'purple', backLink: '/sets-25', buttonClass: 'bg-purple-600 hover:bg-purple-700' },
+  ramd: { sets: examSetsRamD, color: 'green', backLink: '/sets-ramd', buttonClass: 'bg-green-600 hover:bg-green-700' },
+  davidyt: { sets: examSetsDavidYT, color: 'orange', backLink: '/sets-davidyt', buttonClass: 'bg-orange-600 hover:bg-orange-700' },
 };
 
 // Encode exam set ID (must match storage.ts logic)
@@ -130,9 +129,9 @@ export default function ReviewExam() {
 
   if (!sourceConfig) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-6">
+      <div className="min-h-screen bg-[#f8fafc] p-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-2xl font-bold text-gray-900 mb-4">Review not available</h1>
+          <h1 className="text-xl font-semibold text-gray-900 mb-4">Review not available</h1>
           <Link to="/">
             <Button>Return to Home</Button>
           </Link>
@@ -143,7 +142,7 @@ export default function ReviewExam() {
 
   if (loading) {
     return (
-      <div className={`min-h-screen bg-gradient-to-br ${sourceConfig.bgGradient} p-6 flex items-center justify-center`}>
+      <div className="min-h-screen bg-[#f8fafc] p-6 flex items-center justify-center">
         <div className="text-center">
           <BookOpen className="size-12 text-gray-400 mx-auto mb-4 animate-pulse" />
           <p className="text-gray-600">Loading wrong answers...</p>
@@ -154,7 +153,7 @@ export default function ReviewExam() {
 
   if (wrongAnswers.length === 0) {
     return (
-      <div className={`min-h-screen bg-gradient-to-br ${sourceConfig.bgGradient} p-6`}>
+      <div className="min-h-screen bg-[#f8fafc] p-6">
         <div className="max-w-4xl mx-auto">
           <div className="mb-6">
             <Link to={sourceConfig.backLink}>
@@ -164,10 +163,10 @@ export default function ReviewExam() {
               </Button>
             </Link>
           </div>
-          <div className="bg-white rounded-lg shadow-md p-12 text-center">
+          <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-12 text-center">
             <CheckCircle2 className="size-16 text-green-500 mx-auto mb-4" />
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">Great job!</h1>
-            <p className="text-lg text-gray-600">
+            <h1 className="text-xl font-semibold text-gray-900 mb-2">Great job!</h1>
+            <p className="text-base text-gray-600">
               You don't have any wrong answers to review. Keep up the good work!
             </p>
           </div>
@@ -204,26 +203,26 @@ export default function ReviewExam() {
   ).length;
 
   return (
-    <div className={`min-h-screen bg-gradient-to-br ${sourceConfig.bgGradient} p-6`}>
-      <div className="max-w-4xl mx-auto">
-        {/* Header */}
-        <div className="bg-white rounded-lg shadow-md p-6 mb-6 sticky top-6 z-10">
-          <div className="flex items-center justify-between mb-4">
+    <div className="min-h-screen bg-[#f8fafc]">
+      {/* Sticky header */}
+      <div className="bg-white border-b border-gray-200 px-4 sm:px-6 py-3 sticky top-0 z-10">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex items-center gap-3 mb-2">
             <Link to={sourceConfig.backLink}>
               <Button variant="outline" size="sm">
-                <ArrowLeft className="size-4 mr-2" />
-                Back to Sets
+                <ArrowLeft className="size-4 mr-1" />
+                <span className="hidden sm:inline">Back to Sets</span>
               </Button>
             </Link>
-            <div className="text-center">
-              <h1 className="text-2xl font-bold text-gray-900">Review Wrong Answers</h1>
-              <p className="text-sm text-gray-500">{wrongAnswers.length} questions you got wrong</p>
+            <div className="flex-1 min-w-0">
+              <h1 className="text-sm font-semibold text-gray-900 truncate">Questions to Revisit</h1>
+              <p className="text-xs text-gray-500">{wrongAnswers.length} questions from previous sessions</p>
             </div>
             <AlertDialog>
               <AlertDialogTrigger asChild>
-                <Button variant="outline" size="sm" className="text-red-600 hover:text-red-700 hover:bg-red-50">
-                  <RotateCcw className="size-4 mr-2" />
-                  Reset
+                <Button variant="outline" size="sm" className="text-red-600 border-red-200 hover:bg-red-50 gap-1 flex-shrink-0">
+                  <RotateCcw className="size-3.5" />
+                  <span className="hidden sm:inline text-xs">Reset</span>
                 </Button>
               </AlertDialogTrigger>
               <AlertDialogContent>
@@ -243,57 +242,60 @@ export default function ReviewExam() {
             </AlertDialog>
           </div>
 
-          <div className="space-y-2">
-            <div className="flex justify-between text-sm text-gray-600">
-              <span>Progress: {answeredCount} / {wrongAnswers.length}</span>
-              <span>Corrected: {correctCount} / {answeredCount}</span>
+          <div className="flex items-center gap-2">
+            <div className="flex-1 bg-gray-100 rounded-full h-1.5">
+              <div
+                className="bg-indigo-500 h-1.5 rounded-full transition-all"
+                style={{ width: `${progressPercentage}%` }}
+              />
             </div>
-            <Progress value={progressPercentage} className="h-2" />
+            <span className="text-xs text-gray-400 flex-shrink-0">{answeredCount}/{wrongAnswers.length}</span>
+            {answeredCount > 0 && (
+              <span className={`text-xs font-semibold flex-shrink-0 ${Math.round((correctCount / answeredCount) * 100) >= 70 ? 'text-green-600' : Math.round((correctCount / answeredCount) * 100) >= 50 ? 'text-amber-600' : 'text-red-500'}`}>
+                {Math.round((correctCount / answeredCount) * 100)}%
+              </span>
+            )}
           </div>
         </div>
+      </div>
 
-        {/* Questions */}
-        <div className="space-y-6">
-          {wrongAnswers.map((wa, index) => (
-            <ReviewQuestionCard
-              key={`${wa.originalSetId}-${wa.questionId}`}
-              index={index + 1}
-              wrongAnswer={wa}
-              selectedAnswer={answers.get(wa.questionId)}
-              onAnswerClick={handleAnswerClick}
-              color={sourceConfig.color}
-            />
-          ))}
-        </div>
+      {/* Questions */}
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-6 space-y-4">
+        {wrongAnswers.map((wa, index) => (
+          <ReviewQuestionCard
+            key={`${wa.originalSetId}-${wa.questionId}`}
+            index={index + 1}
+            wrongAnswer={wa}
+            selectedAnswer={answers.get(wa.questionId)}
+            onAnswerClick={handleAnswerClick}
+            color={sourceConfig.color}
+          />
+        ))}
 
         {/* Footer Summary */}
         {answeredCount === wrongAnswers.length && (
-          <Card className="mt-6 bg-green-50 border-green-200">
-            <CardContent className="p-6">
-              <div className="flex items-center gap-3">
-                <CheckCircle2 className="size-8 text-green-600" />
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900">Review Complete!</h3>
-                  <p className="text-gray-700">
-                    You corrected {correctCount} out of {wrongAnswers.length} ({Math.round((correctCount / wrongAnswers.length) * 100)}%)
-                  </p>
-                </div>
+          <div className="bg-green-50 border border-green-200 rounded-xl p-5 flex items-center gap-3">
+            <CheckCircle2 className="size-8 text-green-600 flex-shrink-0" />
+            <div>
+              <div className="font-semibold text-gray-900">Review Complete!</div>
+              <div className="text-sm text-gray-600">
+                You corrected {correctCount} out of {wrongAnswers.length} ({Math.round((correctCount / wrongAnswers.length) * 100)}%)
               </div>
-            </CardContent>
-          </Card>
-        )}
-
-        {/* Back to Top Button */}
-        {showBackToTop && (
-          <Button
-            onClick={scrollToTop}
-            className={`fixed bottom-6 right-6 z-50 rounded-full shadow-lg ${sourceConfig.buttonClass}`}
-            size="icon"
-          >
-            <ArrowUp className="size-5" />
-          </Button>
+            </div>
+          </div>
         )}
       </div>
+
+      {/* Back to Top Button */}
+      {showBackToTop && (
+        <Button
+          onClick={scrollToTop}
+          className={`fixed bottom-6 right-6 z-50 rounded-full shadow-lg ${sourceConfig.buttonClass}`}
+          size="icon"
+        >
+          <ArrowUp className="size-5" />
+        </Button>
+      )}
     </div>
   );
 }
@@ -311,99 +313,80 @@ function ReviewQuestionCard({ index, wrongAnswer, selectedAnswer, onAnswerClick,
   const isAnswered = selectedAnswer !== undefined;
   const isCorrect = isAnswered && selectedAnswer === question.correctAnswer;
 
-  const colorMap: Record<string, { bg: string; border: string; badge: string }> = {
-    indigo: { bg: 'bg-indigo-50', border: 'border-indigo-200', badge: 'bg-indigo-600' },
-    purple: { bg: 'bg-purple-50', border: 'border-purple-200', badge: 'bg-purple-600' },
-    green: { bg: 'bg-green-50', border: 'border-green-200', badge: 'bg-green-600' },
-    orange: { bg: 'bg-orange-50', border: 'border-orange-200', badge: 'bg-orange-600' },
+  const colorMap: Record<string, { badge: string }> = {
+    indigo: { badge: 'bg-indigo-600' },
+    purple: { badge: 'bg-purple-600' },
+    green: { badge: 'bg-green-600' },
+    orange: { badge: 'bg-orange-600' },
   };
   const colors = colorMap[color] || colorMap.indigo;
 
   return (
-    <Card className={`${isAnswered ? (isCorrect ? 'border-green-300 bg-green-50' : 'border-red-300 bg-red-50') : ''}`}>
-      <CardHeader>
-        <div className="flex items-start gap-3">
-          <div className={`flex-shrink-0 w-8 h-8 ${colors.badge} text-white rounded-full flex items-center justify-center font-semibold`}>
-            {index}
-          </div>
-          <div className="flex-1">
-            <CardTitle className="text-lg">{question.question}</CardTitle>
-            <p className="text-xs text-gray-500 mt-1">
-              From: {wrongAnswer.originalSetTitle}
-            </p>
-          </div>
+    <div className={`bg-white rounded-xl border-2 p-5 shadow-sm transition-colors ${isAnswered ? (isCorrect ? 'border-green-200' : 'border-red-200') : 'border-gray-200'}`}>
+      <div className="flex items-start gap-3 mb-4">
+        <div className={`flex-shrink-0 w-8 h-8 ${colors.badge} text-white rounded-full flex items-center justify-center text-xs font-bold`}>
+          {index}
         </div>
-      </CardHeader>
-      <CardContent>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {/* Left side - Question options */}
-          <div className="space-y-3">
-            {question.options.map((option, optionIndex) => {
-              const isSelected = selectedAnswer === optionIndex;
-              const isCorrectOption = optionIndex === question.correctAnswer;
+        <div className="flex-1 min-w-0">
+          <p className="text-sm sm:text-base font-medium text-gray-900 leading-relaxed">{question.question}</p>
+          <p className="text-xs text-gray-400 mt-1">From: {wrongAnswer.originalSetTitle}</p>
+        </div>
+      </div>
 
-              let buttonClass = 'w-full justify-start text-left h-auto py-3 px-4 ';
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
+        {/* Options */}
+        <div className="space-y-2">
+          {question.options.map((option, optionIndex) => {
+            const isSelected = selectedAnswer === optionIndex;
+            const isCorrectOption = optionIndex === question.correctAnswer;
 
-              if (isAnswered) {
-                if (isCorrectOption) {
-                  buttonClass += 'bg-green-100 border-green-500 border-2 hover:bg-green-100';
-                } else if (isSelected && !isCorrectOption) {
-                  buttonClass += 'bg-red-100 border-red-500 border-2 hover:bg-red-100';
-                } else {
-                  buttonClass += 'bg-gray-100 border-gray-300 border opacity-60';
-                }
-              } else {
-                buttonClass += 'bg-white border-gray-300 border-2 hover:bg-gray-50 hover:border-gray-400';
-              }
+            let cls = 'w-full text-left px-4 py-2.5 rounded-lg border-2 flex items-center gap-2.5 text-sm transition-colors ';
+            if (!isAnswered) {
+              cls += 'border-gray-200 hover:border-indigo-300 hover:bg-indigo-50 cursor-pointer bg-white';
+            } else if (isCorrectOption) {
+              cls += 'border-green-400 bg-green-50 cursor-default';
+            } else if (isSelected) {
+              cls += 'border-red-400 bg-red-50 cursor-default';
+            } else {
+              cls += 'border-gray-100 bg-gray-50 opacity-50 cursor-default';
+            }
 
-              return (
-                <Button
-                  key={optionIndex}
-                  variant="outline"
-                  className={buttonClass}
-                  onClick={() => !isAnswered && onAnswerClick(wrongAnswer.questionId, optionIndex)}
-                  disabled={isAnswered}
-                >
-                  <div className="flex items-center gap-3 w-full">
-                    <span className="font-semibold text-gray-700 flex-shrink-0">
-                      {String.fromCharCode(65 + optionIndex)}.
-                    </span>
-                    <span className="flex-1 text-left break-words whitespace-normal">{option}</span>
-                    {isAnswered && isCorrectOption && (
-                      <CheckCircle2 className="size-5 text-green-600 flex-shrink-0" />
-                    )}
-                    {isAnswered && isSelected && !isCorrectOption && (
-                      <XCircle className="size-5 text-red-600 flex-shrink-0" />
-                    )}
-                  </div>
-                </Button>
-              );
-            })}
-          </div>
+            return (
+              <button
+                key={optionIndex}
+                className={cls}
+                onClick={() => !isAnswered && onAnswerClick(wrongAnswer.questionId, optionIndex)}
+                disabled={isAnswered}
+              >
+                <span className="font-bold text-gray-400 flex-shrink-0 w-5">{String.fromCharCode(65 + optionIndex)}.</span>
+                <span className="flex-1 text-gray-800 break-words whitespace-normal">{option}</span>
+                {isAnswered && isCorrectOption && <CheckCircle2 className="size-4 text-green-500 flex-shrink-0" />}
+                {isAnswered && isSelected && !isCorrectOption && <XCircle className="size-4 text-red-500 flex-shrink-0" />}
+              </button>
+            );
+          })}
+        </div>
 
-          {/* Right side - Explanation (shown after answer is selected) */}
-          {isAnswered && (
-            <div className={`p-4 rounded-lg h-fit ${isCorrect ? 'bg-green-100 border border-green-300' : 'bg-amber-100 border border-amber-300'}`}>
-              <div className="flex items-start gap-2">
-                <AlertCircle className={`size-5 flex-shrink-0 mt-0.5 ${isCorrect ? 'text-green-700' : 'text-amber-700'}`} />
-                <div>
-                  <p className={`font-semibold mb-1 ${isCorrect ? 'text-green-900' : 'text-amber-900'}`}>
-                    {isCorrect ? 'Corrected!' : 'Incorrect'}
+        {/* Explanation */}
+        {isAnswered && (
+          <div className={`p-4 rounded-lg border text-sm leading-relaxed h-fit ${isCorrect ? 'bg-green-50 border-green-200 text-green-900' : 'bg-amber-50 border-amber-200 text-amber-900'}`}>
+            <div className="flex items-start gap-2">
+              <AlertCircle className={`size-4 flex-shrink-0 mt-0.5 ${isCorrect ? 'text-green-600' : 'text-amber-600'}`} />
+              <div>
+                <p className="font-semibold mb-1">
+                  {isCorrect ? 'Corrected!' : 'Incorrect'}
+                </p>
+                <p>{question.explanation}</p>
+                {!isCorrect && (
+                  <p className="mt-2 text-amber-700">
+                    Your previous answer was: <strong>{String.fromCharCode(65 + wrongAnswer.userAnswer)}</strong>
                   </p>
-                  <p className={`text-sm ${isCorrect ? 'text-green-800' : 'text-amber-800'}`}>
-                    {question.explanation}
-                  </p>
-                  {!isCorrect && (
-                    <p className="text-sm text-amber-700 mt-2">
-                      Your previous answer was: <strong>{String.fromCharCode(65 + wrongAnswer.userAnswer)}</strong>
-                    </p>
-                  )}
-                </div>
+                )}
               </div>
             </div>
-          )}
-        </div>
-      </CardContent>
-    </Card>
+          </div>
+        )}
+      </div>
+    </div>
   );
 }

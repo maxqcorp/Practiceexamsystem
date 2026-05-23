@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
+import { Card, CardContent, CardDescription, CardTitle } from './ui/card';
 import { BookOpen, FileText, Zap, Target, Youtube, LogOut, User, GraduationCap, ScrollText } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 
@@ -8,7 +8,7 @@ export default function Landing() {
   const { user, logout } = useAuth();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 p-6">
+    <div className="min-h-screen bg-[#f8fafc] p-6">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-end mb-4">
           <div className="bg-white rounded-lg shadow-md px-3 py-2 flex items-center gap-3 max-w-full">
@@ -29,16 +29,13 @@ export default function Landing() {
           </div>
         </div>
 
-        <div className="text-center mb-8 mt-8 sm:mb-12 sm:mt-12">
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mb-4">
-            <BookOpen className="size-10 sm:size-16 text-indigo-600" />
-            <h1 className="text-3xl sm:text-5xl font-bold text-gray-900">Practice Exam System</h1>
+        <div className="text-center mb-6 mt-2 sm:mb-8 sm:mt-4">
+          <div className="flex items-center justify-center gap-2.5 mb-2">
+            <BookOpen className="size-6 text-indigo-600" />
+            <h1 className="text-xl sm:text-2xl font-semibold text-gray-900">Practice Exam System</h1>
           </div>
-          <p className="text-base sm:text-xl text-gray-600 mb-2">
-            Project Management MCQ Questions
-          </p>
           <p className="text-sm text-gray-500">
-            Choose your practice mode and start learning
+            Project Management MCQ Questions
           </p>
         </div>
 
@@ -84,176 +81,28 @@ export default function Landing() {
           </Card>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <Card className="hover:shadow-xl transition-all border-2 border-indigo-200 hover:border-indigo-400">
-            <CardHeader>
-              <div className="flex items-center gap-2 mb-3">
-                <FileText className="size-8 text-indigo-600" />
-                <CardTitle className="text-2xl">DumpsGate Standard Practice</CardTitle>
-              </div>
-              <CardDescription className="text-base">
-                34 sets with 50 questions each
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                <ul className="space-y-2 text-sm text-gray-700">
-                  <li className="flex items-start gap-2">
-                    <span className="text-indigo-600 font-bold">•</span>
-                    <span>Comprehensive practice sessions</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-indigo-600 font-bold">•</span>
-                    <span>Better for focused study time</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-indigo-600 font-bold">•</span>
-                    <span>1650 questions total</span>
-                  </li>
-                </ul>
-                <Link to="/sets-50">
-                  <Button className="w-full bg-indigo-600 hover:bg-indigo-700 text-lg py-6">
-                    <FileText className="size-5 mr-2" />
-                    50 Questions per Set
-                  </Button>
-                </Link>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="hover:shadow-xl transition-all border-2 border-purple-200 hover:border-purple-400">
-            <CardHeader>
-              <div className="flex items-center gap-2 mb-3">
-                <Zap className="size-8 text-purple-600" />
-                <CardTitle className="text-2xl">DumpsGate Quick Practice</CardTitle>
-              </div>
-              <CardDescription className="text-base">
-                67 sets with 25 questions each
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                <ul className="space-y-2 text-sm text-gray-700">
-                  <li className="flex items-start gap-2">
-                    <span className="text-purple-600 font-bold">•</span>
-                    <span>Shorter, focused practice sessions</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-purple-600 font-bold">•</span>
-                    <span>Perfect for limited time</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-purple-600 font-bold">•</span>
-                    <span>1675 questions total</span>
-                  </li>
-                </ul>
-                <Link to="/sets-25">
-                  <Button className="w-full bg-purple-600 hover:bg-purple-700 text-lg py-6">
-                    <Zap className="size-5 mr-2" />
-                    25 Questions per Set
-                  </Button>
-                </Link>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="hover:shadow-xl transition-all border-2 border-green-200 hover:border-green-400">
-            <CardHeader>
-              <div className="flex items-center gap-2 mb-3">
-                <Target className="size-8 text-green-600" />
-                <CardTitle className="text-2xl">RamD Practice</CardTitle>
-              </div>
-              <CardDescription className="text-base">
-                Sets with 15 questions each
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                <ul className="space-y-2 text-sm text-gray-700">
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-600 font-bold">•</span>
-                    <span>Compact, focused learning sessions</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-600 font-bold">•</span>
-                    <span>Ideal for quick review sessions</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-600 font-bold">•</span>
-                    <span>Perfect balance of depth and speed</span>
-                  </li>
-                </ul>
-                <Link to="/sets-ramd">
-                  <Button className="w-full bg-green-600 hover:bg-green-700 text-lg py-6">
-                    <Target className="size-5 mr-2" />
-                    15 Questions per Set
-                  </Button>
-                </Link>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="hover:shadow-xl transition-all border-2 border-orange-200 hover:border-orange-400">
-            <CardHeader>
-              <div className="flex items-center gap-2 mb-3">
-                <Youtube className="size-8 text-orange-600" />
-                <CardTitle className="text-2xl">David YT Practice</CardTitle>
-              </div>
-              <CardDescription className="text-base">
-                Sets with 10 questions each
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                <ul className="space-y-2 text-sm text-gray-700">
-                  <li className="flex items-start gap-2">
-                    <span className="text-orange-600 font-bold">•</span>
-                    <span>Quick, bite-sized practice sessions</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-orange-600 font-bold">•</span>
-                    <span>Perfect for daily study habits</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-orange-600 font-bold">•</span>
-                    <span>Easy to fit into busy schedules</span>
-                  </li>
-                </ul>
-                <Link to="/sets-davidyt">
-                  <Button className="w-full bg-orange-600 hover:bg-orange-700 text-lg py-6">
-                    <Youtube className="size-5 mr-2" />
-                    10 Questions per Set
-                  </Button>
-                </Link>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-
-        <div className="bg-white rounded-lg p-6 shadow-md">
-          <h2 className="text-xl font-semibold mb-3 text-gray-900">How it works</h2>
-          <ul className="space-y-2 text-gray-700">
-            <li className="flex items-start gap-2">
-              <span className="text-indigo-600 font-bold">1.</span>
-              <span>Choose your preferred practice mode (50, 25, 15, or 10 questions per set)</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-indigo-600 font-bold">2.</span>
-              <span>Select a practice set to begin</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-indigo-600 font-bold">3.</span>
-              <span>Click on your answer choice for each question</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-indigo-600 font-bold">4.</span>
-              <span>Get instant feedback with explanations</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-indigo-600 font-bold">5.</span>
-              <span>Your progress is automatically saved across sessions</span>
-            </li>
-          </ul>
+        <div className="mb-8">
+          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Practice Sets</h2>
+          <div className="bg-white rounded-xl border border-gray-200 shadow-sm divide-y divide-gray-100">
+            {[
+              { to: '/sets-50', icon: FileText, color: 'text-indigo-600', bg: 'bg-indigo-50', badge: 'bg-indigo-100 text-indigo-700', label: 'DumpsGate Standard', sub: '34 sets · 50 questions each', tag: '1,650 Qs' },
+              { to: '/sets-25', icon: Zap, color: 'text-purple-600', bg: 'bg-purple-50', badge: 'bg-purple-100 text-purple-700', label: 'DumpsGate Quick', sub: '67 sets · 25 questions each', tag: '1,675 Qs' },
+              { to: '/sets-ramd', icon: Target, color: 'text-green-600', bg: 'bg-green-50', badge: 'bg-green-100 text-green-700', label: 'RamD Practice', sub: 'Sets of 15 questions', tag: 'Focused' },
+              { to: '/sets-davidyt', icon: Youtube, color: 'text-orange-600', bg: 'bg-orange-50', badge: 'bg-orange-100 text-orange-700', label: 'David YT Practice', sub: 'Sets of 10 questions', tag: 'Daily' },
+            ].map(item => (
+              <Link key={item.to} to={item.to} className="flex items-center gap-4 px-5 py-4 hover:bg-gray-50 transition-colors group first:rounded-t-xl last:rounded-b-xl">
+                <div className={`${item.bg} p-2.5 rounded-lg flex-shrink-0`}>
+                  <item.icon className={`size-5 ${item.color}`} />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="font-semibold text-gray-900 text-sm">{item.label}</div>
+                  <div className="text-xs text-gray-400 mt-0.5">{item.sub}</div>
+                </div>
+                <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${item.badge} flex-shrink-0`}>{item.tag}</span>
+                <svg className="size-4 text-gray-300 group-hover:text-gray-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+              </Link>
+            ))}
+          </div>
         </div>
 
         {/* Footer */}
