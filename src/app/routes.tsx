@@ -13,6 +13,8 @@ import ReviewExam from "./components/ReviewExam";
 import PMPSimulation from "./components/pmp/PMPSimulation";
 import PMPExam from "./components/pmp/PMPExam";
 import ReleaseNotes from "./components/ReleaseNotes";
+import ForgotPassword from "./components/ForgotPassword";
+import ResetPassword from "./components/ResetPassword";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { AuthProvider } from "./contexts/AuthContext";
 
@@ -31,6 +33,14 @@ export const router = createBrowserRouter([
       {
         path: "/login",
         Component: Login,
+      },
+      {
+        path: "/forgot-password",
+        Component: ForgotPassword,
+      },
+      {
+        path: "/reset-password",
+        Component: ResetPassword,
       },
       {
         path: "/",
