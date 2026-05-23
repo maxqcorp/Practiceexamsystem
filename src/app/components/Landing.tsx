@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
-import { BookOpen, FileText, Zap, Target, Youtube, LogOut, User } from 'lucide-react';
+import { BookOpen, FileText, Zap, Target, Youtube, LogOut, User, GraduationCap } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 
 export default function Landing() {
@@ -39,6 +39,44 @@ export default function Landing() {
           <p className="text-sm text-gray-500">
             Choose your practice mode and start learning
           </p>
+        </div>
+
+        {/* PMP Simulation Mode */}
+        <div className="mb-8">
+          <Card className="bg-gradient-to-r from-indigo-900 to-indigo-800 text-white border-2 border-indigo-500 hover:shadow-2xl hover:shadow-indigo-500/30 transition-all">
+            <CardContent className="p-8">
+              <div className="flex items-center justify-between flex-wrap gap-4">
+                <div className="flex items-center gap-4">
+                  <div className="bg-indigo-500/30 p-3 rounded-full">
+                    <GraduationCap className="size-10 text-indigo-200" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-3xl mb-1">PMP Exam Simulation</CardTitle>
+                    <CardDescription className="text-indigo-200 text-lg">
+                      Full exam simulation with timer, breaks, and review
+                    </CardDescription>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="text-right">
+                    <p className="text-sm text-indigo-200">180 questions</p>
+                    <p className="text-sm text-indigo-200">240 minutes</p>
+                  </div>
+                  <div className="h-10 w-px bg-indigo-500/50" />
+                  <div className="text-right">
+                    <p className="text-sm text-indigo-200">60 questions</p>
+                    <p className="text-sm text-indigo-200">80 minutes</p>
+                  </div>
+                  <Link to="/pmp-simulation">
+                    <Button className="bg-white text-indigo-900 hover:bg-indigo-50 text-lg px-8 py-6 font-semibold">
+                      <GraduationCap className="size-5 mr-2" />
+                      Start Simulation
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
