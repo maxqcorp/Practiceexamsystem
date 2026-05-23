@@ -33,7 +33,7 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Conduct individual interviews with key stakeholders in order to understand all concerns, then prepare a communications management plan) fixes it."
 "Question 4
 
-To estimate the costs of a new project that is similar to a project that was implemented last year, the project manager meets with a group of experts from the previous project. The group uses a threepoint estimating technique. The project manager submits the estimated budget to the project sponsor for approval. The project sponsor, who is new to the company, is concerned because the budget exceeded their expectations. What should the project manager do?
+To estimate the costs of a new project that is similar to a project that was implemented last year, the project manager meets with a group of experts from the previous project. The group uses a three-point estimating technique. The project manager submits the estimated budget to the project sponsor for approval. The project sponsor, who is new to the company, is concerned because the budget exceeded their expectations. What should the project manager do?
 a. Review the organizational process assessment to determine if a contingency reserve was considered in the budget estimate
 b. Review the historical information and lessons learned from last year’s project to justify the new budget estimate
 c. Change the budgeting technique to a more accurate, bottom-up cost estimation.
@@ -44,7 +44,7 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Review the historical information and lessons learned from last year’s project to justify the new budget estimate) fixes it."
 "Question 5
 
-The project manager is having difficulty obtaining approval of the project requirements because there is disagreement among the project stakeholders. This issue is putting the project schedule at risk. What should the project manager do first to facilitate the approval of project requirements'?
+The project manager is having difficulty obtaining approval of the project requirements because there is disagreement among the project stakeholders. This issue is putting the project schedule at risk. What should the project manager do first to facilitate the approval of project requirements?
 a. Review the project charter
 b. Perform a stakeholder analysis
 c. Identify the source of the disagreement
@@ -55,7 +55,7 @@ Answer: C
 Explanation: Need: listen to people needs. Option C (Identify the source of the disagreement) fixes it."
 "Question 6
 
-A project manager has been assigned to a project and receives the project charter from the project management office (PMO) The document is very clear about customer requests. During Project Scope Management some requirements seem to be different from the ones specified within the project charter. What should the project manager do?
+A project manager has been assigned to a project and receives the project charter from the project management office (PMO). The document is very clear about customer requests. During Project Scope Management some requirements seem to be different from the ones specified within the project charter. What should the project manager do?
 a. Modify the baseline of the project for minor impact changes to the project scope
 b. Use a focus group and brainstorming sessions to gather more details about the project scope
 c. Register the changes in the configuration management plan and send it to the change control board (CCB).
@@ -143,8 +143,8 @@ Answer: C
 Explanation: Need: guide and calm the team. Option C (Provide performance feedback as part of the retrospective ceremony.) fixes it."
 "Question 14
 
-The project velocity has recently slipped, and a decision was made to skip testing to increase the momentum and bong the project back on track. What will the project manager need to focus on as a result of this decision?
-a. Increased bum rate
+The project velocity has recently slipped, and a decision was made to skip testing to increase the momentum and bring the project back on track. What will the project manager need to focus on as a result of this decision?
+a. Increased burn rate
 b. Increased cost
 c. Increased technical debt
 d. Decreased efficiency
@@ -265,7 +265,7 @@ Answer: D
 Explanation: Need: listen to people needs. Option D (Engage the stakeholder to solicit more information before responding to the request) fixes it."
 "Question 27
 
-The city has decided to build a new tram station. The project will include various approaches. The construction and infrastructure work will be accomplished using a predictive life cycle while software will be developed using an iterative life cycle Some neighbors are resisting the project have been asking the mayor to stop the project, and are threatening legal action. What two actions should the project manager take'? (Choose two)?
+The city has decided to build a new tram station. The project will include various approaches. The construction and infrastructure work will be accomplished using a predictive life cycle while software will be developed using an iterative life cycle Some neighbors are resisting the project have been asking the mayor to stop the project, and are threatening legal action. What two actions should the project manager take? (Choose two)?
 a. Discuss with the construction team alternatives on moving the new train station to another location.
 b. Publish information on the city’s website about the benefits that the new tram station will bring
 c. Have a meeting with the mayor and explain the importance of the new train station to the city.
@@ -289,7 +289,7 @@ Answer: B,D
 Explanation: Need: guide and calm the team. Options B and D (Evaluate the project manager’s own strengths and weaknesses as a virtual team leader to identify avoidable pitfalls; Establish in the beginning, how progress will be monitored and the best means for communicating progress) work together."
 "Question 29
 
-Important projects in the portfolio backlog need to be delivered Budget estimates are needed to prioritize the projects. How should the project budgets be estimated'?
+Important projects in the portfolio backlog need to be delivered Budget estimates are needed to prioritize the projects. How should the project budgets be estimated?
 a. The project is decomposed into features and based on the feature value and the velocity of the team, the team provides the estimate
 b. Budget estimates are provided based on the experience of the sponsor, product owner and team facilitator
 c. The team facilitator uses historical data and arrives at an estimate based on the nature of the project.
@@ -344,7 +344,7 @@ Answer: A
 Explanation: Need: guide and calm the team. Option A (Submit a change request.) fixes it."
 "Question 34
 
-During the last sprint review, the mam stakeholder complained that the product was missing many features they had been expecting. The project team argued that every increment met the acceptance criteria and was approved by the mam stakeholder. The cost performance index (CPI) of the project is 1 15 and the schedule performance index (SPI) is 1.43. What should the project manager do?
+During the last sprint review, the main stakeholder complained that the product was missing many features they had been expecting. The project team argued that every increment met the acceptance criteria and was approved by the main stakeholder. The cost performance index (CPI) of the project is 1.15 and the schedule performance index (SPI) is 1.43. What should the project manager do?
 a. Ask the project team to perform the modifications since the project budget and schedule can support them.
 b. Ask the stakeholder to submit a change request to increase the budget and time for the modifications requested
 c. Explain to the stakeholder that since the acceptance criteria for every increment were met the project can be closed.
@@ -502,7 +502,7 @@ The project schedule is falling behind and the project manager observes that the
 a. Assign a team member to handle the documentation activities.
 b. Coach the project team to complete the project documentation activities
 c. Review and adapt the appropriate project artifacts.
-d. Save all documentation activities until tire end of the project
+d. Save all documentation activities until the end of the project
 
 Answer: C
 
@@ -531,7 +531,7 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (The WBS dictionary) fixes it."
 "Question 52
 
-A large project is affecting the neighborhood in which it is located. The neighbors are not satisfied with the project and their resistance to the project may affect the project deadline. What two actions should the project manager take'? (Choose two)?
+A large project is affecting the neighborhood in which it is located. The neighbors are not satisfied with the project and their resistance to the project may affect the project deadline. What two actions should the project manager take? (Choose two)?
 a. Send letters to the neighbors and ask them kindly not to disturb the project.
 b. Set up a meeting with neighborhood representatives to win their cooperation
 c. Analyze the situation and find out what is causing the neighborhood's negative attitude.
@@ -666,7 +666,7 @@ Answer: B,D
 Explanation: Need: keep plans flexible. Options B and D (Update the procurement management plan and negotiate with the contractor.; Update the procurement strategy and negotiate with the contractor) work together."
 "Question 66
 
-A project manager presented the project schedule to the mam stakeholders. They have requested that the project be completed two months earlier than the scheduled date. What should the project manager do?
+A project manager presented the project schedule to the main stakeholders. They have requested that the project be completed two months earlier than the scheduled date. What should the project manager do?
 a. Hold a stakeholder meeting to align timelines and scope expectations.
 b. Crash the schedule to shorten the timeline while keeping the scope unchanged
 c. Update the cost management plan to allocate more resources to the project to finish the scope earlier.
@@ -734,7 +734,7 @@ Answer: C
 Explanation: Need: watch risks early. Option C (Expert judgment) fixes it."
 "Question 72
 
-The sponsor is supportive in leveraging agile approaches. The project manager is contemplating how to roll out the agile approach and gam buy-in from both project team members and stakeholders. What should the project manager do first?
+The sponsor is supportive in leveraging agile approaches. The project manager is contemplating how to roll out the agile approach and gain buy-in from both project team members and stakeholders. What should the project manager do first?
 a. Determine which agile software tools will be required to support agile delivery within the organization
 b. Select a current predictive project define the approach, and provide agile training to execute the remainder of the project
 c. Start with a pilot project of appropriate complexity and provide agile training to those who are impacted
@@ -767,7 +767,7 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Define a user focus group as external stakeholders with a high influence on outcomes) fixes it."
 "Question 76
 
-In analyzing a project for monthly status reporting, the project manager notices that the schedule performance index (SPI) is 0.75 and the cost performance index (CPI) is 1 25. The project manager must provide the first project status review soon and wants to emphasize that the project is under control. How should the project manager report the project status to key stakeholders?
+In analyzing a project for monthly status reporting, the project manager notices that the schedule performance index (SPI) is 0.75 and the cost performance index (CPI) is 1.25. The project manager must provide the first project status review soon and wants to emphasize that the project is under control. How should the project manager report the project status to key stakeholders?
 a. Prepare a detailed presentation for stakeholders on earned value including how it is calculated and the project's current earned value results
 b. Report that the project is behind schedule but that an additional experienced resource can be added to stay within schedule and maintain the budget.
 c. Perform a detailed root cause analysis utilizing a pareto chart and fishbone diagrams to demonstrate that the project is under control.
@@ -889,7 +889,7 @@ Answer: A
 Explanation: Need: listen to people needs. Option A (Request that the customer reviews and clarifies feature definitions for the current sprint) fixes it."
 "Question 87
 
-A project manager has received an updated earned value analysis report. The following are the key findings from the report •Budget at completion = USS1 million •Earned value = US$0 7 million •Actual cost = US$0 75 million •Cost performance index = 0 933 Based on this information, what should the project manager conclude about project performance'?
+A project manager has received an updated earned value analysis report. The following are the key findings from the report: Budget at completion = US$1 million, Earned value = US$0.7 million, Actual cost = US$0.75 million, Cost performance index = 0.933. Based on this information, what should the project manager conclude about project performance?
 a. The project will be completed exactly as planned
 b. The project will be easier to complete than planned
 c. The project will be difficult to complete as planned.
@@ -1214,7 +1214,7 @@ Answer: D
 Explanation: Need: listen to people needs. Option D (Create prototypes with the development team to confirm requirements) fixes it."
 "Question 118
 
-A team has been working on a project for several months,, but the completion date is unclear because the scope is changing frequently as new knowledge is gained. Some deliverables have already been completed, but when new stakeholders join the team, they complain that project outcomes are not meeting business goals. How can the project manager prevent this situation from happening in the future?
+A team has been working on a project for several months, but the completion date is unclear because the scope is changing frequently as new knowledge is gained. Some deliverables have already been completed, but when new stakeholders join the team, they complain that project outcomes are not meeting business goals. How can the project manager prevent this situation from happening in the future?
 a. Create a prioritized backlog and define iteration review sessions with stakeholders
 b. Create a detailed work breakdown structure (WBS) and milestone schedule approved by all stakeholders
 c. Schedule a daily meeting to review team performance and impediments
@@ -1225,7 +1225,7 @@ Answer: A
 Explanation: Need: listen to people needs. Option A (Create a prioritized backlog and define iteration review sessions with stakeholders) fixes it."
 "Question 119
 
-A company recently used desktop research for a feasibility study, which showed that the project is behind schedule. The project team also has concerns about the impact of scope changes on the project schedule. What should the project manager do to keep the project on schedule while still meeting project objectives'?
+A company recently used desktop research for a feasibility study, which showed that the project is behind schedule. The project team also has concerns about the impact of scope changes on the project schedule. What should the project manager do to keep the project on schedule while still meeting project objectives?
 a. Collaborate with the change control board (CCB) to review the scope and submit any change requests
 b. Submit a change request to the CCB and update the schedule
 c. Update the scope and add more resources to the project
@@ -1546,8 +1546,8 @@ Answer: C
 Explanation: Need: watch risks early. Option C (Have the vendor issue the quality documentation prior to the next delivery.) fixes it."
 "Question 149
 
-During project execution, the risk owner is monitoring the critical speed rate of a power engine to eventually trigger the defined risk-response strategy. During the risk assessment and management process phase, it was defined that the power engine has the following characteristics 1,600 rpm (rate-per-minute) -> stops working and crashes the system 1.500 rpm (rate-per-minute) -> warns of max rate allowed 1.400pm (rate-per-minute) -> reduces the power and brakes the engine. Which of the following statements is correct?
-a. 0 1,600 rpm is a project risk,1,500 rpm is an event that triggers a response strategy and 1,400 rpm is a project issue.
+During project execution, the risk owner is monitoring the critical speed rate of a power engine to eventually trigger the defined risk-response strategy. During the risk assessment and management process phase, it was defined that the power engine has the following characteristics 1,600 rpm (rate-per-minute) -> stops working and crashes the system 1,500 rpm (rate-per-minute) -> warns of max rate allowed 1,400 rpm (rate-per-minute) -> reduces the power and brakes the engine. Which of the following statements is correct?
+a. 1,600 rpm is a project risk, 1,500 rpm is an event that triggers a response strategy and 1,400 rpm is a project issue.
 b. 1,600 rpm is a project issue,1,500 rpm is an event that triggers a response strategy and 1,400 rpm is a project risk
 c. 1600 rpm is a project issue; 1,500 rpm is a project risk; and1,400 rpm is an event that triggers a response strategy
 d. 1.600 rpm is an event that triggers a response strategy.1,500 rpm is a project issue and 1,400 rpm is a project risk.
@@ -1601,7 +1601,7 @@ Answer: C
 Explanation: Need: guide and calm the team. Option C (Assess the required training per team member.) fixes it."
 "Question 155
 
-While reviewing prototypes, the quality team found some deviations that do not affect the mam functionality but have the potential to be an issue in the future To avoid major problems in the future, the team recommends corrective actions that will require additional funds. The project is already struggling to stay on budget and has even used some of the contingency reserves. What should the project manager do?
+While reviewing prototypes, the quality team found some deviations that do not affect the main functionality but have the potential to be an issue in the future To avoid major problems in the future, the team recommends corrective actions that will require additional funds. The project is already struggling to stay on budget and has even used some of the contingency reserves. What should the project manager do?
 a. Ask the product designer why the deviation was not considered in the design phase
 b. Report to the project sponsor that the product is working and the project is struggling with the budget.
 c. Evaluate and initiate the change request process with the stakeholders
@@ -1861,7 +1861,7 @@ The marketing team is transitioning to using hybrid approaches for their project
 a. Ask the marketing director to participate in daily meetings
 b. Mentor the marketing director on hybrid approaches
 c. Ask the marketing team members to coach the director
-d. Tram the marketing team and keep the director informed
+d. Train the marketing team and keep the director informed
 
 Answer: B
 
@@ -1927,17 +1927,17 @@ Explanation: Need: protect benefits for users. Option A (A release burndown char
 The product team is progressing with a prototyping approach to deliver a multiyear business initiative A few user stones are taking longer to be delivered. What should the project manager do?
 a. Determine the risks and identify a resolution during the retrospective meeting
 b. Inform stakeholders about the delay during project updates
-c. Determine cross-dependencies and plan a spike in the next spont
+c. Determine cross-dependencies and plan a spike in the next sprint
 d. Discover the gaps in the communications management plan and address them accordingly
 
 Answer: C
 
-Explanation: Need: listen to people needs. Option C (Determine cross-dependencies and plan a spike in the next spont) fixes it."
+Explanation: Need: listen to people needs. Option C (Determine cross-dependencies and plan a spike in the next sprint) fixes it."
 "Question 187
 
-The project sponsor of a major initiative is consistently changing the prioritization of modular work packages. The team is used to three week sprints and is becoming increasingly frustrated with the daily changes in scope> What should the project manager do?
+The project sponsor of a major initiative is consistently changing the prioritization of modular work packages. The team is used to three week sprints and is becoming increasingly frustrated with the daily changes in scope. What should the project manager do?
 a. Move to a Kanban strategy so that work can be reallocated more easily
-b. Decrease the sprint cycle to the average repriontization request by calculating it in days
+b. Decrease the sprint cycle to the average reprioritization request by calculating it in days
 c. Set up a meeting with the project team and ask for their opinion on what to do
 d. Set up a meeting with the sponsor to explain the importance of keeping a strict sprint cycle
 
@@ -1959,30 +1959,30 @@ Explanation: Need: listen to people needs. Option B (Work with the product owner
 
 An agile team has been struggling to keep up with the planned pace, which is frequently resulting in sprint failures. What should the project manager do to help avoid this situation in the future?
 a. Switch to a Kanban approach, implementing features on a first-come, first-serve basis, fostering a sustainable pace
-b. Review the velocity of the team over the last several sprnts and adjust the plan accordingly
+b. Review the velocity of the team over the last several sprints and adjust the plan accordingly
 c. Ask the project sponsor to approve overtime to compensate for the lack of performance while adjusting the plan
 d. Replace junior team members with more experienced ones and negotiate the project scope to compensate for the budget gap
 
 Answer: B
 
-Explanation: Need: guide and calm the team. Option B (Review the velocity of the team over the last several sprnts and adjust the plan accordingly) fixes it."
+Explanation: Need: guide and calm the team. Option B (Review the velocity of the team over the last several sprints and adjust the plan accordingly) fixes it."
 "Question 190
 
 for a project has reported the potential for a delivery delay due to a technical issue with the subsupplier To stay on schedule, the vendor proposed replacing the sub- supplier's component with a similar part that is different from the one that is stipulated in the project specifications. What should the project manager do next?
 a. Accept the proposed replacement in order to keep procurement activities on track
 b. Insist on using the component per the project specifications and air freight the equipment to mitigate the delay
 c. Instruct the vendor to use the part that is compliant with the project specifications and update the schedule
-d. Consult with a subject matter expert (SME) to see if the proposed change isacceptable
+d. Consult with a subject matter expert (SME) to see if the proposed change is acceptable
 
 Answer: D
 
-Explanation: Need: keep plans flexible. Option D (Consult with a subject matter expert (SME) to see if the proposed change isacceptable) fixes it."
+Explanation: Need: keep plans flexible. Option D (Consult with a subject matter expert (SME) to see if the proposed change is acceptable) fixes it."
 "Question 191
 
 At the end of a meeting a functional manager takes the project manager aside to raise some concerns on behalf of a project team member who is unclear about their role and responsibilities for the project. What should the project manager do in this situation?
 a. Develop a work plan for the project team member with the help of the resource manager
 b. Advise the functional manager and the project team member to review the resource management plan
-c. Tell the functional manager and the project team member to review the projectcharter
+c. Tell the functional manager and the project team member to review the project charter
 d. Ask the functional manager to create a specific responsible, accountable, consult, and inform (RACI) chart for the team member
 
 Answer: D
@@ -2081,7 +2081,7 @@ Explanation: Need: listen to people needs. Option A (Work to understand the key 
 A project manager joins a team that is providing a customized enterprise resource planning (ERP) system to a client A potential design problem is identified by the development team. After reviewing this issue with the project owner and team members, all agreed to revise the design to avoid a system defect when deployed. The design is already approved. What should be the project manager's next steps?
 a. Conduct a proof of concept to make sure there are no problems in the revised design
 b. Amend the design specifications and pass them to the development team for reprogramming
-c. Make a change request and get format approval from the project owner
+c. Make a change request and get formal approval from the project owner
 d. Inform the client of the problem and follow the change request process
 
 Answer: D
@@ -2111,7 +2111,7 @@ Answer: C
 Explanation: Need: listen to people needs. Option C (Emotional intelligence training) fixes it."
 "Question 204
 
-A company is using a predictive approach for the development of a particular component as defined in the scope management plan Due to regularly changing regulatory requirements, the development team has requested to utilize agile approaches. What should the project manager do about the development team's request""?
+A company is using a predictive approach for the development of a particular component as defined in the scope management plan Due to regularly changing regulatory requirements, the development team has requested to utilize agile approaches. What should the project manager do about the development team's request?
 a. Escalate the request for additional financial resources
 b. Forward the request to the project management office (PMO) to amend the organizational process assets
 c. Ask the project sponsor to obtain approval for implementation of the new approach
@@ -2181,7 +2181,7 @@ A project manager is managing a hybrid project. After attending an iteration rev
 a. Negotiate a reduced review attendance with the stakeholder and update the stakeholder engagement plan to reflect this reduced
 b. Discuss with the stakeholder the benefits of the hybrid project and how frequent reviews lead to greater value and less rework
 c. Record the issue in the issue log and escalate the conflict to the project sponsor forassistance
-d. Explain to the stakeholder that the stakelrolder engagement plan requires their attendance at all reviews
+d. Explain to the stakeholder that the stakeholder engagement plan requires their attendance at all reviews
 
 Answer: B
 
@@ -2199,7 +2199,7 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Review the project backlog looking for high-priority items and come up with a minimum viable product (MVP) that fits the expected timeline) fixes it."
 "Question 212
 
-A project manager is managing a hybrid project. After attending an iteration review, a stakeholder tells the project manager that they are very busy and asks why these reviews are held so frequently. How should the project manager respond'?
+A project manager is managing a hybrid project. After attending an iteration review, a stakeholder tells the project manager that they are very busy and asks why these reviews are held so frequently. How should the project manager respond?
 a. Negotiate a reduced review attendance with the stakeholder and update the stakeholder engagement plan to reflect this reduced attendance
 b. Discuss with the stakeholder the benefits of the hybrid project and how frequent reviews lead to greater value and less rework
 c. Record the issue in the issue log and escalate the conflict to the project sponsor for assistance
@@ -2246,7 +2246,7 @@ Explanation: Need: guide and calm the team. Option B (Train the executives on ag
 In the beginning of project execution, the project manager finds out that a key resource will be unavailable for two weeks which could cause a delay to the schedule. What should the project manager do first?
 a. Assign the tasks to another resource, and ask the resource to work double shifts
 b. Update the schedule to reflect the project's changes in duration
-c. Ask human resources (HR) for a replacement, and update the nsk register
+c. Ask human resources (HR) for a replacement, and update the risk register
 d. Update the resource management plan and resource allocation chart accordingly
 
 Answer: D
@@ -2287,7 +2287,7 @@ Answer: C
 Explanation: Need: listen to people needs. Option C (Explain that a project charter is necessary to ensure agreement on scope and deliverables and to define the project manager's responsibilities) fixes it."
 "Question 220
 
-A transportation company is transforming its operational processes and the mam system this company uses to move freight. The scope statement is in place An iterative delivery approach has been agreed by all stakeholders. What does the project manager need to do next to help the team understand the work that needs to be done?
+A transportation company is transforming its operational processes and the main system this company uses to move freight. The scope statement is in place An iterative delivery approach has been agreed by all stakeholders. What does the project manager need to do next to help the team understand the work that needs to be done?
 a. Work with the team to decompose the scope into a WBS and work packages in order to create required deliverables and timelines.
 b. Work directly with stakeholders on the work breakdown structure (WBS) and assign tasks with a required timeline for each team member to start the work.
 c. Create the requirements management plan to outline how project requirements will be collected analyzed and documented and then assign requirements to team members
@@ -2320,7 +2320,7 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Update the communications management plan based on the product owner’spreferences and distribute to the team) fixes it."
 "Question 223
 
-The customer's project manager changes during the final stage of a project. How can the project manager avoid a project closure delay’?
+The customer's project manager changes during the final stage of a project. How can the project manager avoid a project closure delay?
 a. Update the stakeholder engagement plan
 b. Review the latest project status report and update the stakeholders
 c. Escalate the case to the customer's management team
@@ -2331,7 +2331,7 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Review the latest project status report and update the stakeholders) fixes it."
 "Question 224
 
-In an industrial plant, the owner has decided to add more capacity to the plant by installing a new machine and updating the software used in production. This capacity enlargement will occur while the plant is still functioning and producing. The software update will be accomplished using an agile approach in order to minimize risk. The machine procurement, installation, and integration will be accomplished using predictive approaches. What types of communications will the project manager have to design into the schedule management plan to ensure the project will be on schedule'’?
+In an industrial plant, the owner has decided to add more capacity to the plant by installing a new machine and updating the software used in production. This capacity enlargement will occur while the plant is still functioning and producing. The software update will be accomplished using an agile approach in order to minimize risk. The machine procurement, installation, and integration will be accomplished using predictive approaches. What types of communications will the project manager have to design into the schedule management plan to ensure the project will be on schedule?
 a. Weekly colocated meetings with the relevant stakeholders
 b. Biweekly conference calls with the relevant stakeholders
 c. Weekly one-on-one meetings with each of the relevant stakeholders
@@ -2453,11 +2453,11 @@ Answer: A
 Explanation: Need: guide and calm the team. Option A (Ensure that the impediments are captured and prioritized based upon the highest valued features) fixes it."
 "Question 235
 
-A company was awarded a project in a dangerous location that poses several high-level risks for employees. Help is needed to tram the employees on major safety and health factors. The project is ongoing and uses a hybrid approach. The project will be conducted in multiple sites, with several development iterations running in parallel. How should the project manager handle this situation?
+A company was awarded a project in a dangerous location that poses several high-level risks for employees. Help is needed to train the employees on major safety and health factors. The project is ongoing and uses a hybrid approach. The project will be conducted in multiple sites, with several development iterations running in parallel. How should the project manager handle this situation?
 a. Allocate and use part of the project's contingency reserves for training purposes.
 b. Negotiate a contract and form a partnership with a local authority for medical and security support services.
 c. Perform a retrospective and update the risk register and resource management plan regarding the necessary budget for training
-d. Hire only local resources who are aware of the terntory's hazards, providing employment to the local community
+d. Hire only local resources who are aware of the territory's hazards, providing employment to the local community
 
 Answer: B
 
@@ -2643,7 +2643,7 @@ Explanation: Need: guide and calm the team. Option A (Organize regular meetings 
 
 A project manager has been selected to deliver one of an organization's key flagship solutions Critical success factors include agility, market adaptation, and a quick response to market offerings. What is one of the key activities that the project manager should undertake to ensure company success?
 a. Review the project objectives with the project sponsor to agree on more realistic and achievable project plans and deliverables
-b. Request more funding from the project sponsor to hire additional skilled resourcesand to incorporate additional quality in the project delivery approach and outcome
+b. Request more funding from the project sponsor to hire additional skilled resources and to incorporate additional quality in the project delivery approach and outcome
 c. Conduct periodical reviews of the project plans, objectives, and deliverables to ensure all relevant data are captured to continue making informed project decisions
 d. Create a business case after performing a market review, and then submit it to the sponsor to modify the project deliverable to meet the newly defined objectives
 
@@ -2754,9 +2754,9 @@ Explanation: Need: guide and calm the team. Option B (Meet with the project team
 
 During a retrospective review, many project team members say they are not completing tasks during the iterations because of interruptions and requests for help from other teams. As a team facilitator, what should the project manager do to avoid this?
 a. Identify the problem's root causes and define the ground rules with all project team members to minimize interferences
-b. Hire a coach to help all project teams to improve their abilities to solve problems ontheir own.
+b. Hire a coach to help all project teams to improve their abilities to solve problems on their own.
 c. Reunite with the project team members affected and tell them not to reduce the team's capacity
-d. Recommend to the project team members that they should improve their planningand make their stones smaller
+d. Recommend to the project team members that they should improve their planning and make their stories smaller
 
 Answer: A
 
@@ -3052,7 +3052,7 @@ Answer: C
 Explanation: Need: guide and calm the team. Option C (Coordinate a meeting to understand the situation and resolve any conflicts.) fixes it."
 "Question 293
 
-The customer is reviewing the new reporting system and informs the project manager that one of the components in the printing module is not complete. The project manager reviews the work breakdown structure (WBS) and confirms that the component Is included. What does the project manager need to do first?
+The customer is reviewing the new reporting system and informs the project manager that one of the components in the printing module is not complete. The project manager reviews the work breakdown structure (WBS) and confirms that the component is included. What does the project manager need to do first?
 a. Raise a change request to immediately implement the printing module component.
 b. Escalate this issue to the project sponsor immediately
 c. Ask the project team to conduct a quality audit of the printing module components.
@@ -3129,7 +3129,7 @@ Answer: A
 Explanation: Need: listen to people needs. Option A (Schedule a meeting with critical stakeholders to review the issue and decide on the next steps) fixes it."
 "Question 301
 
-A project manager is in a learn meeting and the project team requires a decision to be made about a new suggested timeline due to an impact from a potential scope change. What should the project manager do?
+A project manager is in a team meeting and the project team requires a decision to be made about a new suggested timeline due to an impact from a potential scope change. What should the project manager do?
 a. Make the decision on behalf of the organization
 b. Review the stakeholder map along with the organizational chart and delegate the most senior person to make the decision
 c. Schedule a project decision meeting with all stakeholders to discuss the decision.
@@ -3140,7 +3140,7 @@ Answer: D
 Explanation: Need: listen to people needs. Option D (Follow the stakeholder engagement plan) fixes it."
 "Question 302
 
-Some of the mote experienced members of a project team have complained about the project manager. The senior project team members feel that the project manager is micromanaging them and preventing them from completing their work. What should the project manager do when made aware of these issues?
+Some of the more experienced members of a project team have complained about the project manager. The senior project team members feel that the project manager is micromanaging them and preventing them from completing their work. What should the project manager do when made aware of these issues?
 a. Ask for advice on how to be a better mentor to these team members.
 b. Set up a team building event to bring synergy back to the project team.
 c. Adjust the project manager's management style to better fit senior team members.
@@ -3174,7 +3174,7 @@ Answer: D
 Explanation: Need: listen to people needs. Option D (Discuss project requirements with the new stakeholder, and update the communications management plan.) fixes it."
 "Question 305
 
-A learn has been working for two months and has consistently missed planned user stories. How should the project manager address this issue?
+A team has been working for two months and has consistently missed planned user stories. How should the project manager address this issue?
 a. Ensure the sprint size is appropriate for the iteration duration.
 b. Promote changing the iteration duration in order to commit as planned.
 c. Engage in recruiting a highly skilled resource to reinforce the skills.
@@ -3218,7 +3218,7 @@ Answer: B
 Explanation: Need: guide and calm the team. Option B (Rolling wave planning) fixes it."
 "Question 309
 
-An agile team member received certification on a new tool: however, this learn member is complaining that the rest of the team is not using the tool due to lack of knowledge. How should the servant leader apply emotional intelligence to leverage this situation to benefit the project?
+An agile team member received certification on a new tool: however, this team member is complaining that the rest of the team is not using the tool due to lack of knowledge. How should the servant leader apply emotional intelligence to leverage this situation to benefit the project?
 a. Request budget to reward the team member so others will be motivated to obtain the same certification
 b. Promote the team member to product owner to leverage the new knowledge with the clients
 c. Provide an incentive to team members who begin using the new tool on this project.
@@ -3240,7 +3240,7 @@ Answer: A
 Explanation: Need: guide and calm the team. Option A (Arrange a meeting with the managers and try to reach an agreement.) fixes it."
 "Question 311
 
-A project manager is m the middle of a project when one of the key project team members needs to take an unexpected and prolonged leave of absence. The project is ahead of schedule and running under budget. Which two actions should the project manager take initially to resolve this problem? (Choose two)?
+A project manager is in the middle of a project when one of the key project team members needs to take an unexpected and prolonged leave of absence. The project is ahead of schedule and running under budget. Which two actions should the project manager take initially to resolve this problem? (Choose two)?
 a. Check the risk register for a prepared response to a resource being suddenly unavailable.
 b. Check if the team member's activities are sufficiently documented to facilitate handover
 c. Check the project's responsibility assignment matrix (RAM) to determine which activities will be affected
@@ -3384,7 +3384,7 @@ Answer: C
 Explanation: Need: guide and calm the team. Option C (Organization-wide diversity training should have been provided to the workforce) fixes it."
 "Question 324
 
-Since the beginning of a project, the product owner keeps asking during ceremonies about the budget spent for each product iteration. The product owner seems much more interested in the cost rather than the product itself. What should the project manager have done earlier to change the product owner's behavior''?
+Since the beginning of a project, the product owner keeps asking during ceremonies about the budget spent for each product iteration. The product owner seems much more interested in the cost rather than the product itself. What should the project manager have done earlier to change the product owner's behavior?
 a. Worked on a fixed-price contract to switch the product owner's attention to value instead of money
 b. Worked on a communications management plan with reports of budget spent in each iteration versus planned to avoid these discussions during ceremonies
 c. Worked on different approaches of estimating to give confidence of the cost spent in each product increment.
@@ -3417,7 +3417,7 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Create a benefits management plan mapped to the organization's strategic objectives) fixes it."
 "Question 327
 
-A project manager is in the middle of an agile project comprised of 100 user stories broken down into five iterations Each user story is worth USS50. The actual expenditure is US$2,000 and 50 user stories have been delivered. Which statement is true''?
+A project manager is in the middle of an agile project comprised of 100 user stories broken down into five iterations. Each user story is worth US$50. The actual expenditure is US$2,000 and 50 user stories have been delivered. Which statement is true?
 a. The project is on budget and on schedule.
 b. The project is over budget and behind schedule
 c. The project is under budget and behind schedule.
@@ -3461,7 +3461,7 @@ Answer: C
 Explanation: Need: keep plans flexible. Option C (Clarify the high-level business requirements with the event organizer as a basis for forming the deliverables list.) fixes it."
 "Question 331
 
-In a fixed time and budget project the customer wants the development of a core component to be based on agile practices, as the final scope of (he requirement has not yet been fully developed. The project manager is participating in contract development with the sales team and wants to ensure that development costs do not impact the profitability of the project. Which two controls should the project manager incorporate into the contract to specifically address the development of the core component? (Choose two)?
+In a fixed time and budget project the customer wants the development of a core component to be based on agile practices, as the final scope of the requirement has not yet been fully developed. The project manager is participating in contract development with the sales team and wants to ensure that development costs do not impact the profitability of the project. Which two controls should the project manager incorporate into the contract to specifically address the development of the core component? (Choose two)?
 a. Limit the number of iterations for development in the contract.
 b. Establish a governance committee to review the contract delivery
 c. Tier the contract for fixed and agile components
@@ -3506,7 +3506,7 @@ Answer: B
 Explanation: Need: keep plans flexible. Option B (Analyze both projects to determine the most effective use of common resources) fixes it."
 "Question 336
 
-A project learn member identified a defect in the initial solution design for a project. The stakeholders are not sure whether to deploy the system or not. What should the project manager do?
+A project team member identified a defect in the initial solution design for a project. The stakeholders are not sure whether to deploy the system or not. What should the project manager do?
 a. Propose a solution redesign for the project
 b. Perform risk analysis against the issue.
 c. Revise the project's quality control measurements
@@ -3517,7 +3517,7 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Perform risk analysis against the issue.) fixes it."
 "Question 337
 
-A project manager has noticed that the performance of a new team member has increased dramatically over the past few months. The project manager has been measuring this team member's performance through the cost performance index (CPl) and schedule performance index (SPl) of work packages. The project manager has also assigned new. unrelated work packages to this team member. The project manager wants to formally record the team member's success in the project documentation. What should the project manager do?
+A project manager has noticed that the performance of a new team member has increased dramatically over the past few months. The project manager has been measuring this team member's performance through the cost performance index (CPI) and schedule performance index (SPI) of work packages. The project manager has also assigned new, unrelated work packages to this team member. The project manager wants to formally record the team member's success in the project documentation. What should the project manager do?
 a. Attach a note to the project management plan about the team member
 b. Hold a project team meeting about the team member's contribution and take minutes
 c. Record the team member's contribution in the responsibility assignment matrix (RAM)
@@ -3539,7 +3539,7 @@ Answer: A
 Explanation: Need: listen to people needs. Option A (Review and prioritize new requirements with stakeholders to determine which change requests are needed.) fixes it."
 "Question 339
 
-An operations manager continuously raises concerns about a project's benefits to the company. While some concerns are valid most of the time these concerns have caused delays in project meetings. How should the project manager handle this'?
+An operations manager continuously raises concerns about a project's benefits to the company. While some concerns are valid most of the time these concerns have caused delays in project meetings. How should the project manager handle this?
 a. Discuss the meeting delays with the director of operations and ask for support with the concerns.
 b. Review the operations manager's concerns and ensure these concerns are addressed
 c. Escalate the concerns to the project sponsor and discuss options to address them
@@ -3627,7 +3627,7 @@ Answer: C
 Explanation: Need: listen to people needs. Option C (Use fixed-price increments as user stories are completed.) fixes it."
 "Question 348
 
-A project manager has joined a company m an unfamiliar industry and has been given a strategically important project Being new, and not fully understanding the interdependences of the various departmental work items, the project manager is unsure of how to plan the project. How should the project manager proceed?
+A project manager has joined a company in an unfamiliar industry and has been given a strategically important project. Being new, and not fully understanding the interdependences of the various departmental work items, the project manager is unsure of how to plan the project. How should the project manager proceed?
 a. Consult the project sponsor and request their feedback
 b. Consult the product owner and request a complete prioritization session
 c. Consult a senior project manager within the organization and request their expert judgement
@@ -3671,7 +3671,7 @@ Answer: A
 Explanation: Need: guide and calm the team. Option A (Call for a team meeting to identify the root cause for the declining performance) fixes it."
 "Question 352
 
-A project manager is managing a project which is approaching the end of the execution phase. A high-level stakeholder informs the project manager that a very important requirement was not included in the scope of the project, and that without that requirement the project will deliver no value. What is the first thing the project manager should do""?
+A project manager is managing a project which is approaching the end of the execution phase. A high-level stakeholder informs the project manager that a very important requirement was not included in the scope of the project, and that without that requirement the project will deliver no value. What is the first thing the project manager should do?
 a. Include the requirement into the project and schedule it as soon as possible
 b. Inform the project sponsor about the situation and request assistance
 c. Evaluate the impact that the inclusion of this new requirement will have on project performance
@@ -3704,7 +3704,7 @@ Answer: A
 Explanation: Need: guide and calm the team. Option A (Focus on remediation not merely on correcting symptoms) fixes it."
 "Question 355
 
-During a meeting to define project scope a stakeholder tells the project manager that the main requested feature in the contract is not applicable, and this is documented m the lessons learned. What should the project manager do?
+During a meeting to define project scope a stakeholder tells the project manager that the main requested feature in the contract is not applicable, and this is documented in the lessons learned. What should the project manager do?
 a. Check with the team to learn what can be done, and consult an expert
 b. Ask the sponsor to close the project and pay the contracted penalty.
 c. Check that this information was documented correctly
@@ -3838,7 +3838,7 @@ Explanation: Need: listen to people needs. Option C (Set expectations with the n
 
 A company's leadership team has decided to invest in a new product using an agile approach. The commercial and product teams have started the planning activity for this new venture. Which three key factors does the project manager need in order to deliver this product? (Choose 3)?
 a. High-level product backlog
-b. Key performance indicators (KPls)
+b. Key performance indicators (KPIs)
 c. Product vision
 d. Schedule performance indexes (SPIs)
 e. Product roadmap
@@ -3848,7 +3848,7 @@ Answer: A,C,E
 Explanation: Need: guide and calm the team. Options A, C, and E (High-level product backlog; Product vision; Product roadmap) work together."
 "Question 368
 
-A project is nearing completion. The contingency time has been consumed To ensure that the final deliverables are achieved fhin budget, the project manager has asked the team to follow a rigorous process. This Is causing some resistance among the team members. What should the project manager do to address the growing resistance?
+A project is nearing completion. The contingency time has been consumed. To ensure that the final deliverables are achieved within budget, the project manager has asked the team to follow a rigorous process. This is causing some resistance among the team members. What should the project manager do to address the growing resistance?
 a. Crash the project schedule and ask project team members to work overtime to meet the new timeline
 b. Motivate project team members by offering incentives to complete the project on time
 c. Describe to the team members how specific tools and techniques can be used to finish on time
@@ -3892,7 +3892,7 @@ Answer: B
 Explanation: Need: control changes and baselines. Option B (Identify adequate change management tools to conduct the project) fixes it."
 "Question 372
 
-The project manager of a hybrid project learns that a stakeholder has approached a team member directly to request a change. This change will impact the project m a significant way. The project manager should ten the stakeholder that the correct procedure tor new requirements is to provide a request directly to whom?
+The project manager of a hybrid project learns that a stakeholder has approached a team member directly to request a change. This change will impact the project in a significant way. The project manager should tell the stakeholder that the correct procedure for new requirements is to provide a request directly to whom?
 a. Product owner
 b. Change control board (CCB)
 c. Project sponsor
@@ -3914,7 +3914,7 @@ Answer: C
 Explanation: Need: listen to people needs. Option C (The change should be considered because it will help the team work more efficiently) fixes it."
 "Question 374
 
-On a project to create the perfect paper airplane, the development of the airplane Is performed. In iterations. The artwork to go on the wings and tail is done using a predictive approach. One of the stakeholders provides a requirement that conflicts with the product owner's requirements. Who is responsible for analyzing the new requirement and making the final decision?
+On a project to create the perfect paper airplane, the development of the airplane is performed in iterations. The artwork to go on the wings and tail is done using a predictive approach. One of the stakeholders provides a requirement that conflicts with the product owner's requirements. Who is responsible for analyzing the new requirement and making the final decision?
 a. Project manager
 b. Scrum master
 c. Project sponsor
@@ -3925,7 +3925,7 @@ Answer: D
 Explanation: Need: listen to people needs. Option D (Product owner) fixes it."
 "Question 375
 
-A project manager Is transitioning from a predictive We cycle project to a new agile project. How should the project manager manage and control the scope for the new project?
+A project manager is transitioning from a predictive life cycle project to a new agile project. How should the project manager manage and control the scope for the new project?
 a. Create a scope baseline and put the rest as backlog activities.
 b. Estimate the work the team can complete and define story sizes to keep the project under control.
 c. Develop a plan to complete more work In less time.
@@ -3936,8 +3936,8 @@ Answer: D
 Explanation: Need: control changes and baselines. Option D (Spend a short amount of time defining the scope and building prototypes to refine the requirements.) fixes it."
 "Question 376
 
-A company Is helping their client launch an. Innovative product. During the sprint review, the product owner identifies that the product does not include key features that were previously prioritized as part of the product backlog. What should the project manager do next?
-a. Extend the sprint timeline so the learn can work on the missing feature.
+A company is helping their client launch an innovative product. During the sprint review, the product owner identifies that the product does not include key features that were previously prioritized as part of the product backlog. What should the project manager do next?
+a. Extend the sprint timeline so the team can work on the missing feature.
 b. Inform the product owner that this issue needs to be escalated to the executive level.
 c. Collaborate with the product owner and the team to plan the following sprint
 d. Initiate the change request process to include these missing features.
@@ -3958,7 +3958,7 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Work with the product manager and the rest of the team to update the project backlog.) fixes it."
 "Question 378
 
-After a project learn has been working on a project for several months, the project Is cancelled. The project sponsor Is putting pressure on the project manager to perform closeout duties as fast as possible so that the project team can move on to other work. The project sponsor has instructed the team not to waste time archiving the project artifacts for the cancelled project. How should the project manager handle this situation?
+After a project team has been working on a project for several months, the project is cancelled. The project sponsor is putting pressure on the project manager to perform closeout duties as fast as possible so that the project team can move on to other work. The project sponsor has instructed the team not to waste time archiving the project artifacts for the cancelled project. How should the project manager handle this situation?
 a. Comply with the project sponsor's request to not archive the project artifacts.
 b. Document the project sponsor's instructions as the archived project artifacts.
 c. Archive the project artifacts on the project manager's local computer for future reference
@@ -3992,9 +3992,9 @@ Explanation: Need: listen to people needs. Option A (Evaluate the impact to the 
 "Question 381
 
 A project manager is leading an agile project in an organization that has not executed this type of project before. In order to ensure the project is following the compliance requirements, what should the project manager do?
-a. Follow the organization's process and deliverables for predictive projects, even ifthey compromise the agility and performance of the project.
-b. Use the risk register to document all of the compliance vulnerabilities generated bythe project so that all decisions are well documented and approved by stakeholders.
-c. Meet with the project management office (PMO)/compliance entity to work onprocess tailoring to ensure that the agile deliverables support the compliance requirements of the organization.
+a. Follow the organization's process and deliverables for predictive projects, even if they compromise the agility and performance of the project.
+b. Use the risk register to document all of the compliance vulnerabilities generated by the project so that all decisions are well documented and approved by stakeholders.
+c. Meet with the project management office (PMO)/compliance entity to work on process tailoring to ensure that the agile deliverables support the compliance requirements of the organization.
 d. Coach upper management on agile practices, explaining that an agile project is concerned with value delivery, and negotiate a way out of the compliance requirements.
 
 Answer: C
@@ -4014,14 +4014,14 @@ Explanation: Need: listen to people needs. Option D (Communicated the project ma
 "Question 383
 
 A project started 12 months ago and is currently on iteration 12 of 14. The team has performed well and completed all deliverables on time. However, some team members are starting to complain about the length of the project, creating a risk for lack of performance at this critical stage. What should the project manager do as a servant leader to mitigate this risk?
-a. Meet with the team to reinforce their responsibilities and the consequences if theproject deliverables are not completed on time.
-b. Apply additional controls to the project deliverables to ensure that all milestonesare achieved on time.
-c. Contact the functional manager to ensure that team motivation remains high untilthe end of the project.
-d. Schedule a team event with the project sponsor to highlight the importance of theproject and recognize the work of the team.
+a. Meet with the team to reinforce their responsibilities and the consequences if the project deliverables are not completed on time.
+b. Apply additional controls to the project deliverables to ensure that all milestones are achieved on time.
+c. Contact the functional manager to ensure that team motivation remains high until the end of the project.
+d. Schedule a team event with the project sponsor to highlight the importance of the project and recognize the work of the team.
 
 Answer: D
 
-Explanation: Need: listen to people needs. Option D (Schedule a team event with the project sponsor to highlight the importance of theproject and recognize the work of the team.) fixes it."
+Explanation: Need: listen to people needs. Option D (Schedule a team event with the project sponsor to highlight the importance of the project and recognize the work of the team.) fixes it."
 "Question 384
 
 The project manager has initiated the project and the team's roles and responsibilities have been assigned. In preparation for the development of the project management plan, the project manager reviews lessons learned from previous projects and discovers that the same team has been missing delivery dates. What should the project manager do to ensure timely delivery?
@@ -4311,9 +4311,9 @@ Explanation: Need: listen to people needs. Option D (Encourage participation in 
 "Question 411
 
 A contractor has been making small changes to the engineering specifications without submitting change requests. The contractor and the technical team did not discuss the changes with the project manager, and the modifications do not affect the budget and quality of the deliverable. What should the project manager do?
-a. Report the violation to the change control board (CCB) and seek comprehensiveapproval for these modifications.
-b. Update the change management plan to define the level of control required forthese types of modifications.
-c. Ask the quality control team to evaluate the modifications, but take no actionbecause the associated quality risks are insignificant.
+a. Report the violation to the change control board (CCB) and seek comprehensive approval for these modifications.
+b. Update the change management plan to define the level of control required for these types of modifications.
+c. Ask the quality control team to evaluate the modifications, but take no action because the associated quality risks are insignificant.
 d. Request the engineering team to update the specifications to reflect the modifications made by the contractor.
 
 Answer: B
@@ -4565,14 +4565,14 @@ Explanation: Need: listen to people needs. Option D (Assess risks together with 
 "Question 435
 
 A large organization decided to adopt an agile methodology based on the trends seen in the industry. The organization invested a large amount of money in adopting it, but after a few months, the implementation failed. What should the project manager have done differently to avoid the implementation failure?
-a. Conducted agile training for all employees ranging from the project teams throughmid-level to upper-level management.
-b. Conducted a postmortem and captured the learning in organizational process assets(OPAs) for future use.
-c. Assessed the organization's culture, performed a suitability analysis, and determinedthe future state.
+a. Conducted agile training for all employees ranging from the project teams through mid-level to upper-level management.
+b. Conducted a postmortem and captured the learning in organizational process assets (OPAs) for future use.
+c. Assessed the organization's culture, performed a suitability analysis, and determined the future state.
 d. Hired a third-party agile delivery team to do the implementation.
 
 Answer: C
 
-Explanation: Need: guide and calm the team. Option C (Assessed the organization's culture, performed a suitability analysis, and determinedthe future state.) fixes it."
+Explanation: Need: guide and calm the team. Option C (Assessed the organization's culture, performed a suitability analysis, and determined the future state.) fixes it."
 "Question 436
 
 In a project management team meeting, one of the team members always argues with the project manager about the objective, timeline, and deliverable of any assigned task. What should the project manager do to manage this conflict?
@@ -4719,7 +4719,7 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Meet the team member and try to plan a course of action together.) fixes it."
 "Question 449
 
-A project team member complained to the project manager that they are not sure f on the latest requirements document because it was emailed to them about one week ago. They mentioned that, in the past they worked on a document tor more than 20 hours only to find out later that another team member had already updated that same document but did not send them the latest revisions. What should the project manager do to avoid this situation in the future?
+A project team member complained to the project manager that they are not sure if they have the latest requirements document because it was emailed to them about one week ago. They mentioned that, in the past they worked on a document for more than 20 hours only to find out later that another team member had already updated that same document but did not send them the latest revisions. What should the project manager do to avoid this situation in the future?
 a. Encourage better team communication by positioning team members closer together.
 b. Implement a project management information system (PMIS)
 c. Update the communications management plan to ensure correct delivery of the latest version
@@ -4731,8 +4731,8 @@ Explanation: Need: guide and calm the team. Option B (Implement a project manage
 "Question 450
 
 An agile project is starting and the assigned team is new to agile. During the first daily meetings, the project manager observes that the team is having problems meeting goals. What should the project manager do?
-a. Plan an outdoor activity tor the team to get to know each other
-b. Ask the team to review agile protect management approaches.
+a. Plan an outdoor activity for the team to get to know each other
+b. Ask the team to review agile project management approaches.
 c. Ask the human resources department for an experienced agile team
 d. Conduct a meeting to help the team define the team charter
 
@@ -4774,11 +4774,11 @@ Answer: B
 Explanation: Need: guide and calm the team. Option B (Confirm ownership for ongoing value realization) fixes it."
 "Question 454
 
-During a project review meeting, the project sponsor is worried that the protect may not be delivering results as planned Based on that the project manager is evaluating the project status. What information should the project manager use as an indicator that the project is actually delivering value?
+During a project review meeting, the project sponsor is worried that the project may not be delivering results as planned. Based on that the project manager is evaluating the project status. What information should the project manager use as an indicator that the project is actually delivering value?
 a. Stakeholders are satisfied with the current status.
 b. The project is under budget and on schedule
 c. The project is aligned with the project charter
-d. The protect is aligned with the benefits management plan
+d. The project is aligned with the benefits management plan
 
 Answer: D
 
@@ -4807,10 +4807,10 @@ Answer: C
 Explanation: Need: guide and calm the team. Option C (Consult the project team to understand the extent of the training needs for the contractor) fixes it."
 "Question 457
 
-A Scrum team working in an aircraft manufacturing company has completed. Its first iteration for a critical project. It is very Important for the project sponsor to complete the project on time and under budget A burndown chart indicates that the project is behind schedule. Which two actions should the project manager take to manage Impediments and improve the team's velocity? (Choose two)?
+A Scrum team working in an aircraft manufacturing company has completed its first iteration for a critical project. It is very important for the project sponsor to complete the project on time and under budget. A burndown chart indicates that the project is behind schedule. Which two actions should the project manager take to manage impediments and improve the team's velocity? (Choose two)?
 a. Look for processes that cause bottlenecks and slow down the team's agility
-b. Assign the items with high complexity lo senior developers
-c. Empower the learn to make decisions to remove impediments
+b. Assign the items with high complexity to senior developers
+c. Empower the team to make decisions to remove impediments
 d. Work with the team to remove impediments as quickly as possible
 e. Move the items with high complexity to the last iterations
 
@@ -4963,7 +4963,7 @@ Explanation: Need: guide and calm the team. Option C (Address this concern with 
 "Question 471
 
 During the execution of a financial project, a project manager met with the project team weekly to evaluate the project's progress. However, the sponsor requests that project performance be checked daily. The key team members disagree with this requirement and argue that they do not have enough time to go to daily meetings because they are at an executive level. What should the project manager do first?
-a. Negotiate with the key team members to send a daily report and let the sponsor know that the project cost will increase. ty
+a. Negotiate with the key team members to send a daily report and let the sponsor know that the project cost will increase.
 b. Recommend to the sponsor that performance of the project be reviewed once per week.
 c. Review the communications management plan and submit a change request if required.
 d. Evaluate the capacity of each team member to attend daily meetings in person or virtually and reduce the time of each meeting.
@@ -5041,7 +5041,7 @@ Explanation: Need: guide and calm the team. Option A (Ask the product owner to l
 
 During a project status update by the project management office (PMO), the CEO is concerned that the status of all projects suddenly changed from green to red, without warning. Upper management is used to reading traditional reports related to progress and cost, and they want to continue viewing this information. How should the PMO implement a better way to report the project's health?
 a. Perform a root cause analysis (RCA) to find out why the status of projects is deteriorating so fast.
-b. Explore reporting the earned value (EV) key performance indicators (KPls) using agile progress as an input.
+b. Explore reporting the earned value (EV) key performance indicators (KPIs) using agile progress as an input.
 c. Ask the project managers to report on their projects using a Kanban board format.
 d. Request the program managers to be more accurate when presenting status reports.
 
@@ -5459,14 +5459,14 @@ Explanation: Need: listen to people needs. Option B (Discuss the impact of start
 "Question 517
 
 Early in a project, a team member failed to effectively communicate the reason for their absence from three team meetings. How should the project manager handle this situation?
-a. Reaffirm the required project obligations directly with the team member. oy
+a. Reaffirm the required project obligations directly with the team member.
 b. Ask the team member to explain the reason for the absences.
 c. Assess the impact of the team member's absence on the task involved.
 d. Send a formal letter to the team member stating that their absences are noted.
 
 Answer: A
 
-Explanation: Need: guide and calm the team. Option A (Reaffirm the required project obligations directly with the team member. oy) fixes it."
+Explanation: Need: guide and calm the team. Option A (Reaffirm the required project obligations directly with the team member.) fixes it."
 "Question 518
 
 A company is leading a project to develop a new product using an agile approach. A supplier was contracted to provide a solution for one of the product features based on mandatory scope, stable requirements, and fixed-price contract. During a meeting with the supplier, the project manager was informed that the company's business analyst also asked the supplier to add a solution for another feature as part of their deliverable. What should the project manager do?
@@ -5569,7 +5569,7 @@ Explanation: Need: guide and calm the team. Option D (Assess the organization's 
 "Question 527
 
 A new agile project manager is trying to determine how the team is performing against the schedule for a release. Which tool will provide a deeper look into the team's progress?
-a. Release plan Sy
+a. Release plan
 b. Product roadmap
 c. Kanban board
 d. Burndown chart
@@ -5790,7 +5790,7 @@ Explanation: Need: listen to people needs. Option B (Use a problem-solving appro
 "Question 548
 
 After a performance review, a team member approaches the project manager and asks for feedback. The project manager mentions anecdotal information about this team member being a positive team player and generally getting their work done on time, even though they have been late with work once or twice. The team member expresses frustration at not having better information included in the annual performance review. What should the project manager do to prevent this frustration going forward?
-a. Request the human resource (HR) department to provide the key performance indicators (KPls) that were defined for this project.
+a. Request the human resource (HR) department to provide the key performance indicators (KPIs) that were defined for this project.
 b. Set team performance goals and explain how the team receives the same performance scores.
 c. Review the key performance indicators (KPIs) for this team member and remind the team member how they are determined.
 d. Provide the team member with velocity tracking tools and explain how the team member can see and track performance.
@@ -5979,7 +5979,7 @@ Explanation: Need: listen to people needs. Option B (Ensure the team receives co
 An agile project has a documented list or requirements prioritized in high, medium, and low categories. The project team has expressed that it is difficult to know what to work on next as so many items are listed as high priority. What should the project manager recommend?
 a. Ensure the product owner determines the priority based on a product roadmap. release plan, and iteration plan.
 b. Ask the team to prioritize the high-priority items based on what they feel is a logical sequence to build.
-c. Ask the team to prioritize the high-priority Items based on the release plan and what allows tor testing most effectively.
+c. Ask the team to prioritize the high-priority items based on the release plan and what allows for testing most effectively.
 d. Discard the current categorization of requirements as high, medium, and low and prioritize numerically.
 
 Answer: D
@@ -5987,7 +5987,7 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Discard the current categorization of requirements as high, medium, and low and prioritize numerically.) fixes it."
 "Question 566
 
-A project manager who Is new to an organization is given data that include information related to both project team members and stakeholders. Among other items, this information includes each stakeholder's current role, previous and current projects in which they participated, and their level of organizational influence. In what type of analysis should the project manager use this information?
+A project manager who is new to an organization is given data that include information related to both project team members and stakeholders. Among other items, this information includes each stakeholder's current role, previous and current projects in which they participated, and their level of organizational influence. In what type of analysis should the project manager use this information?
 a. Regression analysis
 b. Stakeholder analysis
 c. Qualitative risk analysis
@@ -6031,7 +6031,7 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Project managers are expected to become coaches in agile teams.) fixes it."
 "Question 570
 
-A project team Is working on a relative-weighting approach to assess product features. The product features will be prioritized to highlight the benefits and bring value to the customer. What should the project manager ask the team to do?
+A project team is working on a relative-weighting approach to assess product features. The product features will be prioritized to highlight the benefits and bring value to the customer. What should the project manager ask the team to do?
 a. Perform collaborative work that is coordinated by the project manager.
 b. Rely on the expert judgment of the product owner.
 c. Use a market-based strategy.
@@ -6044,7 +6044,7 @@ Explanation: Need: listen to people needs. Option A (Perform collaborative work 
 
 The customer wants to show their stakeholders a tangible outcome faster. This requires advancing a milestone. Which two things should the project manager do? (Choose two)?
 a. Inform the customer that moving the milestone has a very high impact on project cost.
-b. Escalate the Issue to senior management so they can impose a solution on the customer.
+b. Escalate the issue to senior management so they can impose a solution on the customer.
 c. Convince the customer to keep the requirements as is and not move the milestone.
 d. Review the customer's priorities regarding the desired requirements for the milestones.
 e. Discuss which requirements can be delivered faster with the project team.
@@ -6054,7 +6054,7 @@ Answer: D,E
 Explanation: Need: listen to people needs. Options D and E (Review the customer's priorities regarding the desired requirements for the milestones.; Discuss which requirements can be delivered faster with the project team.) work together."
 "Question 573
 
-During a scope validation exercise toward the end of a project, a project manager realizes that some operational project requirements were not captured in the project scope of work. Although completing these. Items will have an Impact on the project's completion date. It will. Increase the likelihood of customer acceptance. What should the project manager do to address the issue?
+During a scope validation exercise toward the end of a project, a project manager realizes that some operational project requirements were not captured in the project scope of work. Although completing these items will have an impact on the project's completion date, it will increase the likelihood of customer acceptance. What should the project manager do to address the issue?
 a. Issue a change request to remove items from the scope of work and keep the project on schedule.
 b. Issue a change request to include the additional scope, and track the completion of the work items.
 c. Document the issue in the lessons learned document, and discuss this with the project sponsor.
@@ -6065,7 +6065,7 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Issue a change request to include the additional scope, and track the completion of the work items.) fixes it."
 "Question 574
 
-A project has recently Kicked off. The project manager observes that thete are different expectations among the project team members. These growing misunderstandings are affecting team productivity. Which document should the project managefve?
+A project has recently kicked off. The project manager observes that there are different expectations among the project team members. These growing misunderstandings are affecting team productivity. Which document should the project manager use?
 a. Project charter
 b. Stakeholder register
 c. Team charter
@@ -6098,7 +6098,7 @@ Answer: D
 Explanation: Need: learn from data and lessons. Option D (Reinforce to all engineers the company vision of a safety-first approach to project activities.) fixes it."
 "Question 577
 
-A globally distributed project team is running behind schedule due to the lack ol team commitment and low morale. In order to bring the schedule back on track, what should the project manager do first?
+A globally distributed project team is running behind schedule due to the lack of team commitment and low morale. In order to bring the schedule back on track, what should the project manager do first?
 a. Seek the sponsor's approval to extend the project schedule.
 b. Set up a meeting to perform a root cause analysis.
 c. Update the issue log and communicate it to the team.
@@ -6120,7 +6120,7 @@ Answer: A
 Explanation: Need: guide and calm the team. Option A (Identify the problem's root causes and define the ground rules with all project team members to minimize interferences.) fixes it."
 "Question 580
 
-One team member Is complaining about an agreement made during the last meeting. That team member was present at the meeting ana participated in the decisions registered in the meeting minutes. What should the project manager do next?
+One team member is complaining about an agreement made during the last meeting. That team member was present at the meeting and participated in the decisions registered in the meeting minutes. What should the project manager do next?
 a. Arrange an additional meeting with the team to communicate the agreement made during the last meeting.
 b. Schedule a new meeting to evaluate the agreement and negotiate a new one.
 c. Talk with the team member and explain that once the meeting ended, the agreement must be respected.
@@ -6153,7 +6153,7 @@ Answer: A
 Explanation: Need: guide and calm the team. Option A (Analyze the problem with both teams to figure out If pan of the work must be redone.) fixes it."
 "Question 584
 
-A contract has fust been awarded for an automation project that was supported by the local community. The project manager was warned by the elected officials that the project cannot proceed. Why did this action occur?
+A contract has just been awarded for an automation project that was supported by the local community. The project manager was warned by the elected officials that the project cannot proceed. Why did this action occur?
 a. Inadequate funds for the automation project
 b. Inadequate engagement of the political stakeholders
 c. Lack of competence to manage the automation project
@@ -6164,7 +6164,7 @@ Answer: D
 Explanation: Need: secure people or vendors. Option D (Lack of a proper legal framework in place) fixes it."
 "Question 585
 
-A project manager Is working on the initial phases of a highly technical project that employs the ""first of its kind"" technology. Many of the key project stakeholders are unaware of the project objectives and their participation levels are poor. At every meeting, there are a lot of objections and queries raised that are taking the discussions to a different level, and a great deal of time is wasted. What should the project manager do?
+A project manager is working on the initial phases of a highly technical project that employs the ""first of its kind"" technology. Many of the key project stakeholders are unaware of the project objectives and their participation levels are poor. At every meeting, there are a lot of objections and queries raised that are taking the discussions to a different level, and a great deal of time is wasted. What should the project manager do?
 a. Request stakeholders who understand the technology.
 b. Recommend a change in technology to senior management.
 c. Plan to conduct informal sessions with the stakeholders.
@@ -6175,7 +6175,7 @@ Answer: C
 Explanation: Need: listen to people needs. Option C (Plan to conduct informal sessions with the stakeholders.) fixes it."
 "Question 586
 
-After 1 year. Into the life cycle of an ongoing residential project, an announcement was received from the municipality regarding a new regulation that will greatly impact the project's schedule and budget. What should the project manager do next?
+After 1 year into the life cycle of an ongoing residential project, an announcement was received from the municipality regarding a new regulation that will greatly impact the project's schedule and budget. What should the project manager do next?
 a. Perform a qualitative risk analysis and update the risk register.
 b. Submit a change request through the Integrated change control process.
 c. Update the issue log and discuss It in the next steering committee meeting.
@@ -6186,7 +6186,7 @@ Answer: B
 Explanation: Need: keep plans flexible. Option B (Submit a change request through the Integrated change control process.) fixes it."
 "Question 587
 
-A project manager is leading a software development project. Recently, team members have complained that during the last few dally standup meetings, a key stakeholder frequently interrupts, requests explanations, and proposes unplanned changes. This issue is frustrating the project team and slowing down me work. What should the project manager do?
+A project manager is leading a software development project. Recently, team members have complained that during the last few daily standup meetings, a key stakeholder frequently interrupts, requests explanations, and proposes unplanned changes. This issue is frustrating the project team and slowing down the work. What should the project manager do?
 a. Instruct the team to work as planned and Ignore the stakeholder's requests.
 b. Escalate the situation to upper management.
 c. Add more team members to make up for any project delays.
@@ -6242,7 +6242,7 @@ Answer: B,E
 Explanation: Need: guide and calm the team. Options B and E (Retrospective; Backlog refinement) work together."
 "Question 592
 
-A protect manager is managing a project that will handle sensitive data for millions of users. The sponsor mentioned that, lo their knowledge, the project does not seem to have any compliance requirements in their country. What should the project manager do in this situation?
+A project manager is managing a project that will handle sensitive data for millions of users. The sponsor mentioned that, to their knowledge, the project does not seem to have any compliance requirements in their country. What should the project manager do in this situation?
 a. Request expert advice from the compliance leader to confirm if there are any compliance requirements for the project.
 b. Check with The national compliance agency to determine if the project has any compliance requirements in this country
 c. Trust in the expertise of the sponsor and believe that there are no compliance requirements for this project.
@@ -6267,12 +6267,12 @@ Explanation: Need: guide and calm the team. Option B (Plan to implement team-bui
 An equipment vendor will implement a new production line for a client company. The year-long project will include 2- to 4-month long iterations; however, the client's project manager has no agile experience. How should the project manager ensure that the client is effectively represented in the daily meetings?
 a. Recommend agile training programs that best suit the client project manager's schedule.
 b. Realign the project to a predictive approach to ensure optimal collaboration between the teams.
-c. Propose a session tor essential agile Knowledge transfer for the client team to align with the daily meeting goals
+c. Propose a session for essential agile knowledge transfer for the client team to align with the daily meeting goals
 d. Provide the client project manager with agile best practice documents and web resources.
 
 Answer: C
 
-Explanation: Need: listen to people needs. Option C (Propose a session tor essential agile Knowledge transfer for the client team to align with the daily meeting goals) fixes it."
+Explanation: Need: listen to people needs. Option C (Propose a session for essential agile knowledge transfer for the client team to align with the daily meeting goals) fixes it."
 "Question 595
 
 A regulatory branch of an environmental government agency has recently placed a ban on the manufacturing of a specified thickness of plastic packaging products. This ban will take effect in 12 months. The project manager for a startup firm working in alternative packaging has been monitoring the progress of this law for a while and. as part of the risk management, has identified new products that can support a growing customer base. What should the project manager do next?
@@ -6286,7 +6286,7 @@ Answer: C
 Explanation: Need: listen to people needs. Option C (Inform management of the new law as an opportunity to expand market share and share the proposed products) fixes it."
 "Question 596
 
-A project manager must manage a virtual application control software team that is culturally and geographically diverse. The project manager wants to promote open collaboration in a Realtime manner. What should the project manager do?
+A project manager must manage a virtual application control software team that is culturally and geographically diverse. The project manager wants to promote open collaboration in a real-time manner. What should the project manager do?
 a. Provide a software for instant messaging.
 b. Document all information on the team wiki.
 c. Promote the use of remote site syndication.
@@ -6297,7 +6297,7 @@ Answer: A
 Explanation: Need: guide and calm the team. Option A (Provide a software for instant messaging.) fixes it."
 "Question 597
 
-A protect manager has just finished planning for a project when the client adds a new project team member. The project manager Knows that the new team member only works remotely and is not in the main office. In addition, the new team member engages with decisions quickly in a face-to-face environment, but is slow to respond otherwise. How should the project manager reflect this in their planning?
+A project manager has just finished planning for a project when the client adds a new project team member. The project manager knows that the new team member only works remotely and is not in the main office. In addition, the new team member engages with decisions quickly in a face-to-face environment, but is slow to respond otherwise. How should the project manager reflect this in their planning?
 a. Send out recurring onsite project meeting invites to ensure the team member's presence.
 b. Update the project charter to include the new team member for this project.
 c. Monitor the new team member's input to gauge their value to the project.
@@ -6341,7 +6341,7 @@ Answer: D
 Explanation: Need: protect value and acceptance. Option D (Reevaluated the new product owner's needs for better engagement) fixes it."
 "Question 601
 
-A team lead has been highly engaged and involved in a project and is operating without a chain of command or authority levels. What is the team lead dang1?
+A team lead has been highly engaged and involved in a project and is operating without a chain of command or authority levels. What is the team lead doing?
 a. Modeling directive leadership
 b. Modeling commanding leadership
 c. Modeling adaptive leadership
@@ -6352,10 +6352,10 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Modeling servant leadership) fixes it."
 "Question 602
 
-A project manager learns from a marketing analyst that a competitor just published a press release announcing a product launch using a specific innovation. The project manager is concerned because the company is initiating a project involving the same innovation A key goal of the new project is that the product will be the first to market won the innovation. What should the project manager do next?
+A project manager learns from a marketing analyst that a competitor just published a press release announcing a product launch using a specific innovation. The project manager is concerned because the company is initiating a project involving the same innovation. A key goal of the new project is that the product will be the first to market with the innovation. What should the project manager do next?
 a. Document the issue in the issue log and escalate to the project sponsor
 b. Inform the project sponsor and suggest canceling the project
-c. Review the project goals and eat criteria m the project charter
+c. Review the project goals and exit criteria in the project charter
 d. Ask the leader of research and development to decide on next steps
 
 Answer: A
@@ -6363,9 +6363,9 @@ Answer: A
 Explanation: Need: listen to people needs. Option A (Document the issue in the issue log and escalate to the project sponsor) fixes it."
 "Question 603
 
-A protect manager is struggling to obtain participation from key stakeholders who do not usually attend project meetings. What should the project manager do1?
+A project manager is struggling to obtain participation from key stakeholders who do not usually attend project meetings. What should the project manager do?
 a. Distribute the communications management plan
-b. Reschedule meetings lo align with the stakeholders' availability
+b. Reschedule meetings to align with the stakeholders' availability
 c. Escalate the issue to senior management
 d. Set clear meeting expectations by sharing agendas in advance
 
@@ -6441,10 +6441,10 @@ Explanation: Need: protect benefits for users. Option C (Workstream leader and f
 "Question 610
 
 As a project is reaching completion, the project sponsor tells the project manager to immediately close the project and to move on to another project. Which critical task should the project manager complete before closing the project?
-a. Ensure that the whole team is appropriately recognized and organize a project farewellparty to celebrate the project success and closure.
-b. Update and close both the risk register and issue log with the latest updates, and savethem in the organization's project management information system (PMIS).
-c. Archive all the project documents following the organization's accepted practices sothe documents can be used in other future projects.
-d. Meet with the project sponsor and advise that the new project might be difficult toundertake because the current project is not yet complete.
+a. Ensure that the whole team is appropriately recognized and organize a project farewell party to celebrate the project success and closure.
+b. Update and close both the risk register and issue log with the latest updates, and save them in the organization's project management information system (PMIS).
+c. Archive all the project documents following the organization's accepted practices so the documents can be used in other future projects.
+d. Meet with the project sponsor and advise that the new project might be difficult to undertake because the current project is not yet complete.
 
 Answer: C
 
@@ -6496,10 +6496,10 @@ Explanation: Need: guide and calm the team. Option A (Encourage the team members
 "Question 615
 
 During the planning for a long project, the project manager recognized that several members of the team are new to their roles. How should the project manager incorporate this into planning?
-a. Increase the overall project duration to account for the inexperienced team memberson the project.
-b. Ensure planning has accounted for replacing team members in new project roles whodo not deliver on project goals.
-c. Assess the training requirements and ensure time for professional developmenttraining by senior members.
-d. Revisit the project resource allocation to remove the inexperienced team membersassigned to the project.
+a. Increase the overall project duration to account for the inexperienced team members on the project.
+b. Ensure planning has accounted for replacing team members in new project roles who do not deliver on project goals.
+c. Assess the training requirements and ensure time for professional development training by senior members.
+d. Revisit the project resource allocation to remove the inexperienced team members assigned to the project.
 
 Answer: C
 
@@ -6507,10 +6507,10 @@ Explanation: Need: guide and calm the team. Option C (Assess the training requir
 "Question 616
 
 A complex, high-value agile project includes sprint demonstrations with the customer every four weeks. Executive management is concerned about the project's progress and wants more frequent updates on the project status. What should the project manager do?
-a. Inform executive management that the customer is made aware of the status duringthe sprint demo.
+a. Inform executive management that the customer is made aware of the status during the sprint demo.
 b. Prepare a weekly status report and share it with executive management every week.
-c. Inform executive management about agile principles and processes that are followedin the project.
-d. Ask the team to prepare and share the status report with executive management everyweek.
+c. Inform executive management about agile principles and processes that are followed in the project.
+d. Ask the team to prepare and share the status report with executive management every week.
 
 Answer: B
 
@@ -6529,14 +6529,14 @@ Explanation: Need: listen to people needs. Option A (Advise the customer to disc
 "Question 618
 
 A key resource is newly assigned to a project. The project manager and the resource did not get along well in a previous project. This resource is needed to ensure the completion of a major component for the project. What should the project manager do?
-a. Work on resolving the differences with the key resource and building a good workingrelationship to ensure project success.
-b. Monitor the key resource closely throughout the project, but do not let the projectsponsor know about the conflict.
-c. Request that the key resource's functional manager work directly with the resourceduring the project.
-d. Discuss this with the project sponsor and request that this key resource be replaced onthe project.
+a. Work on resolving the differences with the key resource and building a good working relationship to ensure project success.
+b. Monitor the key resource closely throughout the project, but do not let the project sponsor know about the conflict.
+c. Request that the key resource's functional manager work directly with the resource during the project.
+d. Discuss this with the project sponsor and request that this key resource be replaced on the project.
 
 Answer: A
 
-Explanation: Need: secure people or vendors. Option A (Work on resolving the differences with the key resource and building a good workingrelationship to ensure project success.) fixes it."
+Explanation: Need: secure people or vendors. Option A (Work on resolving the differences with the key resource and building a good working relationship to ensure project success.) fixes it."
 "Question 619
 
 A project manager who works for a company involved in several industries is asked to lead a software development project for a government agency. The company attempted to execute similar projects for other industries before but was unsuccessful. What should the project manager do to ensure project success?
@@ -6738,10 +6738,10 @@ Explanation: Need: keep plans flexible. Option C (The project manager is obligat
 "Question 639
 
 The main project stakeholder was fired and replaced by another stakeholder. The new stakeholder reviewed the project scope and requested numerous changes, arguing that the stakeholder's team is unhappy with the results to date. What should the project manager do?
-a. Put the new requirements in the backlog with high priority and implement therequested changes.
-b. Put the new requirements in the backlog and submit a formal change request forapproval.
-c. Put the new requirements in the backlog and let the product owner check their valueand priority.
-d. Put the new requirements in the backlog with low priority and implement the requestedchanges.
+a. Put the new requirements in the backlog with high priority and implement the requested changes.
+b. Put the new requirements in the backlog and submit a formal change request for approval.
+c. Put the new requirements in the backlog and let the product owner check their value and priority.
+d. Put the new requirements in the backlog with low priority and implement the requested changes.
 
 Answer: B
 
@@ -6815,14 +6815,14 @@ Explanation: Need: guide and calm the team. Option A (Emphasize the ground rules
 "Question 646
 
 A subcontractor informs the project manager that they are unable to supply a key component to the project. What should the project manager do?
-a. Discuss the issue with the project sponsor and request extra time and budget to obtainthe component from a different supplier.
+a. Discuss the issue with the project sponsor and request extra time and budget to obtain the component from a different supplier.
 b. Raise a new risk in the risk register, perform a risk assessment, and convene SMEs and relevant stakeholders to plan a risk response
-c. Submit a change request to the change control board (CCB) for changes to theperformance measurement baseline to obtain the component from a different supplier.
-d. Raise a new issue in the issue log and convene subject matter experts (SMEs) andrelevant stakeholders to identify alternatives to address the problem.
+c. Submit a change request to the change control board (CCB) for changes to the performance measurement baseline to obtain the component from a different supplier.
+d. Raise a new issue in the issue log and convene subject matter experts (SMEs) and relevant stakeholders to identify alternatives to address the problem.
 
 Answer: D
 
-Explanation: Need: listen to people needs. Option D (Raise a new issue in the issue log and convene subject matter experts (SMEs) andrelevant stakeholders to identify alternatives to address the problem.) fixes it."
+Explanation: Need: listen to people needs. Option D (Raise a new issue in the issue log and convene subject matter experts (SMEs) and relevant stakeholders to identify alternatives to address the problem.) fixes it."
 "Question 647
 
 During a meeting with a customer, it was determined that participants of the meeting had different draft versions of an important design document. What should the project manager do first to ensure that this does not happen again?
@@ -6837,14 +6837,14 @@ Explanation: Need: listen to people needs. Option A (Revisit the communication p
 "Question 648
 
 Due to a recent company merger, a project manager from company B has been assigned to a team that is comprised of team members from company A. At the start of the project, conflicts arise due to a lack of clarity on processes and the project manager's relationship with company B. What should the project manager do to resolve this conflict?
-a. Avoid the conflict as the customer feels comfortable with using processes fromcompany A.
-b. Review the historical information and make the decision based on the return oninvestment (ROI).
-c. Ask the team to use company B's processes since they are more familiar with theseprocesses.
-d. Work with the team to analyze which processes are suitable to use and define them inthe ground rules.
+a. Avoid the conflict as the customer feels comfortable with using processes from company A.
+b. Review the historical information and make the decision based on the return on investment (ROI).
+c. Ask the team to use company B's processes since they are more familiar with these processes.
+d. Work with the team to analyze which processes are suitable to use and define them in the ground rules.
 
 Answer: D
 
-Explanation: Need: guide and calm the team. Option D (Work with the team to analyze which processes are suitable to use and define them inthe ground rules.) fixes it."
+Explanation: Need: guide and calm the team. Option D (Work with the team to analyze which processes are suitable to use and define them in the ground rules.) fixes it."
 "Question 649
 
 A company has always acquired very specialized services from local companies for its projects. During the planning stage for a regulatory project, the project manager is informed that local vendors would not be able to operate due to an unexpected major event. There is an option to hire the same services from companies in other countries. What should the project manager do in this situation?
@@ -6881,7 +6881,7 @@ Explanation: Need: listen to people needs. Option C (Agree on the criteria to pr
 "Question 652
 
 A company is conducting a digital transformation project that has a hard deadline. The marketing team wants to combine this implementation with a new product, and the newly assigned project manager is not aware of all the dependencies. Using a hybrid approach, what should the project manager do to ensure the dependencies are taken into consideration?
-a. Implement a project newsletter so the different team members can be informed aboutthe progress of each project.
+a. Implement a project newsletter so the different team members can be informed about the progress of each project.
 b. Combine all of the small projects into one big project so the team can collaboratebetter as one big team.
 c. Facilitate communication promoting a Scrum of Scrums so the different teams areaware of the dependencies and progress.
 d. Make sure that each individual project schedule is aligned with the common deadlines.
@@ -7090,10 +7090,10 @@ Explanation: Need: listen to people needs. Option D (Update and share the guidel
 "Question 671
 
 During the executing phase, a project manager is reviewing the issue log and finds there are outstanding high-priority issues that are still open. Most of the open issues require effort from external domain experts who are not on the project team. What should the project manager do?
-a. Ask the issue reporter to close the issues, because there are no project team memberswho have the required domain knowledge.
-b. Review the open issues with the issue reporter and issue a change request to hire anexternal domain expert.
-c. Request that the project team members learn the required domain knowledge andresolve the open issues in a short time.
-d. Reduce the project scope to ensure that the project team has the knowledge to deliverthe system on schedule.
+a. Ask the issue reporter to close the issues, because there are no project team members who have the required domain knowledge.
+b. Review the open issues with the issue reporter and issue a change request to hire an external domain expert.
+c. Request that the project team members learn the required domain knowledge and resolve the open issues in a short time.
+d. Reduce the project scope to ensure that the project team has the knowledge to deliver the system on schedule.
 
 Answer: B
 
@@ -7145,10 +7145,10 @@ Explanation: Need: listen to people needs. Option A (Approach the stakeholder to
 "Question 676
 
 A project to implement a new process is still in development. When implemented, the company will benefit by a reduction in utility costs. The project financial evaluation indicates a payback of 3 years. What should the project manager do to expedite the project delivery?
-a. Increase resources on the technical design to enable a decision to proceed as this is aquick return project.
-b. Increase the time spent on project development to improve the level of confidence tovalidate the financial evaluation.
-c. Conduct a stakeholder survey with the plant operators to establish the probability ofthis project reducing the cost of utilities.
-d. Stop any further project development and commence with the implementation as thereis no need to seek further approval.
+a. Increase resources on the technical design to enable a decision to proceed as this is a quick return project.
+b. Increase the time spent on project development to improve the level of confidence to validate the financial evaluation.
+c. Conduct a stakeholder survey with the plant operators to establish the probability of this project reducing the cost of utilities.
+d. Stop any further project development and commence with the implementation as there is no need to seek further approval.
 
 Answer: A
 
@@ -7398,10 +7398,10 @@ Explanation: Need: keep plans flexible. Option C (Facilitate sprint planning ses
 "Question 700
 
 A project manager is assigned to a project related to taxes, which will be managed using an agile approach. By reviewing lessons learned from a previous project, the project manager discovers that a key stakeholder is an expert on taxes and is willing to help. How should the project manager leverage this information?
-a. Recognize the stakeholder's skills are important for the project and evaluate thepossibility of the stakeholder supporting the project team.
-b. Request the functional manager to assign the team from the lessons learned project tothe current project to avoid a learning curve.
-c. Ask the project team to review the lessons learned and have the team contact thestakeholder directly if there are any questions.
-d. Send a request to the project sponsor to hire the stakeholder and have them becomepart of the project team.
+a. Recognize the stakeholder's skills are important for the project and evaluate the possibility of the stakeholder supporting the project team.
+b. Request the functional manager to assign the team from the lessons learned project to the current project to avoid a learning curve.
+c. Ask the project team to review the lessons learned and have the team contact the stakeholder directly if there are any questions.
+d. Send a request to the project sponsor to hire the stakeholder and have them become part of the project team.
 
 Answer: A
 
@@ -7486,9 +7486,9 @@ Explanation: Need: listen to people needs. Option D (Earned value analysis (EVA)
 "Question 708
 
 A project manager writes to the receiving organization to inform them that all acceptance activities are completed with success and it is time to initiate handover. The receiving manager replies that the team will not be ready for the handover procedure for another two weeks. What should the project manager do?
-a. Deliver to the receiving manager on time, who can then make a knowledge transfer totheir team.
-b. Inform the project sponsor of the two-week delay and replan activities to minimizedelays.
-c. Request that the receiving manager issue a change request to prolong the project bytwo weeks.
+a. Deliver to the receiving manager on time, who can then make a knowledge transfer to their team.
+b. Inform the project sponsor of the two-week delay and replan activities to minimize delays.
+c. Request that the receiving manager issue a change request to prolong the project by two weeks.
 d. Issue an internal change request to secure the resources for an additional two weeks.
 
 Answer: C
@@ -7772,7 +7772,7 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Assess the impact of the required change and consult with the executive sponsors to determine the best course of action.) fixes it."
 "Question 734
 
-Ai the start of a project, the sponsor declares that demonstrating benefits from the product will be extremely important. The project sponsor calls a meeting with the project manager and the project leadership team to discuss the best approach because the project has a high degree of uncertainty and many changes are expected. What should the project manager propose?
+At the start of a project, the sponsor declares that demonstrating benefits from the product will be extremely important. The project sponsor calls a meeting with the project manager and the project leadership team to discuss the best approach because the project has a high degree of uncertainty and many changes are expected. What should the project manager propose?
 a. Develop requirements and designs to support a faster product release.
 b. Emphasize the adoption of a predictive approach to minimize ambiguity.
 c. Recommend an agile approach so the project can be delivered iteratively.
@@ -7805,7 +7805,7 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Understand the reason for the team member's absence and encourage them to attend future meetings.) fixes it."
 "Question 737
 
-A project manager entered into a contract with a vendor to build a new system. During the acceptance test stage, the project manager noticed that the system quality was not satisfactory-How should the project manager support their claim to the vendor?
+A project manager entered into a contract with a vendor to build a new system. During the acceptance test stage, the project manager noticed that the system quality was not satisfactory. How should the project manager support their claim to the vendor?
 a. Share unsuccessful results from previous projects with a similar scope
 b. Provide the failed test results along with the agreed-upon acceptance criteria
 c. Show that the acceptance criteria were changed by the vendor without approval.
@@ -7838,7 +7838,7 @@ Answer: A
 Explanation: Need: guide and calm the team. Option A (Speak with the team member about their engagement and contributions) fixes it."
 "Question 740
 
-A project manager is managing the development of a dental wire bending machine. The machine is compatible with the three most popular dental wires in the market which covers 90°.© of the market. The prototype is now under testing for certification. The manufacturer of one of the three wires announced they will be producing a different wire mat will be incompatible with the machine. This will result in a 25% loss of market coverage from the initially predicted 90% coverage. What should the project manager do?
+A project manager is managing the development of a dental wire bending machine. The machine is compatible with the three most popular dental wires in the market which covers 90% of the market. The prototype is now under testing for certification. The manufacturer of one of the three wires announced they will be producing a different wire that will be incompatible with the machine. This will result in a 25% loss of market coverage from the initially predicted 90% coverage. What should the project manager do?
 a. Investigate the impact of this issue with the team and survey the market for alternative wires with similar characteristics
 b. Stop the project and kick off another project to apply alternative wires for the machine
 c. Meet with the sales and marketing representatives and ask them to convince the manufacturer to reconsider
@@ -7860,7 +7860,7 @@ Answer: A
 Explanation: Need: guide and calm the team. Option A (Ensure participation from all team members) fixes it."
 "Question 742
 
-A project manager notices that a project participant seems frustrated and expresses themselves loudly at status meetings and later discovers that the participant is hearing impaired. Which process should the project manager have used at the start of the protect that would have identified this situation?
+A project manager notices that a project participant seems frustrated and expresses themselves loudly at status meetings and later discovers that the participant is hearing impaired. Which process should the project manager have used at the start of the project that would have identified this situation?
 a. Stakeholder analysis
 b. Resource needs analysis
 c. Accommodations assessment
@@ -7871,7 +7871,7 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Team member assessment) fixes it."
 "Question 743
 
-A project team with a tight schedule has succeeded in maintaining a schedule performance index (SPI) of the through regular daily standups and overtime, when required. After a few months the project manager notices that some of the team members' performance has decreased but mat the overall project team performance is still ahead of schedule by a few days. What should the project manager do first to maintain the project team's performance level?
+A project team with a tight schedule has succeeded in maintaining a schedule performance index (SPI) of 1 through regular daily standups and overtime, when required. After a few months the project manager notices that some of the team members' performance has decreased but that the overall project team performance is still ahead of schedule by a few days. What should the project manager do first to maintain the project team's performance level?
 a. Initiate a performance-based bonus for the team members to provide them with a monetary incentive
 b. Remind the team frequently that the project must be delivered on time and within budget
 c. Invite the team to a team-building event to alleviate their stress while strengthening teamwork
@@ -7893,7 +7893,7 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Communicate individually with the affected team members to negotiate the decision and confirm their willingness to relocate) fixes it."
 "Question 745
 
-A project manager is using a hybrid approach to comply with a regulatory requirement. The planning and closing phases will use a predictive approach, and the execution phase will use an iterative approach. During the second sprint review, the project sponsor requested a change in priority tor some of the product backlog items. What should the project manager do as a servant leader?
+A project manager is using a hybrid approach to comply with a regulatory requirement. The planning and closing phases will use a predictive approach, and the execution phase will use an iterative approach. During the second sprint review, the project sponsor requested a change in priority for some of the product backlog items. What should the project manager do as a servant leader?
 a. Ask the sponsor to submit a change request to the change control board (CCB)
 b. Support the product owners decision to change the priority of the product backlog items
 c. Accept the request and include the product backlog items in the next sprint
@@ -7906,7 +7906,7 @@ Explanation: Need: listen to people needs. Option B (Support the product owners 
 
 A project manager has been working with the same group of stakeholders for 3 years using a predictive approach. The stakeholders have invested in many projects and are familiar with the approach Recently the organization has strongly encouraged all project managers to adopt an agile approach. This was announced 2 weeks before the project manager planned to kick off a large complex project with the same group of stakeholders. What should the project manager do?
 a. Use the agile approach in the new project and schedule agile training for those stakeholders who are new to this approach
-b. Continue to use the predictive approach m the new project since it is the approach the stakeholders are familiar with using
+b. Continue to use the predictive approach in the new project since it is the approach the stakeholders are familiar with using
 c. Share the pros and cons of adopting an agile approach for the new project only with the team and ask them to decide which approach to use
 d. Share and discuss the pros and cons of adopting agile with the stakeholders and choose the approach they prefer for the new project
 
@@ -7927,7 +7927,7 @@ Explanation: Need: listen to people needs. Option C (Support the team to find an
 "Question 748
 
 A project manager primarily works on implementation projects Depending on the deliverable, the project manager is able to estimate the time line based on previous projects. The project manager now receives a project that is different from the previous implementation projects. What should the project manager do next?
-a. Refer to the previous protect they worked on and base the estimate on that
+a. Refer to the previous project they worked on and base the estimate on that
 b. Use expert judgment to estimate the schedule and then adjust the schedule as the project progresses
 c. Ask the project management office (PMO) by when the project can be completed and use that date as the project time line
 d. Break down the project into smaller tasks and estimate the durations of the activities
@@ -7959,7 +7959,7 @@ Answer: D
 Explanation: Need: listen to people needs. Option D (Facilitate the update of the product backlog) fixes it."
 "Question 751
 
-On a recently completed prefect a project manager noticed that some of the subcontractors approached the client directly with questions. These subcontractors had a previous direct reporting relationship with the client. The project manager is now in the initial stage of a new project with the same subcontractors and client. How should the project manager set up communications?
+On a recently completed project a project manager noticed that some of the subcontractors approached the client directly with questions. These subcontractors had a previous direct reporting relationship with the client. The project manager is now in the initial stage of a new project with the same subcontractors and client. How should the project manager set up communications?
 a. Inform the client that all communications moving forward will go through the project manager
 b. Ensure that the communications management plan covers contractual obligations
 c. Consult the communications management plan from a recent project that has been closed
@@ -7972,16 +7972,16 @@ Explanation: Need: listen to people needs. Option B (Ensure that the communicati
 
 A large company is transitioning its projects to an agile approach. After the transition executive management requests the information that was previously available in old reports and dashboards Many of the old reports and dashboards are no longer relevant after the shift to agile practices. What should the project manager do in this situation?
 a. Explain to the management team that reporting and management dashboards are not effective agile practices
-b. Ask the management team to review the endorsed agile concepts to prove that the old information s not relevant
-c. Help the management team understand how the change to an agile approach impacts the relevance of certain reports and key performance indicators (KPls)
+b. Ask the management team to review the endorsed agile concepts to prove that the old information is not relevant
+c. Help the management team understand how the change to an agile approach impacts the relevance of certain reports and key performance indicators (KPIs)
 d. Remind the management team that an agile approach empowers teams to be self-directed and therefore there is no need for reporting
 
 Answer: C
 
-Explanation: Need: guide and calm the team. Option C (Help the management team understand how the change to an agile approach impacts the relevance of certain reports and key performance indicators (KPls)) fixes it."
+Explanation: Need: guide and calm the team. Option C (Help the management team understand how the change to an agile approach impacts the relevance of certain reports and key performance indicators (KPIs)) fixes it."
 "Question 753
 
-A project manager for an iterative project received feedback from an on-site team member that the virtual team was not meeting the deliverables on time. The project manager gathered details on what the status report should contain m order to track deliverables. What is the remedial action the project manager should take?
+A project manager for an iterative project received feedback from an on-site team member that the virtual team was not meeting the deliverables on time. The project manager gathered details on what the status report should contain in order to track deliverables. What is the remedial action the project manager should take?
 a. Perform stakeholder engagement with the virtual team
 b. Add status reports to the communications management plan
 c. Convene an on-site meeting for both of the teams
@@ -7992,7 +7992,7 @@ Answer: A
 Explanation: Need: listen to people needs. Option A (Perform stakeholder engagement with the virtual team) fixes it."
 "Question 754
 
-A project manager is managing two integrated projects in a program A key integration point is misaligned, which has resulted in delays. One of the team's integration leads is a subject matter expert (SME) m this integration area. The other team's integration lead is not a SME but is more senior and has worked on the project longer Both team leads are blaming each other. What should the project manager do first to resolve this situation?
+A project manager is managing two integrated projects in a program. A key integration point is misaligned, which has resulted in delays. One of the team's integration leads is a subject matter expert (SME) in this integration area. The other team's integration lead is not a SME but is more senior and has worked on the project longer. Both team leads are blaming each other. What should the project manager do first to resolve this situation?
 a. Assign the resolution of the issue to the senior integration lead who has worked on the project longer
 b. Meet with both integration leads to understand the root cause and determine a resolution
 c. Escalate the issue to the program architect who developed the integration plan
@@ -8025,7 +8025,7 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Evaluate various delivery options in order to immediately demonstrate value to the customer) fixes it."
 "Question 757
 
-A concerned project team member complains to the project manager that another team member is being disruptive and argumentative during team meetings. The project manager received some information that the team member recently overcame a difficult personal situation. What should the project manager do to address the concem9?
+A concerned project team member complains to the project manager that another team member is being disruptive and argumentative during team meetings. The project manager received some information that the team member recently overcame a difficult personal situation. What should the project manager do to address the concern?
 a. Provide team-building activities so that the team can learn how to overcome disruptive behavior
 b. Inform the disruptive team member's functional manager that the disruptive behavior should be stopped immediately
 c. Request a meeting with the disruptive team member and help to resolve the issue
@@ -8047,7 +8047,7 @@ Answer: D
 Explanation: Need: listen to people needs. Option D (Building trust) fixes it."
 "Question 759
 
-us graph describes the current performance of a protect in relation to cost and schedule. What should the project manager do to bring the project back on track?
+This graph describes the current performance of a project in relation to cost and schedule. What should the project manager do to bring the project back on track?
 a. Review project cost because the project is over budget and ahead of schedule
 b. Review project schedule and cost because the project is over budget and behind schedule
 c. Review project schedule because the project is under budget and behind schedule
@@ -8069,7 +8069,7 @@ Answer: C
 Explanation: Need: listen to people needs. Option C (Negotiate the impact of these changes with the client) fixes it."
 "Question 761
 
-A few key stakeholders are concerned about how the prefect team is planning to develop some features tor a new product. They know that the requirements associated with these features are unstable but are also highly strategic for adding value to the product and the customer. What should the project manager do?
+A few key stakeholders are concerned about how the project team is planning to develop some features for a new product. They know that the requirements associated with these features are unstable but are also highly strategic for adding value to the product and the customer. What should the project manager do?
 a. Suggest an agile approach to refine these requirements and prioritize them according to the project objectives
 b. Validate the prioritization of all requirements with the sponsor and share the results with the stakeholders
 c. Review the project governance to validate the policies procedures and guidelines used to prioritize the project
@@ -8102,7 +8102,7 @@ Answer: A
 Explanation: Need: guide and calm the team. Option A (Assessed and analyzed personality indicators from the project team) fixes it."
 "Question 764
 
-A project manager is assigned to an automotive product development project in me middle of the pilot phase. According to the test lab. a durability test was completed with good results 6 weeks ago but there were no reports left behind by the test engineer who left the organization the previous month. What should the previous project manager have done to prevent this issue?
+A project manager is assigned to an automotive product development project in the middle of the pilot phase. According to the test lab. a durability test was completed with good results 6 weeks ago but there were no reports left behind by the test engineer who left the organization the previous month. What should the previous project manager have done to prevent this issue?
 a. Built a pair-engineering environment so that experienced engineers always work with junior engineers to assist in knowledge transfer
 b. Contracted with a third-party test lab to outsource all testing processes and required that they produce all test reports
 c. Led a technical benchmark workshop every month to share state-of-the-art technology trends and ask all team members to attend the workshop
@@ -8124,9 +8124,9 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Allow the engineer and designer to cross-train with each other) fixes it."
 "Question 766
 
-In a hybrid project a stakeholder requests some feature modifications directly to one of the team members. When investigating further the project manager finds this to be a common practice m the business, which is different from what is stated in the project management plan. What should the project manager do?
+In a hybrid project a stakeholder requests some feature modifications directly to one of the team members. When investigating further the project manager finds this to be a common practice in the business, which is different from what is stated in the project management plan. What should the project manager do?
 a. Update the risk register including noncompliance with the change process as a probable cause for scope creep
-b. Make sure that all stakeholders are aware and in agreement with the project governance structure m place
+b. Make sure that all stakeholders are aware and in agreement with the project governance structure in place
 c. Advise the team not to engage in modifications unless it follows the proper change approval process
 d. Escalate to the project management office (PMO) and request that the team member who accepted the request be replaced
 
@@ -8135,18 +8135,18 @@ Answer: C
 Explanation: Need: listen to people needs. Option C (Advise the team not to engage in modifications unless it follows the proper change approval process) fixes it."
 "Question 767
 
-A project team has been formed and the tasks have been assigned to each team member All team members have agreed to follow a hybrid protect approach. What should the project manager do to ensure the team performs as an organized unit?
+A project team has been formed and the tasks have been assigned to each team member. All team members have agreed to follow a hybrid project approach. What should the project manager do to ensure the team performs as an organized unit?
 a. Advise the team to adjust their work habits and behaviors to allow for better conflict resolution
 b. Call a team meeting to discuss team members' strengths and weaknesses
 c. Establish rules and regulations for team members with consequences if the goals are not reached
-d. Establish team behavior and develop an understating of how to work together
+d. Establish team behavior and develop an understanding of how to work together
 
 Answer: D
 
-Explanation: Need: guide and calm the team. Option D (Establish team behavior and develop an understating of how to work together) fixes it."
+Explanation: Need: guide and calm the team. Option D (Establish team behavior and develop an understanding of how to work together) fixes it."
 "Question 768
 
-A protect team has completed many iterations without proper sizing of the stories. In some iterations the team sized some stories and completed them ahead of time. In other iterations the team sized the stones but was unable to complete the planned activities. What should the team do differently during planning for the next iteration""?
+A project team has completed many iterations without proper sizing of the stories. In some iterations the team sized some stories and completed them ahead of time. In other iterations the team sized the stories but was unable to complete the planned activities. What should the team do differently during planning for the next iteration?
 a. Request the product owner and team facilitator to provide the size of the story
 b. Average the story points provided by each team member for a story
 c. Continue multiple rounds of planning poker and arrive at the size of the story
@@ -8157,7 +8157,7 @@ Answer: C
 Explanation: Need: guide and calm the team. Option C (Continue multiple rounds of planning poker and arrive at the size of the story) fixes it."
 "Question 769
 
-A company's board of directors announced that a major layoff will occur at the end of the month. When evaluating the impact the protect manager found that 25°© of the project team members are part of the layoff. What should the project manager do first?
+A company's board of directors announced that a major layoff will occur at the end of the month. When evaluating the impact the project manager found that 25% of the project team members are part of the layoff. What should the project manager do first?
 a. Request a meeting with the project sponsor to discuss the viability of the project and determine the next actions
 b. Request a meeting with the customer and discuss trade-offs to reduce the scope and product quality as a result of the lack of personnel
 c. Request a meeting with the finance department to increase the budget of the project to hire temporary personnel to perform the affected activities
@@ -8179,9 +8179,9 @@ Answer: D
 Explanation: Need: listen to people needs. Option D (inform the relevant stakeholders of this challenge and seek their support) fixes it."
 "Question 771
 
-A new manufacturing line project is planned to be delivered in iterations tor the equipment installation phase. During one of the iterations the vendor communicates to the project manager that they will not be able to deliver some of the equipment at the agreed dates. What should the project manager do next?
+A new manufacturing line project is planned to be delivered in iterations for the equipment installation phase. During one of the iterations the vendor communicates to the project manager that they will not be able to deliver some of the equipment at the agreed dates. What should the project manager do next?
 a. Replan the remaining iterations according to the new installation dates
-b. Update the product backlog m order to address the delays
+b. Update the product backlog in order to address the delays
 c. Review the procurement agreements to address the situation
 d. Find another vendor who can fulfill the delivery dates
 
@@ -8190,7 +8190,7 @@ Answer: C
 Explanation: Need: keep plans flexible. Option C (Review the procurement agreements to address the situation) fixes it."
 "Question 772
 
-A project manager acquired information from the market that would reduce the business value being delivered by an ongoing protect Based on that information, the project manager believes the project should be stopped. How should the project manager handle the situation?
+A project manager acquired information from the market that would reduce the business value being delivered by an ongoing project. Based on that information, the project manager believes the project should be stopped. How should the project manager handle the situation?
 a. Remove the items no longer applicable from the backlog and present the backlog to the project team
 b. Continue working on the defined scope and review the risk matrix
 c. Have a discussion with the project sponsor and cancel the project
@@ -8224,7 +8224,7 @@ Explanation: Need: listen to people needs. Option A (Set up a meeting with the s
 "Question 775
 
 When a project manager is trying to determine a leadership style to use on a project what should they consider?
-a. Number of tasks on the protect
+a. Number of tasks on the project
 b. Culture of the organization
 c. Project timeline
 d. Experience of the project manager
@@ -8247,7 +8247,7 @@ Explanation: Need: listen to people needs. Option D (Meet with the stakeholder t
 
 In an iteration-based marketing project, a product is scheduled to be launched at the sixth iteration. In the third iteration demo the marketing team expressed that they need five iterations to launch the product and they have not started yet. What should the project team have done to avoid this issue?
 a. Held a touchpoint with marketing before the demo to discuss any impediments
-b. Scheduled a demo presentation of the product during the first reason
+b. Scheduled a demo presentation of the product during the first iteration
 c. Asked the marketing team to start working on the product immediately
 d. Confirmed marketing requirements and constraints when adding to the backlog
 
@@ -8267,7 +8267,7 @@ Answer: A
 Explanation: Need: listen to people needs. Option A (Analyze the stakeholder's expectations and emphasize the topics of interest that may influence the project's success) fixes it."
 "Question 779
 
-A hybrid project manager has taken over a large-scale software development project m a highly regulated environment. During a handover session the outgoing project manager explains that they devised their own status reports which is different from the project management office's (PMO's) status report style. The project stakeholders are extremely particular about the information they receive in updates and do not believe the PMO's status reports have sufficient enough information. How should the new project manager proceed*?
+A hybrid project manager has taken over a large-scale software development project in a highly regulated environment. During a handover session the outgoing project manager explains that they devised their own status reports which is different from the project management office's (PMO's) status report style. The project stakeholders are extremely particular about the information they receive in updates and do not believe the PMO's status reports have sufficient enough information. How should the new project manager proceed?
 a. Continue using the outgoing project manager's status reports as well as their approach for schedule reporting
 b. Explain to the PMO that the hybrid project team needs to keep an agile approach for reporting and will not be complying with the organizational standard
 c. Change the status reports according to the template supplied by the PMO and proceed with scheduled reporting
@@ -8278,7 +8278,7 @@ Answer: D
 Explanation: Need: listen to people needs. Option D (Meet with the project stakeholders to explain the need to comply with the PMO standards and update the status report format accordingly) fixes it."
 "Question 780
 
-During a documentation audit of an international company it was identified that the last version of the protect schedule was from one month ago even though the project manager kr. it was recently updated. How should the project manager have handled documentation for the project?
+During a documentation audit of an international company it was identified that the last version of the project schedule was from one month ago even though the project manager knew it was recently updated. How should the project manager have handled documentation for the project?
 a. Reviewed the risk register to identify a response plan for the audit
 b. Assigned a project team member to ensure all project documentation was updated
 c. Updated the project management plan regularly and had it securely shared with all stakeholders
@@ -8300,7 +8300,7 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (When the work is progressing well through the team) fixes it."
 "Question 782
 
-A project manager is instructed by the project sponsor to draft the project charter. The project sponsor asks the project manager to involve a particular stakeholder m order to provide necessary resources. However, the stakeholder is refusing to get involved because the stakeholder thinks mat there is no benefit m using the project deliverable. What should the project manager do to resolve this?
+A project manager is instructed by the project sponsor to draft the project charter. The project sponsor asks the project manager to involve a particular stakeholder in order to provide necessary resources. However, the stakeholder is refusing to get involved because the stakeholder thinks that there is no benefit in using the project deliverable. What should the project manager do to resolve this?
 a. Meet with the stakeholder to discuss the impact of the deliverable
 b. Consider the stakeholder as a risk and evaluate possible solutions with the project team
 c. Improve communication with the stakeholder to obtain their assistance in the future
@@ -8311,7 +8311,7 @@ Answer: A
 Explanation: Need: listen to people needs. Option A (Meet with the stakeholder to discuss the impact of the deliverable) fixes it."
 "Question 783
 
-A team is the first team m the company to use agile methods for a traditional project. The team's manager is concerned that the risks are not being managed. What should the team do to assess and manage risks regularly?
+A team is the first team in the company to use agile methods for a traditional project. The team's manager is concerned that the risks are not being managed. What should the team do to assess and manage risks regularly?
 a. Identify and escalate any identified risks to the facilitator to handle
 b. Update the risk register during every iteration with any open concerns
 c. Use regular feedback loops through daily standups iteration demos and retrospectives
@@ -8333,7 +8333,7 @@ Answer: B
 Explanation: Need: guide and calm the team. Option B (Perform iterative planning with the team to use the prototype) fixes it."
 "Question 785
 
-An agile project manager has learn members from different continents on the project team. During the dairy scrum meetings the project manager notices that there are gaps in understanding about the project goals and objectives. What should the project manager do?
+An agile project manager has team members from different continents on the project team. During the daily scrum meetings the project manager notices that there are gaps in understanding about the project goals and objectives. What should the project manager do?
 a. Schedule team-building activities to encourage collaboration among the team
 b. Coach the team members to resolve the gaps in understanding
 c. Conduct a kick-off meeting and communicate the goals and objectives of the project
@@ -8355,7 +8355,7 @@ Answer: C
 Explanation: Need: listen to people needs. Option C (Submit a change request to analyze a new set of quality tests) fixes it."
 "Question 787
 
-A project, which has its execution phase planned m an iterative way has the following metrics for the first three iterations. One of the requirements for the project states that m order to get payment authorized fcx the project neither the SPI nor the CPl can be less than 0 95. What should the project manager do in iteration 4 to ensure the project is in compliance with the requirement?
+A project, which has its execution phase planned in an iterative way, has the following metrics for the first three iterations. One of the requirements for the project states that in order to get payment authorized for the project, neither the SPI nor the CPI can be less than 0.95. What should the project manager do in iteration 4 to ensure the project is in compliance with the requirement?
 a. Schedule crashing
 b. Fast tracking
 c. Earned schedule
@@ -8377,7 +8377,7 @@ Answer: A
 Explanation: Need: keep plans flexible. Option A (Follow the risk response plan) fixes it."
 "Question 789
 
-Toward the end of a protect the project manager did not receive approval from a key stakeholder because the necessary deliverables were not functioning as expected. What should the project manager do next?
+Toward the end of a project the project manager did not receive approval from a key stakeholder because the necessary deliverables were not functioning as expected. What should the project manager do next?
 a. Review the stakeholder engagement plan
 b. Review the quality management plan
 c. Review the requirements traceability matrix
@@ -8410,7 +8410,7 @@ Answer: C
 Explanation: Need: listen to people needs. Option C (Make sure all stakeholders have access to the system and know where to find project artifacts) fixes it."
 "Question 792
 
-Two learn members are consistently having misunderstandings and find it difficult to work together. How should the project manager handle this situation?
+Two team members are consistently having misunderstandings and find it difficult to work together. How should the project manager handle this situation?
 a. Remove one of the team members
 b. Identify the issues between the team members and guide them toward a resolution
 c. Warn the team members about their behavior
@@ -8454,7 +8454,7 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Force/direct) fixes it."
 "Question 796
 
-A project manager has been assigned lo an important agile project. During protect execution, a vendor was approved to produce the project deliverables. What should the project manager do to ensure project continuity between the vendor and the team?
+A project manager has been assigned to an important agile project. During project execution, a vendor was approved to produce the project deliverables. What should the project manager do to ensure project continuity between the vendor and the team?
 a. Request that the vendor provides a manual with all required knowledge
 b. Implement retrospectives with the vendor to gather the required knowledge
 c. Submit a change request to extend the vendor's contract to provide formal training for the team
@@ -8478,8 +8478,8 @@ Explanation: Need: listen to people needs. Option D (Look to see if the delivera
 
 A member of the board of directors has asked the project manager for the estimated cost of the minimum viable product (MVP). The estimated cost is needed in order to get formal approval for this project. How should the project manager report this cost?
 a. Estimate user story points and forecast a budget for that deliverable
-b. Determine the control accounts and use a top bottom estimate
-c. Consider the cost performance index (CPl) based on earned value (EV) divided by costs
+b. Determine the control accounts and use a top-down estimate
+c. Consider the cost performance index (CPI) based on earned value (EV) divided by costs
 d. Calculate the budget at completion (BAC) based on the completed and planned features
 
 Answer: A
@@ -8487,7 +8487,7 @@ Answer: A
 Explanation: Need: listen to people needs. Option A (Estimate user story points and forecast a budget for that deliverable) fixes it."
 "Question 799
 
-A company has decided to investigate the feasibility of a new product. The project manager is in charge of validating the customer requirements. What should the project manager do to gam customer feedback?
+A company has decided to investigate the feasibility of a new product. The project manager is in charge of validating the customer requirements. What should the project manager do to gain customer feedback?
 a. Have the product owner create product documentation
 b. Have the team create a minimum viable product (MVP).
 c. Have the marketing department create a survey
@@ -8498,7 +8498,7 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Have the team create a minimum viable product (MVP).) fixes it."
 "Question 800
 
-A project manager is assigned to develop a wire bending machine midway through the design phase. The project manager discovered that the team did not have any test cases or acceptance criteria tor the equipment. The project manager started communication with the team to move the project forward. What should the project manager do first at this pomp?
+A project manager is assigned to develop a wire bending machine midway through the design phase. The project manager discovered that the team did not have any test cases or acceptance criteria for the equipment. The project manager started communication with the team to move the project forward. What should the project manager do first at this point?
 a. Meet with the quality planning manager to identify the reason why the quality plan was not created yet
 b. Meet with the hardware design engineers to identify the minimum performance required to establish a market for the machine
 c. Meet with the sales and marketing teams to identify the requirements that were collected during the interview sessions with potential customers
@@ -8511,7 +8511,7 @@ Explanation: Need: listen to people needs. Option C (Meet with the sales and mar
 
 A project manager is asked to implement a hybrid approach that will replace a predictive approach on an upcoming project. How should the project manager adjust their responsibilities accordingly?
 a. Become a servant leader by supporting team collaboration and removing impediments
-b. Delegate coordination activities to the product owner so the project manager can locus on managing collaboration
+b. Delegate coordination activities to the product owner so the project manager can focus on managing collaboration
 c. Request a scrum master to focus on the collaboration while the project manager focuses on the coordination
 d. introduce new communication tools to the project team members
 
@@ -8520,19 +8520,19 @@ Answer: A
 Explanation: Need: guide and calm the team. Option A (Become a servant leader by supporting team collaboration and removing impediments) fixes it."
 "Question 802
 
-A team member has encountered a technical issue similar to the one faced in a successfully closed project. However, the team member did not know about the previous project arte would like to resolve the issue on their own. What should the project manager do?
+A team member has encountered a technical issue similar to the one faced in a successfully closed project. However, the team member did not know about the previous project and would like to resolve the issue on their own. What should the project manager do?
 a. Improve the risk management strategy and risk monitoring
 b. Reach out to the project manager of the previous project for assistance
 c. Allow the team member to work through the issue as a training opportunity
-d. Share the lessons learned from the previous protect with the team member
+d. Share the lessons learned from the previous project with the team member
 
 Answer: D
 
-Explanation: Need: guide and calm the team. Option D (Share the lessons learned from the previous protect with the team member) fixes it."
+Explanation: Need: guide and calm the team. Option D (Share the lessons learned from the previous project with the team member) fixes it."
 "Question 803
 
 A project manager is tasked with large deliverables that require work by several top developers over the next few weeks. Because of the size and complexity of the deliverables the work cannot be assigned to a single person. What should the project manager do first?
-a. Request additional developers to join the project team through the change cannot process
+a. Request additional developers to join the project team through the change control process
 b. Break down the deliverable by using the work breakdown structure (WBS) process to make it more manageable for task assignment
 c. Assign the entire deliverable to the first available developer to lead and have them assign the work to the remaining developers
 d. Include the situation as a risk in the risk register identify risk impacts and possible mitigations, and monitor closely
@@ -8545,7 +8545,7 @@ Explanation: Need: protect value and acceptance. Option B (Break down the delive
 A project is in the execution phase. During a few planning sessions the team brought up dependencies and risks based on their knowledge of other project. The project manager also received questions from the company in terms of how and when the team planned to perform acceptance testing and training activities. What should the project manager do next?
 a. Document the project management plans and share them with the company and all team members via email for review
 b. Create a log to track risks assumptions issues and dependencies and establish a periodic review with the stakeholders
-c. Add contingency m the schedule to account for dependencies and risks then review rt with the team
+c. Add contingency in the schedule to account for dependencies and risks then review it with the team
 d. Engage with the company and the project team to determine the best course of action
 
 Answer: B
@@ -8564,7 +8564,7 @@ Answer: D
 Explanation: Need: listen to people needs. Option D (Start the project plan for the scope and quality and identify options to deliver and meet stakeholders expectations) fixes it."
 "Question 806
 
-Two team members are arguing about which technology they should use when implementing iteration tasks. The predictive approach was broken into several legations that need to be completed on time so as not to jeopardize the projects timely completion. What should the project manager do to resolve this issue and help the team move on to the next iteration?
+Two team members are arguing about which technology they should use when implementing iteration tasks. The predictive approach was broken into several iterations that need to be completed on time so as not to jeopardize the projects timely completion. What should the project manager do to resolve this issue and help the team move on to the next iteration?
 a. Postpone the selection of the technology used until more information is gathered
 b. Suggest their own approach to solve the issue and ask the team to follow it
 c. Call for an open dialogue which the team will arrive at through consensus
@@ -8587,7 +8587,7 @@ Explanation: Need: protect benefits for users. Option A (Refer to the project ch
 "Question 808
 
 A project team is experiencing conflict between two team members. Team member A feels that team member B is always talking over team member. A and does not listen to any advice Team member B is not willing to listen to feedback. What should the project manager do to resolve the issue?
-a. Move one of the team members to a different protect team
+a. Move one of the team members to a different project team
 b. Review the ground rules for collaboration within the team
 c. Report the performance issue to both of the team members' supervisors
 d. Modify the communications management plan and resend it to the team
@@ -8630,10 +8630,10 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Meet with the project team to find another solution) fixes it."
 "Question 812
 
-A telecommunications company is doing a national network rollout involving continuously changing technical requirements. To address the situation the company has recently adopted a hybrid project life cycle. During a retrospective some team members complain that me majority of me stones are ready to test but have not advanced because they are waiting for the project manager's approval. What should the project manager do?
+A telecommunications company is doing a national network rollout involving continuously changing technical requirements. To address the situation the company has recently adopted a hybrid project life cycle. During a retrospective some team members complain that the majority of the stories are ready to test but have not advanced because they are waiting for the project manager's approval. What should the project manager do?
 a. Update the issue log and review the lessons learned register for options
 b. Implement conflict resolution to accommodate the team's needs
-c. Implement decision-making techniques to advance the stones
+c. Implement decision-making techniques to advance the stories
 d. Empower the team to self-organize and make their own decisions
 
 Answer: D
@@ -8643,16 +8643,16 @@ Explanation: Need: listen to people needs. Option D (Empower the team to self-or
 
 A company has transitioned and is now delivering projects using a hybrid approach instead of a predictive approach. The distributed project team's knowledge of agile is varied. The project manager feels the new methodology will impact the timely delivery of the project. What should the project manager do?
 a. Ask to execute the project with a predictive approach since there is a budget and schedule risk
-b. agile tools and techniques used m the defined hybrid methodology for consistent application by all team members
-c. Use the predictive approach tor team members who are not knowledgeable m agile project delivery practices
+b. Agile tools and techniques used in the defined hybrid methodology for consistent application by all team members
+c. Use the predictive approach for team members who are not knowledgeable in agile project delivery practices
 d. Use crashing to reduce the critical path to ensure enough buffer to include the impact of the agile methodology update
 
 Answer: B
 
-Explanation: Need: guide and calm the team. Option B (agile tools and techniques used m the defined hybrid methodology for consistent application by all team members) fixes it."
+Explanation: Need: guide and calm the team. Option B (Agile tools and techniques used in the defined hybrid methodology for consistent application by all team members) fixes it."
 "Question 814
 
-A project manager is assigned to a digital transformation project for a bank. The company culture is conservative and resistant to transformation or innovation. What should the project manager do first to support the transformation''?
+A project manager is assigned to a digital transformation project for a bank. The company culture is conservative and resistant to transformation or innovation. What should the project manager do first to support the transformation?
 a. Provide a digital transformation guide and explain that the change is unavoidable
 b. Ask the bank executives to officially announce that the project manager is leading the project
 c. Provide proper training sessions to the stakeholders so they understand the purpose of the change
@@ -8667,14 +8667,14 @@ During a team meeting the project manager asks the team to complete a personalit
 a. Present brainstorming topics a day before the session so the team can reflect and contribute more fully during the session
 b. Adjust the lighting and ambient sounds in the work and common areas to create a relaxing work atmosphere
 c. Ensure the team understands that their input needs to be fully articulated and explained to all team members during daily standups
-d. Require everyone to share personal details at the start of each team meeting to allow learn members to get to know one another
+d. Require everyone to share personal details at the start of each team meeting to allow team members to get to know one another
 
 Answer: A
 
 Explanation: Need: guide and calm the team. Option A (Present brainstorming topics a day before the session so the team can reflect and contribute more fully during the session) fixes it."
 "Question 816
 
-Early prototypes developed in a project show an unacceptably high detect rate. The quality management plan calls for a cause-and-effect analysis to address quality problems as they arise. What is the protect manager's first step in addressing the problem?
+Early prototypes developed in a project show an unacceptably high defect rate. The quality management plan calls for a cause-and-effect analysis to address quality problems as they arise. What is the project manager's first step in addressing the problem?
 a. Communicate the issue to the change control board (CCB) and relevant stakeholders identified in the stakeholder engagement plan
 b. Create a problem-solving team from quality assurance subject matter experts (SMEs) experienced in this type of analysis
 c. Form a brainstorming team from project team members selected for their relevant technical analytical and management knowledge
@@ -8685,7 +8685,7 @@ Answer: B
 Explanation: Need: guide and calm the team. Option B (Create a problem-solving team from quality assurance subject matter experts (SMEs) experienced in this type of analysis) fixes it."
 "Question 817
 
-A company is launching a new product and decides to transition from a predictive to an agile approach. During the third sprint the project manager notices that the team is not working as a cohesive unit. Which two rules are appropriate tor the project manager to instill in the team? (Choose two)?
+A company is launching a new product and decides to transition from a predictive to an agile approach. During the third sprint the project manager notices that the team is not working as a cohesive unit. Which two rules are appropriate for the project manager to instill in the team? (Choose two)?
 a. Strive toward continuous improvement
 b. Work together daily as a team
 c. Only share suggestions at the end of the sprint
@@ -8701,7 +8701,7 @@ A project team member is struggling to understand a specific requirement. How sh
 a. Assess and evaluate the team member's skills to ensure alignment to the particular requirement and solution
 b. Reassign the requirement to another team member who may have ideas on how to meet the requirement
 c. Assist by connecting the product owner with the team member to discuss what problem is to be solved
-d. Deprioritize the requirement and assign a task tor it to be restated to provide the necessary clarity
+d. Deprioritize the requirement and assign a task for it to be restated to provide the necessary clarity
 
 Answer: C
 
@@ -8719,7 +8719,7 @@ Answer: B
 Explanation: Need: guide and calm the team. Option B (Meet with the team member privately to discuss the problem and work together to find a solution) fixes it."
 "Question 820
 
-A complex project is m its execution phase. The project is set up to produce both predictive and incremental deliverables. The agile team is running late on their tasks. There is a resource on the agile team who is responsible for producing progress reports for the project manager. This resource has the required skills to help other team members with their workload. What should the project manager do to optimize the time of the resource who produces the progress reports?
+A complex project is in its execution phase. The project is set up to produce both predictive and incremental deliverables. The agile team is running late on their tasks. There is a resource on the agile team who is responsible for producing progress reports for the project manager. This resource has the required skills to help other team members with their workload. What should the project manager do to optimize the time of the resource who produces the progress reports?
 a. Work more closely with the agile team to eliminate the need for progress reports
 b. Record this in the issue log and find a resource to produce the reports
 c. Produce the progress reports on their own
@@ -8730,7 +8730,7 @@ Answer: A
 Explanation: Need: guide and calm the team. Option A (Work more closely with the agile team to eliminate the need for progress reports) fixes it."
 "Question 821
 
-project manager for a defense software application has a culturally and gender-diverse team with a short project time line Considering the project will be stressful what skill should the project manager use to monitor the team's performance?
+A project manager for a defense software application has a culturally and gender-diverse team with a short project timeline. Considering the project will be stressful, what skill should the project manager use to monitor the team's performance?
 a. Coercion
 b. Conflict resolution
 c. Emotional intelligence
@@ -8741,7 +8741,7 @@ Answer: C
 Explanation: Need: guide and calm the team. Option C (Emotional intelligence) fixes it."
 "Question 822
 
-A project manager has considered a detailed and expensive training plan for a new technology for all team members. The training is needed several months into the execution phase of a project Surprisingly. many problems still appear that are related to the team members' lack of competence and the training costs are now negatively impacting the budget baseline. What should the project manager do next?
+A project manager has considered a detailed and expensive training plan for a new technology for all team members. The training is needed several months into the execution phase of a project. Surprisingly, many problems still appear that are related to the team members' lack of competence and the training costs are now negatively impacting the budget baseline. What should the project manager do next?
 a. Select resources who are more experienced with the new technology
 b. Perform a root-cause analysis to measure how the new training will address the issue
 c. Include in the risk register a risk of unskilled resources for the new technology
@@ -8752,11 +8752,11 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Elaborate and socialize the team charter as per the resource management plan) fixes it."
 "Question 823
 
-An agile team has completed 9 out of 10 stones tor the sprint. During the retrospective a few team members pointed out that they finished a of their stories. However one team member tailed to finish a story. What should the agile leader do1?
+An agile team has completed 9 out of 10 stories for the sprint. During the retrospective a few team members pointed out that they finished all of their stories. However one team member failed to finish a story. What should the agile leader do?
 a. Emphasize to the team that each member is responsible for their story but the team is collectively responsible for finishing the sprint
 b. Ask the team to address this at the next sprint planning instead of at the retrospective
-c. Suggest that the team assign stones at the beginning of the sprint based on each person's strengths to maximize performance
-d. Work with the product owner to remove the story from the sprint because the points cannot be splits
+c. Suggest that the team assign stories at the beginning of the sprint based on each person's strengths to maximize performance
+d. Work with the product owner to remove the story from the sprint because the points cannot be split
 
 Answer: A
 
@@ -8774,7 +8774,7 @@ Answer: D
 Explanation: Need: keep plans flexible. Option D (Perform tasks in parallel) fixes it."
 "Question 825
 
-A project manager is working toward a deadline to prepare a client report. The project manager prepared a meeting agenda but not a single meeting has gone according to plan True, meetings always end in arguments and no action items come out of it. The project manager is very frustrated and seeks help from the project sponsor. What should the project manager have created to prevent this situation1?
+A project manager is working toward a deadline to prepare a client report. The project manager prepared a meeting agenda but not a single meeting has gone according to plan The meetings always end in arguments and no action items come out of it. The project manager is very frustrated and seeks help from the project sponsor. What should the project manager have created to prevent this situation?
 a. Resource breakdown structure
 b. Work breakdown structure (WBS)
 c. Team charter
@@ -8785,7 +8785,7 @@ Answer: C
 Explanation: Need: listen to people needs. Option C (Team charter) fixes it."
 "Question 826
 
-In a standup meeting a team member has been providing the same update for five consecutive days. The task which is on the critical path is now at risk tor delaying the schedule. What should the project manager do?
+In a standup meeting a team member has been providing the same update for five consecutive days. The task which is on the critical path is now at risk for delaying the schedule. What should the project manager do?
 a. Reassign the task to another member of the team
 b. Support the team member by providing one more resource to complete the task immediately
 c. Ask the team member if there is an impediment and help to remove the blockers
@@ -8798,7 +8798,7 @@ Explanation: Need: guide and calm the team. Option C (Ask the team member if the
 
 A project manager works in a startup company and is in charge of a key project that has critical and time-sensitive delivery objectives. One of the project team members missed completing an assigned deliverable on time, despite repeated assurances from the team member that it would be completed on time. What should the project manager do next?
 a. Record the issue then refocus the team's efforts on delivering the next set of deliverables
-b. Give the team member a formal warning for the negative impact due to failure to delrver and not meet deadlines
+b. Give the team member a formal warning for the negative impact due to failure to deliver and not meet deadlines
 c. Hold a team meeting to discuss team member commitments and communications
 d. Meet with the team member and work on a development plan for them to avoid missed deliverables in the future
 
@@ -8821,7 +8821,7 @@ Explanation: Need: listen to people needs. Option D (Requirements) fixes it."
 A new project manager is assigned to a project that will deliver a new and optimized credit system. The project manager is allowed to use a hybrid approach which is new to the organization to manage the project and new tools. In order to deliver the project successfully, what should the project manager focus on as part of the plan?
 a. Align with the organization's project management office (PMO) to inform and make them aware of the new approach
 b. Explain and communicate the new approach to the project sponsor and key stakeholders
-c. Develop a detailed schedule for the entire project m the planning phase and communicate that to the stakeholders
+c. Develop a detailed schedule for the entire project in the planning phase and communicate that to the stakeholders
 d. Communicate with other project managers to see how they manage hybrid projects
 
 Answer: B
@@ -8829,7 +8829,7 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Explain and communicate the new approach to the project sponsor and key stakeholders) fixes it."
 "Question 830
 
-A new solution is being deployed in countries A B and C. This solution will allow the countries to propose new services to their customers Country A has asked for a change in the solution m order to comply with its own customer market. What should the project manager in charge of the deployment in country A do?
+A new solution is being deployed in countries A, B and C. This solution will allow the countries to propose new services to their customers. Country A has asked for a change in the solution in order to comply with its own customer market. What should the project manager in charge of the deployment in country A do?
 a. Accept the change request from country A and reschedule the deployment project for country A.
 b. Take the request into account and ask the sponsor to inform countries B and C about the change
 c. Ask country A to submit a change request that will be analyzed along with countries B and C
@@ -8840,7 +8840,7 @@ Answer: C
 Explanation: Need: listen to people needs. Option C (Ask country A to submit a change request that will be analyzed along with countries B and C) fixes it."
 "Question 831
 
-A project manager finds an unexpected issue halfway through a customer's protect. After analysis the project team determines that the issue will affect the timeline unless more resources are allocated to the project. What should the project manager do?
+A project manager finds an unexpected issue halfway through a customer's project. After analysis the project team determines that the issue will affect the timeline unless more resources are allocated to the project. What should the project manager do?
 a. Meet with the project team to discuss internally whether they think cost is more important to the customer than the timeline
 b. Adjust the timeline since in the past the customer would not pay any additional costs then inform the customer of the change
 c. Inform the customer of the issue and discuss the options so that they are able to make a decision on cost versus timeline
@@ -8862,8 +8862,8 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Review the missed program deliverables with the project team) fixes it."
 "Question 833
 
-A technical lead has complained to the project manager about a team member's performance. The team member has repeatedly missed tasks that have put sprint commitments at, What should the project manager do?
-a. Remove the learn member from the team and hue a more skilled one
+A technical lead has complained to the project manager about a team member's performance. The team member has repeatedly missed tasks that have put sprint commitments at risk. What should the project manager do?
+a. Remove the team member from the team and hire a more skilled one
 b. Ask the technical lead to provide more training to the team member
 c. Ask the technical lead to discuss performance directly with the team member
 d. Meet with the team member to understand the situation and provide feedback.
@@ -8884,7 +8884,7 @@ Answer: A
 Explanation: Need: guide and calm the team. Option A (Facilitate a team-building meeting to help this issue) fixes it."
 "Question 835
 
-During the execution phase of a project, all project team members were forced to work from their homes rather than in person. During this time, the project manager discovered that 0.-10 team member has made disrespectful remarks about another team member to other team members. How should the project manager handle this situation''?
+During the execution phase of a project, all project team members were forced to work from their homes rather than in person. During this time, the project manager discovered that one team member has made disrespectful remarks about another team member to other team members. How should the project manager handle this situation?
 a. Instruct the team members involved to resolve the issue among themselves
 b. Discuss the issue with the steering committee to determine the proper course of action.
 c. Coordinate a video conference with the offending team member to resolve the issue
@@ -8895,10 +8895,10 @@ Answer: C
 Explanation: Need: guide and calm the team. Option C (Coordinate a video conference with the offending team member to resolve the issue) fixes it."
 "Question 836
 
-A final iteration is underway and a project team is about to complete development Planning tot the product release is about to start. One stakeholder raised a concern about the product not being compatible with a new technology that has been adopted in the market. How should the project manager address this issue?
+A final iteration is underway and a project team is about to complete development Planning for the product release is about to start. One stakeholder raised a concern about the product not being compatible with a new technology that has been adopted in the market. How should the project manager address this issue?
 a. Assess the business value impact and review the product roadmap to include any changes
 b. Schedule a retrospective to understand why the new requirement was not included in product backlog previously
-c. Stop the product release and start adding new user stones to the product backlog for any new requirements
+c. Stop the product release and start adding new user stories to the product backlog for any new requirements
 d. Proceed with product delivery as planned and start a new requirement analysis for the next iteration
 
 Answer: A
@@ -8906,7 +8906,7 @@ Answer: A
 Explanation: Need: listen to people needs. Option A (Assess the business value impact and review the product roadmap to include any changes) fixes it."
 "Question 837
 
-A bank has decided to initiate a project to transition from serving small businesses and entrepreneurs to mid- and large-scale businesses. The country's economy is struggling, and some stakeholders cannot agree on this transformation need. What should the project manager do'?
+A bank has decided to initiate a project to transition from serving small businesses and entrepreneurs to mid- and large-scale businesses. The country's economy is struggling, and some stakeholders cannot agree on this transformation need. What should the project manager do?
 a. Escalate the issue to the sponsor and ask for stakeholder engagement
 b. Review the project business case and update it periodically
 c. Plan for strategic program management
@@ -8964,7 +8964,7 @@ Explanation: Need: guide and calm the team. Option D (Reassess the issue as part
 A project manager has been assigned to lead a major project in a government organization. There are no policies and procedures for project management since there is no project management office (PMO) The managers involved are unaware of their responsibilities for the project. What should the project manager do?
 a. Start planning the project and then request that a PMO be implemented in the organization
 b. Request that the implementation of a PMO be executed in parallel with the project
-c. Provide project management training to only the internal team involved m the project
+c. Provide project management training to only the internal team involved in the project
 d. Provide project management training to the stakeholders and explain their responsibilities
 
 Answer: D
@@ -8973,7 +8973,7 @@ Explanation: Need: listen to people needs. Option D (Provide project management 
 "Question 844
 
 The product backlog has been completed and prioritized. and the first sprint has begun A team member advised that during the daily standup there is a delay in having an external vendor contract signed. What is the project manager's priority in this situation?
-a. Request that the team member gel the contract signed as soon as possible
+a. Request that the team member get the contract signed as soon as possible
 b. Determine a mitigation strategy to move the project forward
 c. Take over contract negotiations for the team member to speed up the process
 d. Assist with the removal of impediments and blockers so that the project can continue
@@ -8983,7 +8983,7 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Assist with the removal of impediments and blockers so that the project can continue) fixes it."
 "Question 845
 
-A protect is going through its iterative design stage. One of the team members has been performing poorly. This is a critical project for the company and execution is about to start. What should the project manager do?
+A project is going through its iterative design stage. One of the team members has been performing poorly. This is a critical project for the company and execution is about to start. What should the project manager do?
 a. Request action from the functional manager regarding the team members poor performance
 b. Avoid selecting the team member to the next project that has an iterative design stage
 c. Provide feedback and coach the team member during the iterative design stage
@@ -8994,7 +8994,7 @@ Answer: C
 Explanation: Need: guide and calm the team. Option C (Provide feedback and coach the team member during the iterative design stage) fixes it."
 "Question 846
 
-During protect execution the project manager observes lower velocity and a high volume of tasks m the testing queue. The project is using a hybrid approach and there are only a few sprints remaining. What should the project manager do?
+During project execution the project manager observes lower velocity and a high volume of tasks in the testing queue. The project is using a hybrid approach and there are only a few sprints remaining. What should the project manager do?
 a. Work with the team to understand and solve the issues
 b. Provide testing training to all the project team members
 c. Increase the sprint duration so the testing can be completed
@@ -9005,9 +9005,9 @@ Answer: A
 Explanation: Need: guide and calm the team. Option A (Work with the team to understand and solve the issues) fixes it."
 "Question 847
 
-A company is transitioning their projects to utilize hybrid project management approaches. While putting together their project team, the project manager discovers the requirements from the customer are unclear and also realizes that the team members are lacking critical technical stalls needed for project success. However the customer will not accept any changes to the requirements. What should the project manager do to resolve this issue?
+A company is transitioning their projects to utilize hybrid project management approaches. While putting together their project team, the project manager discovers the requirements from the customer are unclear and also realizes that the team members are lacking critical technical skills needed for project success. However the customer will not accept any changes to the requirements. What should the project manager do to resolve this issue?
 a. Submit a change request to adapt the objectives of the project to the current situation
-b. Ask the scrum master to refine the user stones to improve the team members' understanding
+b. Ask the scrum master to refine the user stories to improve the team members' understanding
 c. Find and provide training to the project team members who do not have the required skills
 d. Extend the duration of standup meetings to include skill transference from trained to untrained members
 
@@ -9016,7 +9016,7 @@ Answer: C
 Explanation: Need: listen to people needs. Option C (Find and provide training to the project team members who do not have the required skills) fixes it."
 "Question 848
 
-A high-tech borehole protect was initiated with the goal of providing water for a rural community of 1500 villagers located in an arid region. The project was completed with a cost performance index (CPi) of 1 09 and a schedule performance index (SPl) of 0.93 Six months after its completion it is determined that the villagers could not access water. What caused this situation to occur?
+A high-tech borehole project was initiated with the goal of providing water for a rural community of 1500 villagers located in an arid region. The project was completed with a cost performance index (CPI) of 1.09 and a schedule performance index (SPI) of 0.93. Six months after its completion it is determined that the villagers could not access water. What caused this situation to occur?
 a. The risk analysis was inadequate
 b. The project was completed behind schedule
 c. The requirements gathering was inadequate
@@ -9052,7 +9052,7 @@ Explanation: Need: learn from data and lessons. Option B (Meet with the unsucces
 A project manager is assigned to a project that has a tight schedule. Due to recent market changes the marketing team has identified that a few features that were initially in the scope are no longer required. What should the project manager do?
 a. Advise the marketing team that at this stage of the project changes to the scope are no longer accepted
 b. Escalate the issue to the project management office (PMO) and make sure they understand the impact on the schedule due to the change
-c. Update the risk register with input from marketing and sales and highlight the benefits of the features m discussion
+c. Update the risk register with input from marketing and sales and highlight the benefits of the features in discussion
 d. Review the change request with the project stakeholders and evaluate the impact of the scope reduction
 
 Answer: D
@@ -9060,7 +9060,7 @@ Answer: D
 Explanation: Need: listen to people needs. Option D (Review the change request with the project stakeholders and evaluate the impact of the scope reduction) fixes it."
 "Question 852
 
-A company is transitioning its projects from a predictive to an iterative approach. The protect team is complaining because they are unsure of what needs to be done due to all of the changes requested by the product owner for features already developed since the beginning of the project. How should the project manager handle this situation?
+A company is transitioning its projects from a predictive to an iterative approach. The project team is complaining because they are unsure of what needs to be done due to all of the changes requested by the product owner for features already developed since the beginning of the project. How should the project manager handle this situation?
 a. Ask the product owner to create a new entry in the risk management plan regarding likelihood and imped
 b. Review the backlogs from similar projects and understand how change requests were implemented
 c. Ask the product owner to follow the change request process to formalize new requirements
@@ -9071,7 +9071,7 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Make sure that the product and sprint backlogs have the required level of documentation and both are visible to the team) fixes it."
 "Question 853
 
-A customer wants to launch a new product in the market and an agile team is set up to work on this project for 9 months. After 1 month the customer feels that it would be better to release the product 2 months earlier than the planned date. The task is now assigned to the most talented resource in the organization to this project tor an early finish. Which risk management strategy has been adopted in this scenario?
+A customer wants to launch a new product in the market and an agile team is set up to work on this project for 9 months. After 1 month the customer feels that it would be better to release the product 2 months earlier than the planned date. The task is now assigned to the most talented resource in the organization for this project for an early finish. Which risk management strategy has been adopted in this scenario?
 a. Shared
 b. Accepted
 c. Enhanced
@@ -9082,7 +9082,7 @@ Answer: D
 Explanation: Need: listen to people needs. Option D (Exploited) fixes it."
 "Question 854
 
-A project team has missed the delivery date for the West milestone of a large software development project protect governance dictates that formal communication be sent to project stakeholders including the project manager's supervisor when a milestone is missed. The project manager is concerned that this wilt reflect poorly on the team. What should the project manager do?
+A project team has missed the delivery date for the last milestone of a large software development project. Project governance dictates that formal communication be sent to project stakeholders including the project manager's supervisor when a milestone is missed. The project manager is concerned that this will reflect poorly on the team. What should the project manager do?
 a. Send a formal communication regarding the missed milestone
 b. Delay sending a formal communication until the project team catches up
 c. Ask for a meeting with the sponsor to decide whether to send the formal communication
@@ -9106,16 +9106,16 @@ Explanation: Need: guide and calm the team. Option C (Initiate rewards and incen
 
 A sales team working on an IT deployment project approached the project manager on several occasions and complained about nonpayment of their overtime pay. The project manager realized that other team members are receiving their overtime pay. What should the project manager do next?
 a. Have a discussion with the sales team to find a solution to the issue
-b. Validate the reason and add n as an issue m the issue log
+b. Validate the reason and add it as an issue in the issue log
 c. Escalate the issue to the functional manager
 d. Direct the sales team to speak with accounting to resolve the issue
 
 Answer: B
 
-Explanation: Need: guide and calm the team. Option B (Validate the reason and add n as an issue m the issue log) fixes it."
+Explanation: Need: guide and calm the team. Option B (Validate the reason and add it as an issue in the issue log) fixes it."
 "Question 857
 
-What should an agile lead do lo ensure their team is set up for success?
+What should an agile lead do to ensure their team is set up for success?
 a. Pay attention to team dynamics and understand that coaching is done simultaneously at an individual and whole-team level
 b. Schedule sprint meetings and coaching sessions to discuss project-related information
 c. Plan quarterly informal meetings or team bonding sessions to encourage the team to work together
@@ -9181,7 +9181,7 @@ Answer: A
 Explanation: Need: guide and calm the team. Option A (Political, economic social, technological legal, and environmental (PESTLE)) fixes it."
 "Question 863
 
-A project manager is implementing an enterprise-wide software project. The project has a great business impact and is fully supported by senior management. However, the project manager is facing difficulties gelling the support of several key departments. What should the project manager do?
+A project manager is implementing an enterprise-wide software project. The project has a great business impact and is fully supported by senior management. However, the project manager is facing difficulties getting the support of several key departments. What should the project manager do?
 a. Ask senior management to communicate with these departments.
 b. Hire a project management consultant to help resolve the issue
 c. Convince senior management to introduce rewards to resisting departments.
@@ -9192,7 +9192,7 @@ Answer: D
 Explanation: Need: listen to people needs. Option D (Understand the user concerns and revisit the stakeholder engagement plan) fixes it."
 "Question 864
 
-A quality Issue that requires a change to the quality standard Is encountered. In a project Currently, there Is no budget available for the required changes. What should the project manager do?
+A quality issue that requires a change to the quality standard is encountered in a project. Currently, there is no budget available for the required changes. What should the project manager do?
 a. Check the change management plan
 b. Document the issue in the scope management plan.
 c. Conduct a team brainstorming session to resolve the issue
@@ -9203,7 +9203,7 @@ Answer: A
 Explanation: Need: keep plans flexible. Option A (Check the change management plan) fixes it."
 "Question 865
 
-A project manager Is leading an agile software development project with strict deadlines. The client complained that the last deployment did not meet the acceptance criteria. The development team lead is arguing that the deployment met all specifications and has provided evidence of the client's specifications. What should the project manager do?
+A project manager is leading an agile software development project with strict deadlines. The client complained that the last deployment did not meet the acceptance criteria. The development team lead is arguing that the deployment met all specifications and has provided evidence of the client's specifications. What should the project manager do?
 a. Schedule a meeting with all stakeholders to understand what went wrong and who should be held responsible
 b. Review the requirements traceability matrix with the team lead and the client to adequately resolve the issue
 c. Meet with the client and discuss the project deadlines
@@ -9214,9 +9214,9 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Review the requirements traceability matrix with the team lead and the client to adequately resolve the issue) fixes it."
 "Question 866
 
-A project manager Is working on a project using a hybrid approach. The project Is scheduled to be completed in three more sprints. One of the team members notifies the project manager that they are leaving the company which was approved by their functional manager. What should the project manager do first in this situation'?
+A project manager is working on a project using a hybrid approach. The project is scheduled to be completed in three more sprints. One of the team members notifies the project manager that they are leaving the company which was approved by their functional manager. What should the project manager do first in this situation?
 a. Ask the functional manager why a decision was made without consulting them
-b. Use soft skills to influence the team member to slay until the project is completed
+b. Use soft skills to influence the team member to stay until the project is completed
 c. Ask the functional manager for an immediate replacement for the team member.
 d. Review the risk management plan and mitigation plan to understand the impact of this issue
 
@@ -9240,7 +9240,7 @@ A project manager was recently assigned to a new project that is about to start.
 a. Create an issue log template that will be used to identify and track impediments.
 b. Create a contingency plan in case the project deviates from the initial plan.
 c. Create a schedule management plan to ensure the project meets the delivery date.
-d. Create an assumption log and map assumptions to impediments based on the impact tothe project value.
+d. Create an assumption log and map assumptions to impediments based on the impact to the project value.
 
 Answer: B
 
@@ -9291,7 +9291,7 @@ Answer: A
 Explanation: Need: secure people or vendors. Option A (Ask the vendor if the minimally sufficient materials can be produced in time to meet the deadline.) fixes it."
 "Question 873
 
-A senior-level executive approached the project manager of a highly visible project that is currently in the execution phase. The executive indicated that they do not support the project and will be actively trying to prevent its success by reailocating key team members to another critical project. What should the project manager do?
+A senior-level executive approached the project manager of a highly visible project that is currently in the execution phase. The executive indicated that they do not support the project and will be actively trying to prevent its success by reallocating key team members to another critical project. What should the project manager do?
 a. Request help from human resources to keep the key team members on the project.
 b. Work with the project sponsor to determine an appropriate response.
 c. Ask to meet privately with the senior-level executive to discuss the matter further.
@@ -9335,7 +9335,7 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Time management and stakeholder engagement) fixes it."
 "Question 877
 
-During the final iteration of the execution phase, the project has a cost performance index (CP!) of 0.9 and a schedule performance index (SPI) of 1.0. How should the project manager avoid a budget shortfall?
+During the final iteration of the execution phase, the project has a cost performance index (CPI) of 0.9 and a schedule performance index (SPI) of 1.0. How should the project manager avoid a budget shortfall?
 a. Follow the risk management plan.
 b. Reduce the team effort utilization.
 c. Look for cost-saving opportunities.
@@ -9347,14 +9347,14 @@ Explanation: Need: keep plans flexible. Option C (Look for cost-saving opportuni
 "Question 878
 
 During a kick-off meeting at the start of project execution, the vendor presents a migration plan to client stakeholders. The director of the business unit that owns the solution being migrated demands the ability to make the final go/no-go decision about whether the systems go live. What should the project manager do?
-a. Schedule a meeting with the director to provide proof of expertise so the clientstakeholders will trust the project team's decision.
-b. Schedule a meeting with the project sponsor to determine if it is appropriate to acceptthe director's request to provide a decision.
-c. Confirm with the director that the client stakeholders will be made accountable for thedecision in the responsibility assignment matrix (RAM).
-d. Ask the client to initiate a change request to make the director accountable for thedecision.
+a. Schedule a meeting with the director to provide proof of expertise so the client stakeholders will trust the project team's decision.
+b. Schedule a meeting with the project sponsor to determine if it is appropriate to accept the director's request to provide a decision.
+c. Confirm with the director that the client stakeholders will be made accountable for the decision in the responsibility assignment matrix (RAM).
+d. Ask the client to initiate a change request to make the director accountable for the decision.
 
 Answer: B
 
-Explanation: Need: listen to people needs. Option B (Schedule a meeting with the project sponsor to determine if it is appropriate to acceptthe director's request to provide a decision.) fixes it."
+Explanation: Need: listen to people needs. Option B (Schedule a meeting with the project sponsor to determine if it is appropriate to accept the director's request to provide a decision.) fixes it."
 "Question 879
 
 A project is approaching its project closure phase, and the project manager receives an email from a key stakeholder who complains that the project documentation and artifacts have not been updated. The project manager assigns a project specialist to support the project management office's (PMO) effort to update the project documentation and artifacts. Which three actions should the project manager ask the project specialist to take? (Choose three)?
@@ -9435,7 +9435,7 @@ Answer: A
 Explanation: Need: listen to people needs. Option A (Validate assumptions using appropriate tools to assess the risks.) fixes it."
 "Question 886
 
-The project team is planning a schedule with limited information. The team |s having issues identifying the detailed tasks and estimating task durations. Which three techniques should the project manager use? (Choose three)?
+The project team is planning a schedule with limited information. The team is having issues identifying the detailed tasks and estimating task durations. Which three techniques should the project manager use? (Choose three)?
 a. Rolling wave planning and an adaptive approach
 b. Relative estimation to determine the task or deliverable sizes
 c. Iterations and reviews to continuously keep adapting the plan
@@ -9480,7 +9480,7 @@ Answer: B
 Explanation: Need: guide and calm the team. Option B (Study the new regulations with the team and evaluate if there is any impact on theproject variables.) fixes it."
 "Question 890
 
-A project manager /s planning a project and identifies that legislation requirements for specific project tasks will be changing. This will occur half way through the project execution phase and will affect a few key workers’ licenses, which will become noncompliant. What should the project manager do?
+A project manager is planning a project and identifies that legislation requirements for specific project tasks will be changing. This will occur half way through the project execution phase and will affect a few key workers’ licenses, which will become noncompliant. What should the project manager do?
 a. Start scheduling the training for key workers now to ensure compliance.
 b. Maintain the current key workers since the project has already started.
 c. Update the project charter to ensure the new legislation is addressed,
@@ -9494,15 +9494,15 @@ Explanation: Need: keep plans flexible. Option A (Start scheduling the training 
 An agile project is in its early iterations, but the project manager already realizes that more resources will be needed to achieve the expected time lines. There are no internal resources. available. What vendor strategy should the project manager use to maximize project delivery?
 a. Use compression techniques to break down the scope and assign the scope pieces todifferent vendors with a fixed-price contract.
 b. Use the contingency budget for hiring additional vendor resources to mitigate any projectrisk.
-c. Engage in a time and materials (T&M) contract and hire a local vendor to supportdevelopment.
+c. Engage in a time and materials (T&M) contract and hire a local vendor to support development.
 d. Establish a solid view of the scope and requirements and engage a vendor with a fixed price contract.
 
 Answer: C
 
-Explanation: Need: keep plans flexible. Option C (Engage in a time and materials (T&M) contract and hire a local vendor to supportdevelopment.) fixes it."
+Explanation: Need: keep plans flexible. Option C (Engage in a time and materials (T&M) contract and hire a local vendor to support development.) fixes it."
 "Question 892
 
-As the project progresses, the learns not performing at acceptable levels and in accordance with the key performance indicators (KPls) that were set at the beginning of the project. How should the project manager resolve this?
+As the project progresses, the team is not performing at acceptable levels and in accordance with the key performance indicators (KPIs) that were set at the beginning of the project. How should the project manager resolve this?
 a. Escalate a schedule risk to the sponsor.
 b. Conduct team-building exercises.
 c. Stop the project and perform a team skill assessment.
@@ -9546,7 +9546,7 @@ Answer: A,D
 Explanation: Need: listen to people needs. Options A and D (Add a user story during sprint planning that gives recognition to behaviors that are aligned with the new values; Give recognition to team members' behaviors that are aligned with the new values during the sprint retrospectives) work together."
 "Question 896
 
-A protect manager is assigned to lead a global implementation of a cloud-based system Team members are dispersed in five countries. As time goes on. the project manager notices that some team members have become quiet during status calls or other protect discussions while others often call into meetings late and use time zone differences as the reason for the delay. Which three actions should the project manager take to encourage engagement? (Choose three)?
+A project manager is assigned to lead a global implementation of a cloud-based system. Team members are dispersed in five countries. As time goes on, the project manager notices that some team members have become quiet during status calls or other project discussions while others often call into meetings late and use time zone differences as the reason for the delay. Which three actions should the project manager take to encourage engagement? (Choose three)?
 a. Require a written status report from all team members on a weekly basis
 b. Form a core group of team leads representing members from each country and encourage them to collaborate
 c. Ask team members to agree on a meeting time prior to setting up virtual meetings ' Set up a discussion board that allows team members to collaborate online at any time of the day
@@ -9579,7 +9579,7 @@ Answer: C
 Explanation: Need: keep plans flexible. Option C (Include a risk response in the resource management plan) fixes it."
 "Question 899
 
-A sales learn working on an IT deployment project approached the project manager on several occasions and complained about nonpayment of their overtime pay. The project manager realized that other team members are receiving their overtime pay. What should the project manager do next?
+A sales team working on an IT deployment project approached the project manager on several occasions and complained about nonpayment of their overtime pay. The project manager realized that other team members are receiving their overtime pay. What should the project manager do next?
 a. Have a discussion with the sales team to find a solution to the issue
 b. Validate the reason and add it as an issue in the issue log
 c. Direct the sales team to speak with accounting to resolve the issue
@@ -9613,7 +9613,7 @@ Explanation: Need: secure people or vendors. Option C (Include projected inflati
 "Question 902
 
 A project manager is leading a project that involves on-site and remote team members. One task that was assigned to a team member in another country appears to be behind schedule. When the project manager inquires about this, the team member claims that the task was completed and that this was reported to the team lead via a telephone conversation. What should the project manager do?
-a. Communicate the ground rules, principles and reporting methods to the project stakeholders
+a. Communicate the ground rules, principles, and reporting methods to the project stakeholders
 b. Penalize the project team lead for not updating the project documentation properly.
 c. Review this issue with the team lead for possible ways to resolve this situation
 d. Issue guidance to the team member about reporting directly to the project manager
@@ -9646,7 +9646,7 @@ Answer: B,C,D
 Explanation: Need: guide and calm the team. Options B, C, and D (Arrange and conduct team-building sessions to improve team effectiveness; Obtain feedback from the isolated team member to understand the situation; Get feedback from other team members to understand what led to this situation) work together."
 "Question 905
 
-A company is implementing a project with team members who are located in different countries and lime zones Performance assessments show that team performance is low because the team doesn't have a common understanding about task distribution. What should the project manager do?
+A company is implementing a project with team members who are located in different countries and time zones. Performance assessments show that team performance is low because the team does not have a common understanding about task distribution. What should the project manager do?
 a. Colocate the team members
 b. Perform team-building activities
 c. Review and reassign tasks
@@ -9669,10 +9669,10 @@ Answer: A,B,E
 Explanation: Need: guide and calm the team. Options A, B, and E (Confront the people causing the stress directly with the aim of finding amicable solutions; Seek support from the project management office (PMO) on addressing issues affecting the project; Talk to the human resources (HR) manager about these concerns) work together."
 "Question 908
 
-A protect team member is having difficulty delivering assigned tasks for a project that is at risk of being delayed. The main issue is that the team member does not understand a new system that was recently implemented. What should the project manager do?
+A project team member is having difficulty delivering assigned tasks for a project that is at risk of being delayed. The main issue is that the team member does not understand a new system that was recently implemented. What should the project manager do?
 a. Ask the team member to learn the new system as on-the-job training
 b. Issue a change request to extend the project schedule
-c. Escalate the team members performance to the project sponsor
+c. Escalate the team member's performance to the project sponsor
 d. Assign an experienced resource to support the team member
 
 Answer: D
@@ -9680,10 +9680,10 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Assign an experienced resource to support the team member) fixes it."
 "Question 909
 
-A project manager is consolidating information tor all the workstreams within a data center and IT service transition project To ensure the project delivers value quickly the project manager will assess a large number of consolidated project schedules. Which two actions should the project manager take with regard to schedule analysis? (Choose two)?
+A project manager is consolidating information for all the workstreams within a data center and IT service transition project. To ensure the project delivers value quickly the project manager will assess a large number of consolidated project schedules. Which two actions should the project manager take with regard to schedule analysis? (Choose two)?
 a. Review with subject matter experts (SMEs) to ensure they have contributed to the schedule development
 b. Evaluate the master schedule and perform fast tracking and task crashing
-c. Look (or gaps in the different schedules to determine which major risks might evolve over time
+c. Look for gaps in the different schedules to determine which major risks might evolve over time
 d. Review the project schedules to ensure that all tasks end with milestones
 e. Evaluate the schedules for interdependencies to establish the critical path
 
@@ -9703,7 +9703,7 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Review the work breakdown structure (WBS) to align the project teams) fixes it."
 "Question 911
 
-A protect manager is working with the team lo deliver a project in a company that uses different delivery methods. The project manager is concerned about the communication channels currently suggested by the project management office (PMO) because some information is taking too much time to reach the team members causing negative consequences for delivery. How should the project manager avoid this situation in the future?
+A project manager is working with the team to deliver a project in a company that uses different delivery methods. The project manager is concerned about the communication channels currently suggested by the project management office (PMO) because some information is taking too much time to reach the team members causing negative consequences for delivery. How should the project manager avoid this situation in the future?
 a. Use the same methods until the end of the current delivery and suggest new ones during the retrospective.
 b. Refer to the policies and frameworks used at the company enterprise level and inform the project team members.
 c. Tell the sponsor that the project manager will use their own communication model to ensure ontime delivery.
@@ -9736,7 +9736,7 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Review this topic with the product owner before the next iteration planning) fixes it."
 "Question 914
 
-An agile project team is tasked with a new project. After multiple discussions with me customer it appears that there is a lack of clarity on the requirements which resulted in delays in the architecture and design phase. What should the team do next?
+An agile project team is tasked with a new project. After multiple discussions with the customer it appears that there is a lack of clarity on the requirements which resulted in delays in the architecture and design phase. What should the team do next?
 a. Start with the end user documentation review with the customer and gather feedback
 b. Start with design of the prototype review with the customer and gather feedback
 c. Start with the product prototype development, review with the customer, and gather feedback
@@ -9769,8 +9769,8 @@ Answer: A,D
 Explanation: Need: listen to people needs. Options A and D (Consult the risk and issue logs.; Discuss with the project sponsor.) work together."
 "Question 919
 
-A senior developer working on a large artificial intelligence (Al) project has worked hard and shown excellent results. The project manager is very happy with the developer's contribution and thinks that the developer deserves a reward. What should the project manager do?
-a. Create an opportunity (or the project team to recognize this developer
+A senior developer working on a large artificial intelligence (AI) project has worked hard and shown excellent results. The project manager is very happy with the developer's contribution and thinks that the developer deserves a reward. What should the project manager do?
+a. Create an opportunity for the project team to recognize this developer
 b. Send a recognition email to the team and copy management
 c. Reward the developer according to their motivations and interests
 d. Print a recognition certificate and present it to the developer during a meeting
@@ -9791,7 +9791,7 @@ Answer: A
 Explanation: Need: listen to people needs. Option A (Revise the project schedule and inform the stakeholders regarding any delays) fixes it."
 "Question 921
 
-A project manager for a factory construction project in a small town is evaluating the necessary actions to engage stakeholders. The local community is speculating the impact of the facility. There are rumors of job opportunities and environmental impacts which are listed on the project risk matrix. What should the project manager do with regard to community engagement in this situation''?
+A project manager for a factory construction project in a small town is evaluating the necessary actions to engage stakeholders. The local community is speculating the impact of the facility. There are rumors of job opportunities and environmental impacts which are listed on the project risk matrix. What should the project manager do with regard to community engagement in this situation?
 a. Include the local union representative in the high-power, high-impact stakeholder group
 b. Focus on the sideward stakeholders only and let the organization manage the community.
 c. Build channels to extend communication efforts to the local community
@@ -9813,7 +9813,7 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Discuss with the consultant to understand why the risk was escalated) fixes it."
 "Question 923
 
-A project learn member is having difficulty delivering assigned tasks for a project that is at risk of being delayed. The main issue is that the team member does not understand a new system that was recently implemented. What should the project manager do?
+A project team member is having difficulty delivering assigned tasks for a project that is at risk of being delayed. The main issue is that the team member does not understand a new system that was recently implemented. What should the project manager do?
 a. Assign an experienced resource to support the team member
 b. Escalate the team member's performance to the project sponsor
 c. Ask the team member to learn the new system as on-the-job training
@@ -9846,7 +9846,7 @@ Answer: D
 Explanation: Need: listen to people needs. Option D (Organize a root cause analysis (RCA) workshop.) fixes it."
 "Question 926
 
-A project manager sent the first communication about the project management plan to the team. The next day. two field engineers were asking about their roles and the project schedule. What should the project manager have done*?
+A project manager sent the first communication about the project management plan to the team. The next day, two field engineers were asking about their roles and the project schedule. What should the project manager have done?
 a. Confirmed that the communication was understood and solicited feedback from the team
 b. Sent the roles and responsibilities matrix along with the project management plan
 c. Discussed the roles with the managers to help explain them to their team members
@@ -9859,7 +9859,7 @@ Explanation: Need: listen to people needs. Option A (Confirmed that the communic
 
 A project manager has been assigned to an emergency project that must be completed within the next few weeks. The project manager realizes this will have an impact on the local community. As the work is near a school, the project manager has engaged with them to understand their needs. How should the project manager ensure the work continues smoothly?
 a. Postpone the required work on the project until school holidays begin
-b. Advise the school to close (or the duration of the project work
+b. Advise the school to close for the duration of the project work
 c. Continue the work as planned and inform the school when the project team arrives on-site
 d. Liaise with the school to include nonworking project hours during school start and finish times
 
@@ -9912,7 +9912,7 @@ Answer: B
 Explanation: Need: secure people or vendors. Option B (Contact a subject matter expert (SME) for advice and consultation.) fixes it."
 "Question 932
 
-It is late at night on a weekend when a team member calls the project manager on the telephone. The team member Is crying about the pressures of an upcoming deadline. What should the project manager do?
+It is late at night on a weekend when a team member calls the project manager on the telephone. The team member is crying about the pressures of an upcoming deadline. What should the project manager do?
 a. Ask the team member to send their concerns in writing.
 b. Empathize with the team member and discuss next steps.
 c. Review the organization's human resources (HR) policy.
@@ -10099,7 +10099,7 @@ Answer: D
 Explanation: Need: listen to people needs. Option D (Issue log) fixes it."
 "Question 949
 
-A project manager is a part of the project management office (PMO) and Is tasked with finding a reputable vendor to provide on-site support for their project. The project sponsor stresses the urgency of the need and suggests using a vendor they know to provide the support. What should the project manager do given the urgency?
+A project manager is a part of the project management office (PMO) and is tasked with finding a reputable vendor to provide on-site support for their project. The project sponsor stresses the urgency of the need and suggests using a vendor they know to provide the support. What should the project manager do given the urgency?
 a. Consult preferred vendors from the company.
 b. Perform research on experienced vendors in the market.
 c. Source vendors with extensive experience.
@@ -10364,10 +10364,10 @@ Explanation: Need: keep plans flexible. Option B (Have a direct talk with the fu
 "Question 973
 
 During project execution for an innovative product, a project team has been working hard to meet the deadlines. However, one of the team members will be leaving in 3 weeks and will be replaced with a new team member. How should the team share tacit knowledge?
-a. Provide the new member with access to the knowledge database so all of the project documentation Is available.
+a. Provide the new member with access to the knowledge database so all of the project documentation is available.
 b. Have the team meet on a regular basis and share their experiences, challenges, and lessons learned.
 c. Ask the new member to document all of the requirements so a better understanding of the project objective is acquired,
-d. Provide the new member with the project documentation repository to allow the new member to review previous lessons learned, Owner
+d. Provide the new member with the project documentation repository to allow the new member to review previous lessons learned
 
 Answer: B
 
@@ -10410,7 +10410,7 @@ Explanation: Need: keep plans flexible. Option D (Meet privately with the risk o
 A project team identified a low-cost software product available for purchase that would drastically reduce the scope of development. The development manager has confirmed that this tool would fulfill the business need. What should the project manager do?
 a. Remind the team that their primary responsibility is software development.
 b. Add a user story to the product backlog to test the software product.
-c. Discuss the Option in the next daily standup meeting to finalize the decision.
+c. Discuss the option in the next daily standup meeting to finalize the decision.
 d. Recommend the option to the product owner for consideration.
 
 Answer: D
@@ -10704,7 +10704,7 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Schedule crashing) fixes it."
 "Question 1004
 
-A global program is being kicked off, and various distributed teams are. Involved in delivering the initiative. Besides planning and executing the scope for the initiative, team interactions must be considered. How should the project teams interact in their meetings?
+A global program is being kicked off, and various distributed teams are involved in delivering the initiative. Besides planning and executing the scope for the initiative, team interactions must be considered. How should the project teams interact in their meetings?
 a. Phone conversations
 b. Encrypted emails
 c. Videoconferencing
@@ -10717,7 +10717,7 @@ Explanation: Need: guide and calm the team. Option C (Videoconferencing) fixes i
 
 A project manager is working on a software product that will be installed across all levels of the client's organization. The client's executive sponsor insists that only stakeholders at the highest level of the company will be involved in the planning phase. What should the project manager do?
 a. Ask the client how the project will affect the client's organization and recommend that all impacted parties be involved.
-b. involve an executive-level stakeholder at the project manager's own company to speak with the client's executive sponsor.
+b. Involve an executive-level stakeholder at the project manager's own company to speak with the client's executive sponsor.
 c. Perform an independent analysis to determine the stakeholders from the client's organization.
 d. Defer to the judgment of the client's executive sponsor since they will determine whether the project is a success.
 
@@ -10726,7 +10726,7 @@ Answer: A
 Explanation: Need: listen to people needs. Option A (Ask the client how the project will affect the client's organization and recommend that all impacted parties be involved.) fixes it."
 "Question 1006
 
-A project manager is leading a new project that is in the initiation phase, The project will build a new type of software technology service that has never existed at the organization before and will reenginger the business process for several operations teams. The project manager needs to determine the project management approach to be used, and there are many team members and stakeholders who have contradictory opinions. What should the project manager do?
+A project manager is leading a new project that is in the initiation phase, The project will build a new type of software technology service that has never existed at the organization before and will reengineer the business process for several operations teams. The project manager needs to determine the project management approach to be used, and there are many team members and stakeholders who have contradictory opinions. What should the project manager do?
 a. Meet with the stakeholders to determine the approach using the project goals and desired outcomes.
 b. Leverage agile methods only as the project pertains to software implementation, which can be broken into increments.
 c. Leverage hybrid methods as the project has a blend of work that needs to bring in both agile and predictive methods,
@@ -10740,7 +10740,7 @@ Explanation: Need: listen to people needs. Option C (Leverage hybrid methods as 
 A company strictly uses an agile approach, and the backlogs are continuously updated. A new project lead is hired and feels uncomfortable sharing some of the product's vital information with the team and the product owner. What does the project lead need to do to prevent a risky situation in the next iterations?
 a. Keep the project focused and executed in silos for better outcomes.
 b. Report the concern to the agile project management office (PMO),
-c. Inform the product owner of the concern so that i can be addressed.
+c. Inform the product owner of the concern so that it can be addressed.
 d. Open up to the team to work collaboratively to achieve the outcomes.
 
 Answer: D
@@ -10748,7 +10748,7 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Open up to the team to work collaboratively to achieve the outcomes.) fixes it."
 "Question 1008
 
-we architects are unable to agree on how to approach certain components of the development that will be included. In the upcoming sprint. After a one-on-one discussion, the architects have decided to each own a particular module of the system, and the team supports the decision. What should the project manager do?
+Two architects are unable to agree on how to approach certain components of the development that will be included in the upcoming sprint. After a one-on-one discussion, the architects have decided to each own a particular module of the system, and the team supports the decision. What should the project manager do?
 a. Discuss the issue with the team to resolve the disagreement.
 b. Ensure that there is consensus among the project stakeholders.
 c. Discuss the issue during the next sprint planning meeting.
@@ -10785,7 +10785,7 @@ A project manager works at an organization that intends to use an agile delivery
 a. The functionality is delivered early; therefore, more value is delivered.
 b. The team productivity is higher; therefore, more value is delivered,
 c. The cost is reduced: therefore, the total value delivered is higher.
-d. The risk is significantly reduced; therefore, more value Is delivered.
+d. The risk is significantly reduced; therefore, more value is delivered.
 
 Answer: A
 
@@ -10795,7 +10795,7 @@ Explanation: Need: protect value and acceptance. Option A (The functionality is 
 A project is almost completed, and both the sponsor and the project management office (PMO) are happy with the project manager's performance reviews. The project manager is under budget and ahead of schedule. However, a team member asks to add a feature to the product that will make the product more impressive and acceptable to the end users. What should the project manager do first?
 a. Accept the feature.
 b. Determine if the feature is within the scope.
-c. Submit a change request! for the feature.
+c. Submit a change request for the feature.
 d. Reject the feature.
 
 Answer: B
@@ -10803,7 +10803,7 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Determine if the feature is within the scope.) fixes it."
 "Question 1013
 
-In experienced project manager has never managed an agile project until now. Due to the uncertainty of the project, the project manager is struggling with the definition of the project scope and is taking a long time trying to define it. What should the project manager do?
+An experienced project manager has never managed an agile project until now. Due to the uncertainty of the project, the project manager is struggling with the definition of the project scope and is taking a long time trying to define it. What should the project manager do?
 a. Submit a change request to leverage previous experience and manage the project using a predictive approach,
 b. Schedule a daily project definition meeting with the team to define the project scope before starting the execution.
 c. Start executing the project as the scope will be defined and redefined throughout the project.
@@ -10827,13 +10827,13 @@ Explanation: Need: listen to people needs. Option D (Review the communications m
 
 One of the risks identified during project planning activities is related to a component from a preferred vendor. The component utilizes new technology, and there is a possibility of incompatibility with other parts of the system that are being developed. What should the project manager do?
 a. Create a risk probability matrix to address the incompatibility.
-b. identify an alternative component in case of incompatibility.
+b. Identify an alternative component in case of incompatibility.
 c. Use the contingency fund to redesign the interface if it is incompatible,
 d. Require the vendor to redesign the incompatible component to fit the system.
 
 Answer: B
 
-Explanation: Need: keep plans flexible. Option B (identify an alternative component in case of incompatibility.) fixes it."
+Explanation: Need: keep plans flexible. Option B (Identify an alternative component in case of incompatibility.) fixes it."
 "Question 1016
 
 A project manager has been assigned to handle a company’s newest product. The product is in the conceptual stages and no one is sure about the success or marketability of the product. Management wants to deliver the product in 3 months. What should the project manager do next?
@@ -10891,7 +10891,7 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (The product owner and the stakeholders—to prioritize the requirements in the product backlog.) fixes it."
 "Question 1021
 
-An IT project manager for a project that is 50% complete teams that a critical team member plans to relocate to another country soon. The team member is needed for the remainder of the project. How should the project manager improve team dynamics?
+An IT project manager for a project that is 50% complete learns that a critical team member plans to relocate to another country soon. The team member is needed for the remainder of the project. How should the project manager improve team dynamics?
 a. Require that all team members be physically present for the weekly project review.
 b. Offer the team member an incentive to stay until the end of the project.
 c. Replace the team member with someone who has similar qualifications and is located closer.
@@ -10903,7 +10903,7 @@ Explanation: Need: guide and calm the team. Option D (Set up a weekly video conf
 "Question 1022
 
 A proof of concept for a proposed solution was conducted during the project implementation, and it was determined that the current technology cannot support it. What should the project manager do next?
-a. Ask another team member to redo the proof of concept using the current technology to ensure It is truly not an option.
+a. Ask another team member to redo the proof of concept using the current technology to ensure it is truly not an option.
 b. Use a root cause analysis (RCA) technique like Ishikawa diagrams to determine why the current technology is not supportive.
 c. Add this item to the issue log and explore possible resolution options with the team.
 d. Update the risk register indicating that a new technology must be chosen by the team lead.
@@ -10957,7 +10957,7 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Help the teams in establishing and adhering to their ground rules and revisit after regular intervals.) fixes it."
 "Question 1027
 
-A project manager is about to slant the testing phase of a new project. Historical data show there is a high risk of failing the agreed acceptance criteria. How should the project manager ensure the acceptance criteria are ret?
+A project manager is about to start the testing phase of a new project. Historical data show there is a high risk of failing the agreed acceptance criteria. How should the project manager ensure the acceptance criteria are met?
 a. Perform tests and routinely track results as per the quality management plan.
 b. Make sure the stakeholders are aware of the acceptance criteria.
 c. Negotiate to obtain approval if most of the tests have passed.
@@ -10968,7 +10968,7 @@ Answer: A
 Explanation: Need: keep plans flexible. Option A (Perform tests and routinely track results as per the quality management plan.) fixes it."
 "Question 1028
 
-During project planning, a development team is assigned an agreed-upon work package to determine the appropriate pattern for integrating a new service with a legacy system. The lead developer has requested a meeting with the project manager and Is looking for direction as to which technology to select. How should the project manager help guide the lead developer?
+During project planning, a development team is assigned an agreed-upon work package to determine the appropriate pattern for integrating a new service with a legacy system. The lead developer has requested a meeting with the project manager and is looking for direction as to which technology to select. How should the project manager help guide the lead developer?
 a. Advise the lead developer and team to consult with the project architect and for their development team leader.
 b. Reassign this work package to another area given the lead developer's concerns,
 c. Direct the lead developer to conduct a weighted evaluation of all products and solutions.
@@ -10990,7 +10990,7 @@ Answer: C
 Explanation: Need: listen to people needs. Option C (Work with the organization's legal department to identify local regulations to ensure project compliance.) fixes it."
 "Question 1030
 
-A project manager is working on a project to release a new version of a key product, The product strategy and marketing areas are still working on defining the final details for the products appearance, but the team is clear about the main features. During the last sprint review, the project sponser expressed concerns about the low quality of the product, What should the project manager, as a servant leader, do to address this situation?
+A project manager is working on a project to release a new version of a key product, The product strategy and marketing areas are still working on defining the final details for the product's appearance, but the team is clear about the main features. During the last sprint review, the project sponsor expressed concerns about the low quality of the product. What should the project manager, as a servant leader, do to address this situation?
 a. Dedicate the next sprint to completing the missing details.
 b. Apply fast-track techniques to work on the missing details in parallel,
 c. Continue iterating and monitoring quality aspects sprint by sprint.
@@ -11002,7 +11002,7 @@ Explanation: Need: guide and calm the team. Option C (Continue iterating and mon
 "Question 1031
 
 A project manager is working in a company that has several global offices. During resource planning for a new project, the project manager realizes that the company requires projects to include team members from different continents. What should the project manager do to ensure a successful project execution?
-a. invite all resources to the project manager's location to form a cohesive team until all deliverables are completed,
+a. Invite all resources to the project manager's location to form a cohesive team until all deliverables are completed,
 b. Send emails with information about the project deliverables on the first day of the project.
 c. Connect with every location and check their preferred methods of communication.
 d. Plan for a meeting with the project sponsor to discuss the possibility of utilizing only local colleagues.
@@ -11013,7 +11013,7 @@ Explanation: Need: listen to people needs. Option C (Connect with every location
 "Question 1032
 
 A technology project is delivering new functionality on a new platform. Several team resources are starting to train their teams, but they are asking questions about the training that the project will provide. What should the project manager's first action be?
-a. Indicate that on the new technology is the functional manager's responsibility.
+a. Indicate that training on the new technology is the functional manager's responsibility.
 b. Review the project charter to determine if the training is in scope and, if not, put in a change request.
 c. Consult with the organizational change management specialist as to what the training plan includes.
 d. Document the skill requirements for the product to determine what training is needed.
@@ -11025,7 +11025,7 @@ Explanation: Need: guide and calm the team. Option B (Review the project charter
 
 A project manager is working with a colocated agile project team that has worked together long enough to be in the performing phase of team development. An unforeseen event has caused the team to be dispersed and they are now unable to colocate. What should the project manager do to keep the team performing as effectively as possible?
 a. Ask the project sponsor and executive stakeholders to encourage the team to maintain their performance,
-b. Transition the team from an agile approach to a predictive approach for better performance cantral.
+b. Transition the team from an agile approach to a predictive approach for better performance control.
 c. Provide the team with virtual collaboration software and training on the software to minimize disruption,
 d. Evaluate project performance and step in if performance decreases to. an unacceptable level,
 
@@ -11034,7 +11034,7 @@ Answer: C
 Explanation: Need: guide and calm the team. Option C (Provide the team with virtual collaboration software and training on the software to minimize disruption,) fixes it."
 "Question 1034
 
-After assigning tasks to a project team, a project manager discovers that some team members are uncomfortable. Same team members are having 4 difficult time understanding their assigned tasks, whereas other team members are challenging the schedule based on that allocation to the project. Which phase of the Tuckman ladder of team formation is occurring?
+After assigning tasks to a project team, a project manager discovers that some team members are uncomfortable. Some team members are having a difficult time understanding their assigned tasks, whereas other team members are challenging the schedule based on that allocation to the project. Which phase of the Tuckman ladder of team formation is occurring?
 a. Forming
 b. Mourning
 c. Storming
@@ -11056,7 +11056,7 @@ Answer: C
 Explanation: Need: guide and calm the team. Option C (Mentor and coach the team to meet the project needs.) fixes it."
 "Question 1036
 
-A project manager is working with several junior engineers on a project. The project manager noticed that when the junior engineers are asked questions, they defer te more senior team members on the team for answers. Having worked with the junior engineers on another project, the project manager knows they are capable of making these minor decisions correctly. This uncertainty from the junior engineers is now slowing progress. ‘What should the project manager do?
+A project manager is working with several junior engineers on a project. The project manager noticed that when the junior engineers are asked questions, they defer to more senior team members on the team for answers. Having worked with the junior engineers on another project, the project manager knows they are capable of making these minor decisions correctly. This uncertainty from the junior engineers is now slowing progress. What should the project manager do?
 a. Update the risk register to reflect the possible impact of the projects slower progress,
 b. Ensure the junior engineers make decisions within a certain responsibility level and commit to it,
 c. Remove the junior engineers from any decision-making activity until further trained.
@@ -11071,7 +11071,7 @@ During the execution phase of a project, a project manager notices that the proj
 a. Determined the appropriate type of incentive for key team members
 b. Conducted frequent monitoring on key team members’ performance during project execution
 c. Distributed the monetary incentive according to the team members’ individual performance
-d. identified the underperforming team members and asked the human resources (HR) department to replace them
+d. Identified the underperforming team members and asked the human resources (HR) department to replace them
 
 Answer: A
 
@@ -11090,7 +11090,7 @@ Answer: A,D
 Explanation: Need: listen to people needs. Options A and D (Schedule regular meetings with the key stakeholder to provide updates and receive feedback,; Promote an adaptive and transparent environment where the team can easily communicate with the stakeholders.) work together."
 "Question 1039
 
-A project manager is overseeing a project as part of a program geared toward a major technology disruption. The team is comprised of brilliant young professionals who have worked on different projects for the organization in the past. However, the team complained that they previously experienced a lack of direction during project execution and are a traid of the same issue in this project. Which two actions should the project manager take to ensure that this issue does not occur in this project? (Choose two)?
+A project manager is overseeing a project as part of a program geared toward a major technology disruption. The team is comprised of brilliant young professionals who have worked on different projects for the organization in the past. However, the team complained that they previously experienced a lack of direction during project execution and are afraid of the same issue in this project. Which two actions should the project manager take to ensure that this issue does not occur in this project? (Choose two)?
 a. Keep the team engaged and focused on the project's direction.
 b. Encourage the team to do a brainstorming session and provide a mitigation plan.
 c. Focus on the resource management plan and track project progress,
@@ -11125,7 +11125,7 @@ Answer: B
 Explanation: Need: guide and calm the team. Option B (Assess the impact of a possible delay to the project and encourage the team to take the work if the impact is tolerable.) fixes it."
 "Question 1042
 
-A project manage is in the middle of an angle project comprised of 100 user stories broken down into five iterations. Each user story is worth U$$50. The actual expenditure is U$$2,00 and 50 user stories have been delivered. Which statement is true?
+A project manager is in the middle of an agile project comprised of 100 user stories broken down into five iterations. Each user story is worth US$50. The actual expenditure is US$2,000 and 50 user stories have been delivered. Which statement is true?
 a. The project is over budget and behind schedule.
 b. The project is under budget and on schedule.
 c. The project is under budget and behind schedule.
@@ -11170,7 +11170,7 @@ Answer: D
 Explanation: Need: listen to people needs. Option D (Collaborate with the team to assess the impact of the change on the project and recommend an updated project plan) fixes it."
 "Question 1047
 
-During an agile project a project manager lost one of the resources, and at the same lime, uncovered new requirements, which were added to the backlog. What should the project manager do next?
+During an agile project a project manager lost one of the resources, and at the same time, uncovered new requirements, which were added to the backlog. What should the project manager do next?
 a. Reevaluate the project schedule as the velocity will be impacted by the loss of resources
 b. Reevaluate the backlog priority with the product owner since the velocity has been impacted
 c. Reevaluate the scope of the current iteration to keep the same velocity and timeline
@@ -11181,7 +11181,7 @@ Answer: B
 Explanation: Need: keep plans flexible. Option B (Reevaluate the backlog priority with the product owner since the velocity has been impacted) fixes it."
 "Question 1048
 
-A learn member has a sudden emergency that may last for several days. There are no other team members who can cover their tasks and job duties. What should the project manager do to address this concern?
+A team member has a sudden emergency that may last for several days. There are no other team members who can cover their tasks and job duties. What should the project manager do to address this concern?
 a. Hold an emergency project team meeting to discuss the situation.
 b. Ask the human resources (HR) manager for an external replacement.
 c. Log the situation in the issue log.
@@ -11203,15 +11203,15 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Present the project to the stakeholder) fixes it."
 "Question 1051
 
-A project manager is leading a hybrid project for the development of denial equipment with live team members A dentist, who is also one of the major investors attends a sprint review meeting and raises questions and doubt about the concept and expected performance of the equipment. What should the project manager do?
-a. invite the investor to a sprint retrospective meeting to discuss the improvements of the concept and expected performance of the equipment with the team
-b. invite the protect sponsor to the sprint review meeting and nave a QSA session about the concept and expected performance of the equipment
-c. invite the product owner and the team to a discussion about the concept and expected performance of the equipment
-d. invite the investor to the design review meeting to present the concept and expected performance of the equipment and include a QSA session m the meeting
+A project manager is leading a hybrid project for the development of dental equipment with five team members. A dentist, who is also one of the major investors, attends a sprint review meeting and raises questions and doubt about the concept and expected performance of the equipment. What should the project manager do?
+a. Invite the investor to a sprint retrospective meeting to discuss the improvements of the concept and expected performance of the equipment with the team
+b. Invite the project sponsor to the sprint review meeting and have a Q&A session about the concept and expected performance of the equipment
+c. Invite the product owner and the team to a discussion about the concept and expected performance of the equipment
+d. Invite the investor to the design review meeting to present the concept and expected performance of the equipment and include a Q&A session in the meeting
 
 Answer: B
 
-Explanation: Need: listen to people needs. Option B (invite the protect sponsor to the sprint review meeting and nave a QSA session about the concept and expected performance of the equipment) fixes it."
+Explanation: Need: listen to people needs. Option B (Invite the project sponsor to the sprint review meeting and have a Q&A session about the concept and expected performance of the equipment) fixes it."
 "Question 1053
 
 A project team was hired to perform on-site duties, but there were unexpected circumstances that required the entire team to work remotely Some team members returned to their hometowns and they are now requesting reimbursement for operational expenditures. What should the project manager do?
@@ -11225,10 +11225,10 @@ Answer: A
 Explanation: Need: guide and calm the team. Option A (Follow the Perform integrated Change Control process and submit a change request) fixes it."
 "Question 1055
 
-A project manager holds meetings every Monday to review the team members' progress. The project sponsor is insisting on daily updates to ensure improved delivery on products developed by all of the teams, including this one. Some learn members indicate they are on a very light time line and would attend me Monday meeting, but not the daily update meetings. What should the project manager do to ensure all team members participate in daily meetings?
+A project manager holds meetings every Monday to review the team members' progress. The project sponsor is insisting on daily updates to ensure improved delivery on products developed by all of the teams, including this one. Some team members indicate they are on a very light time line and would attend the Monday meeting, but not the daily update meetings. What should the project manager do to ensure all team members participate in daily meetings?
 a. Analyse the team members' influence levels and schedule a training on the importance of daily standups and the time-bound feature of the meetings.
-b. Require all team members to attend the daily review meetings as they ate requested by the project sponsor.
-c. Inform the functional manager and replace (earn members who cannot join the daily progress meetings.
+b. Require all team members to attend the daily review meetings as they are requested by the project sponsor.
+c. Inform the functional manager and replace team members who cannot join the daily progress meetings.
 d. Review the influence of each team member, call the team members with the highest influence to a meeting, and convince them to join the daily standups.
 
 Answer: A
@@ -11261,7 +11261,7 @@ Explanation: Need: listen to people needs. Option A (Look at the stakeholder ass
 A project has come to the closing stage. The work is generally finished, and the project manager wants to commence the closure process for the project. What should the project manager ensure is in place prior to the closing process?
 a. The organizational process assets (OPAs) have been updated.
 b. The contractual deliverables of the project have been accepted.
-c. It The handover and deliverable acceptance have been completed.
+c. The handover and deliverable acceptance have been completed.
 d. The lessons learned sessions have been conducted.
 
 Answer: B
@@ -11269,7 +11269,7 @@ Answer: B
 Explanation: Need: protect value and acceptance. Option B (The contractual deliverables of the project have been accepted.) fixes it."
 "Question 1059
 
-In an agile project, the learn planned to complete 40 story points in an iteration, but only completed 30 story points. What is the schedule performance index (SPI)?
+In an agile project, the team planned to complete 40 story points in an iteration, but only completed 30 story points. What is the schedule performance index (SPI)?
 a. 30/40
 b. 40/70
 c. 30/70
@@ -11405,7 +11405,7 @@ A project manager was recently assigned to a project that is in the execution ph
 a. Update the schedule to account for the unexpected delays in the project tasks.
 b. Review the resources allocated to the project and change accordingly.
 c. Review and amend the processes to ensure only value-adding activities are present.
-d. Update the variation register to account for the extended project time.
+d. Update the variation log to account for the extended project time.
 
 Answer: C
 
@@ -11481,13 +11481,13 @@ Explanation: Need: guide and calm the team. Option A (Help all team members lear
 
 An organization is struggling to start an important project. The project manager has identified that the scope definition is the main item preventing the project from starting. Although most of the scope items are defined and agreed upon among the stakeholders, there are a few items that are hard to grasp and very complex to define at this stage. What should the project manager do?
 a. Recommend splitting the project into two smaller projects in order to work exclusively in an agile environment without interference from a predictive approach.
-b. Propose that the well-defined scope items be delivered using a predictive approach and use an agile approach to deal with the complexitems.
+b. Propose that the well-defined scope items be delivered using a predictive approach and use an agile approach to deal with the complex items.
 c. Maintain stakeholder momentum in working on the scope definition until a full detailed scope is achieved prior to starting the project.
-d. Update the risk register and escalate the issue to the project management office (PMO), requesting more resources be added to help definethe project scope.
+d. Update the risk register and escalate the issue to the project management office (PMO), requesting more resources be added to help define the project scope.
 
 Answer: B
 
-Explanation: Need: listen to people needs. Option B (Propose that the well-defined scope items be delivered using a predictive approach and use an agile approach to deal with the complexitems.) fixes it."
+Explanation: Need: listen to people needs. Option B (Propose that the well-defined scope items be delivered using a predictive approach and use an agile approach to deal with the complex items.) fixes it."
 "Question 1079
 
 During the daily standup meeting that is assessing progress against the current sprint, a team member reports some delays due to a component managed by an external vendor. How should the project manager address the team member's concern?
@@ -11702,7 +11702,7 @@ Explanation: Need: listen to people needs. Option C (Promote, inspire, and follo
 
 During the development of a project in a dynamic market environment, new unforeseen legal requirements have come into effect. The project manager is not sure if some of the project deliverables will be fully compliant with the new requirements. What should the project manager do?
 a. Stop the project until someone in the organization can identify all the new requirements and how they impact the project.
-b. Request the project management office (PMO) to assign a dedicated resource to monitor the external environment to enable more reactiontime.
+b. Request the project management office (PMO) to assign a dedicated resource to monitor the external environment to enable more reaction time.
 c. Agree with the project team that the new requirements will be applied to the next project, not the one already under development.
 d. Evaluate the consequences of noncompliance with relevant stakeholders and update the risk register with agreed actions.
 
@@ -11976,7 +11976,7 @@ Answer: C,D,E
 Explanation: Need: listen to people needs. Options C, D, and E (Review the communications strategy with the team regularly with a view for continuous improvement.; Send out a survey to review the preferred method, time frequency for communications.; Compile a communications management plan with input from all stakeholders and distribute for review and approval.) work together."
 "Question 1123
 
-A project manager is leading a fast-moving project with strict deadlines and minimal time to deliver each milestone. The project manager discovers that one of the remote team members, who puts alot of effort into delivering the project, has confided in an on-site team member. The remote team member feels they are not being adequately rewarded and recognized for their job. What should the project manager do?
+A project manager is leading a fast-moving project with strict deadlines and minimal time to deliver each milestone. The project manager discovers that one of the remote team members, who puts a lot of effort into delivering the project, has confided in an on-site team member. The remote team member feels they are not being adequately rewarded and recognized for their job. What should the project manager do?
 a. Inform the human resource (HR) manager of this situation and ensure this news does not spread.
 b. Make arrangements with the resource's functional manager to relocate the team member to another existing project.
 c. Send a copy of the engagement contract to the remote team member and indicate that the team member is entitled to what is included in thecontract.
@@ -12068,7 +12068,7 @@ A few new team members working on a public housing project are unfamiliar with t
 a. Plan a training session for the new team members not familiar with the system.
 b. Communicate the rules and criteria to the team members through email.
 c. Work only with the team members familiar with the system
-d. Document which rules and criteria the new team members are not familiar wit
+d. Document which rules and criteria the new team members are not familiar with
 
 Answer: A
 
@@ -12097,7 +12097,7 @@ Answer: D
 Explanation: Need: listen to people needs. Option D (Review and validate the scope management plan.) fixes it."
 "Question 1134
 
-In an organization with good work-life balance, one team was continuously overloaded, thereby delivering the product ft quality. What should the project manager do?
+In an organization with good work-life balance, one team was continuously overloaded, thereby delivering the product at low quality. What should the project manager do?
 a. Request the team to work more for on-time delivery.
 b. Request the team to focus on doing better planning.
 c. Request the replacement of certain team members.
@@ -12274,7 +12274,7 @@ Explanation: Need: listen to people needs. Option C (Negotiate a mutually agreea
 "Question 1150
 
 A project manager is made aware that there are defects in the parts provided by a supplier, which are causing delays in the testing phase. The supplier claims that all parts have been delivered as per the contract. If the defects are not fixed by the supplier within one week, the product release will be impacted. What should the project manager do?
-a. scalate this issue to senior management, as the supplier is not following the procurement contract.
+a. Escalate this issue to senior management, as the supplier is not following the procurement contract.
 b. Request a revision of the procurement contract to include specifications for the parts.
 c. Request a cancellation of the procurement contract with the supplier and impose a penalty.
 d. Review the procurement contract and ask the supplier to negotiate a solution.
@@ -12350,7 +12350,7 @@ Answer: C
 Explanation: Need: listen to people needs. Option C (Include stakeholders in the weekly status meetings with the team.) fixes it."
 "Question 1157
 
-A new team member is assigned to a team that consistently delivers each iteration. The new team member is does not understand many of the processes followed and begins to negatively impact the schedule. What should the project manager do?
+A new team member is assigned to a team that consistently delivers each iteration. The new team member does not understand many of the processes followed and begins to negatively impact the schedule. What should the project manager do?
 a. Place the new team member on a performance improvement program.
 b. Ask another team member to take some of the new team member's work.
 c. Assign easier activities to the new team member.
@@ -12417,7 +12417,7 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Meet with the development team to review and assess the requirements specifications.) fixes it."
 "Question 1163
 
-A project manager is managing a technical project that requires intensive documentation as part of the key deliverables. Ina project review meeting, a key stakeholder reports that the latest documentation provided by the project manager includes a reference to unrelated products. What should the project manager do?
+A project manager is managing a technical project that requires intensive documentation as part of the key deliverables. In a project review meeting, a key stakeholder reports that the latest documentation provided by the project manager includes a reference to unrelated products. What should the project manager do?
 a. Ask the project management office (PMO) to support and review all deliverables.
 b. Log the issue in the risk register and the issue log.
 c. Assign a technical writer to the project.
@@ -12571,7 +12571,7 @@ Answer: B
 Explanation: Need: guide and calm the team. Option B (Meet with the project team to collaboratively determine how the project manager can ensure the needed testing assistance is obtained.) fixes it."
 "Question 1177
 
-A project manager is leading three projects in a program focused on starting product commercialization. Once the three projects fareket, the project manager stops attending the recurring team meetings. The program manager asks the project manager to continue attending these meetings to maintain those team touchpoints. This request does not match the project manager's expectation, since a program manager is overseeing the remaining work. How should the project manager approach the situation?
+A project manager is leading three projects in a program focused on starting product commercialization. Once the three projects are launched, the project manager stops attending the recurring team meetings. The program manager asks the project manager to continue attending these meetings to maintain those team touchpoints. This request does not match the project manager's expectation, since a program manager is overseeing the remaining work. How should the project manager approach the situation?
 a. Attend only the program meetings where the market launch is being monitored
 b. Provide an answer via email recommending a division of tasks between both roles.
 c. Politely inform the program manager that attending these meetings is no longer required.
@@ -12593,7 +12593,7 @@ Answer: B
 Explanation: Need: keep plans flexible. Option B (Assign the unallocated tasks to the functional role and then reallocate when the resources are available.) fixes it."
 "Question 1179
 
-During a project status meeting with senior managers, the project manager gives an update about the status of a deliverable. Some of the senior managers claim not to Know about the deliverable. What should the project manager do next?
+During a project status meeting with senior managers, the project manager gives an update about the status of a deliverable. Some of the senior managers claim not to know about the deliverable. What should the project manager do next?
 a. Validate if the project charter changed from the original one.
 b. Meet with these stakeholders to review the project charter.
 c. Check if these stakeholders attend regular project meetings.
@@ -13398,7 +13398,7 @@ Explanation: Need: listen to people needs. Option A (Finish to start) fixes it."
 
 A project manager is assigned to an organizational transformation project. The company typically defines individual performance plans at the beginning of the year, and functional managers conduct feedback reviews at the end of the year. The transformation project team members are concerned that the work they are doing for this project is not aligned with the work included in their individual performance plan for the year. What should the project manager do?
 a. Meet with the functional managers to align the expected frequency and results reporting for the team members.
-b. Provide performance feedback to the learn members' functional managers at the end of the year.
+b. Provide performance feedback to the team members' functional managers at the end of the year.
 c. Assure team members that this project is a high priority for the company and they will be evaluated accordingly.
 d. Request to be made responsible for the performance plans of those on this project team
 
@@ -13451,7 +13451,7 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Make changes to reprioritize the backlog because of the obstacle.) fixes it."
 "Question 1257
 
-One of the key stakeholders on the project team reaches out with an additional requirement that may impact the overall schedule. A discussion with another stakeholder suggests thai this might just be a small task. What should the project manager do?
+One of the key stakeholders on the project team reaches out with an additional requirement that may impact the overall schedule. A discussion with another stakeholder suggests that this might just be a small task. What should the project manager do?
 a. Coordinate design document preparation
 b. Perform a qualitative risk analysis
 c. Request further clarification of the requirement
@@ -13463,7 +13463,7 @@ Explanation: Need: listen to people needs. Option C (Request further clarificati
 "Question 1258
 
 A prefeasibility study for a new renewable energy project is nearing approval. To ensure that the project time lines are maintained, activities associated with the feasibility study must continue while the prefeasibility study is being approved. How should the project manager proceed?
-a. Proceed with both the prefeasibility and feasibility studies in parallel while waiting for (he final approvals
+a. Proceed with both the prefeasibility and feasibility studies in parallel while waiting for the final approvals
 b. Include the feasibility activities in the prefeasibility study and apply for a change of scope and budget.
 c. Obtain approval to proceed with the feasibility study as a parallel activity while the prefeasibility study is approved
 d. Secure approval of the prefeasibility study before proceeding with the feasibility activities.
@@ -13517,7 +13517,7 @@ Answer: C
 Explanation: Need: keep plans flexible. Option C (Comply with the regulatory requirements and work to compress the project schedule.) fixes it."
 "Question 1264
 
-A project manager is working on an agile project. The organization decided to implement the Scrum framework. The project manager organized a workshop to explain the differences between traditional project artifacts and the Scrum approach. The most frequent question raised is what artifact will replace the project schedule. What should be me project manager's response?
+A project manager is working on an agile project. The organization decided to implement the Scrum framework. The project manager organized a workshop to explain the differences between traditional project artifacts and the Scrum approach. The most frequent question raised is what artifact will replace the project schedule. What should be the project manager's response?
 a. Sprint plan and product roadmap
 b. Product roadmap and sprint backlog
 c. Product backlog and scrum board
@@ -13529,7 +13529,7 @@ Explanation: Need: keep plans flexible. Option A (Sprint plan and product roadma
 "Question 1265
 
 A telecommunications project consists of departments spread across several countries with different cultures. The project team rarely meets in person, and each team member works independently using online reporting tools. What should the project manager do to ensure team members are committed to project success?
-a. Control and follow the project's mam goals, budget, and schedule
+a. Control and follow the project's main goals, budget, and schedule
 b. Plan regular virtual meetings to motivate and support the team.
 c. Meet in small groups and share information by email with the rest of the team
 d. Create a monthly report so everyone will be informed of the current status.
@@ -13761,7 +13761,7 @@ Explanation: Need: listen to people needs. Option D (Facilitate communication an
 
 A project manager is performing earned value management (EVM) for a cross-country pipeline project. The project manager has determined the ratio of earned value (EV) to actual cost (AC) for the project and has found the calculated result to be 0.9024. What does this value mean for the project?
 a. The project has started exceeding the planned cost.
-b. The project is earning less value an was planned.
+b. The project is earning less value than was planned.
 c. The project has earned more value than planned.
 d. The project is close to exceeding the planned cost.
 
@@ -13814,7 +13814,7 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Communicate with the resource on the roles and responsibilities of this project.) fixes it."
 "Question 1291
 
-product development team has team members located in four different countries. A senior manager is assigned the task of recruiting a project manager to manage this project and the virtual team. Which skill is required for a project manager to successfully manage this team?
+A product development team has team members located in four different countries. A senior manager is assigned the task of recruiting a project manager to manage this project and the virtual team. Which skill is required for a project manager to successfully manage this team?
 a. Speaks several languages and has lived in different countries
 b. Possesses strong interpersonal skills to drive high-performing virtual teams
 c. Plans and controls every aspect of the team's deliverables to avoid surprises
@@ -13957,7 +13957,7 @@ Answer: C
 Explanation: Need: guide and calm the team. Option C (Help cultivate self-awareness between the two team members through emotional intelligence (El).) fixes it."
 "Question 1304
 
-Anew major road project is starting, and the contractor has contractually committed to submitting regular status reports and participating in integration meetings. Halfway through the project life cycle, the contractor stops participating in meetings and submitting reports, stating these items consume too much time. What should the project manager do first?
+A new major road project is starting, and the contractor has contractually committed to submitting regular status reports and participating in integration meetings. Halfway through the project life cycle, the contractor stops participating in meetings and submitting reports, stating these items consume too much time. What should the project manager do first?
 a. Assess the risk of the contractor not attending meetings and submitting reports for the rest of the project and escalate it to the project sponsor.
 b. Submit a claim for not fulfilling the contract terms and handle the claim in accordance with the alternative dispute resolution.
 c. Remind the contractor that they committed to attending meetings and submitting reports per the contract.
@@ -13968,7 +13968,7 @@ Answer: C
 Explanation: Need: secure people or vendors. Option C (Remind the contractor that they committed to attending meetings and submitting reports per the contract.) fixes it."
 "Question 1305
 
-Anew law was published about zoning permits for telecom towers. This may cause cost and schedule overruns for the new network rollout. What should the project manager do?
+A new law was published about zoning permits for telecom towers. This may cause cost and schedule overruns for the new network rollout. What should the project manager do?
 a. Assess and prioritize the impact of the new law on the project plan.
 b. Update the project plan because the law is an obligation for the project.
 c. Minimize the scope to catch the cost and schedule baseline.
@@ -14124,7 +14124,7 @@ Explanation: Need: listen to people needs. Option C (Plan ahead and define the b
 
 An agile team has released the second version of its product, but the feedback is that the software has many bugs that compromise the user experience. What should the project manager do?
 a. Facilitate the next retrospective meeting, focusing the team on analyzing root causes and proposing solutions.
-b. Closely evaluate the skill set of the team, looking for technical gaps that need to be filed in order to improve quality.
+b. Closely evaluate the skill set of the team, looking for technical gaps that need to be filled in order to improve quality.
 c. Hire an external consultancy firm to focus on testing and quality control to avoid the issue in the future.
 d. Propose an internal program that offers incentives for the team members who find and fix bugs.
 
@@ -14232,7 +14232,7 @@ Answer: C
 Explanation: Need: protect benefits for users. Option C (The engineer has “project burnout"" from working long hours and solving difficult problems.) fixes it."
 "Question 1329
 
-A primary stakeholder is unable to join the project status meetings consistently. The project manager has been communicating with this stakeholder informally and regularly to ensure that the stakeholder is up to date on the project. However. the project manager has recently resigned and will not be meeting with the new project manager prior to departure. How should the project manager ensure that the new project manager continues to update this particular stakeholder?
+A primary stakeholder is unable to join the project status meetings consistently. The project manager has been communicating with this stakeholder informally and regularly to ensure that the stakeholder is up to date on the project. However, the project manager has recently resigned and will not be meeting with the new project manager prior to departure. How should the project manager ensure that the new project manager continues to update this particular stakeholder?
 a. Update the communications management plan with specific information on stakeholder engagement.
 b. Update the stakeholder engagement plan with the specific communication needs for the stakeholder.
 c. Ensure that the project team has been provided guidance on the specific needs of this stakeholder.
@@ -14343,8 +14343,8 @@ Explanation: Need: guide and calm the team. Option D (Add the delay to the issue
 "Question 1339
 
 A project manager for an agile project is concerned that the team has been losing momentum over the last iterations. Which two tools should the project manager use to analyze team performance? (Choose two)?
-a. 0Project schedule
-b. Product backlog bumup chart
+a. Project schedule
+b. Product backlog burnup chart
 c. Work breakdown structure (WBS)
 d. Cumulative flow diagram of completed features
 e. Burndown chart
@@ -14354,7 +14354,7 @@ Answer: D,E
 Explanation: Need: guide and calm the team. Options D and E (Cumulative flow diagram of completed features; Burndown chart) work together."
 "Question 1340
 
-Eight highly qualified experts have been assembled to work for a 6-month period on an a specific aspect of an organization's product development process. How should the project manager support this team to succeed?
+Eight highly qualified experts have been assembled to work for a 6-month period on a specific aspect of an organization's product development process. How should the project manager support this team to succeed?
 a. Hand over control of specific aspects of their roles as experts and let them agree on their own timelines and targets.
 b. Bring in a senior colleague who is also an expert to ensure the team is on track to achieve the goals and objectives.
 c. Define roles and targets for all team members and regularly follow up with one-to-one meetings to review progress.
@@ -14565,7 +14565,7 @@ Explanation: Need: watch risks early. Option C (Audit meeting) fixes it."
 
 During iteration planning, team A identifies that an important deliverable is dependent upon a deliverable from team B. What should the project manager do?
 a. Inform team B of the dependency and ensure that the deliverable is planned.
-b. Make team Aa part of team B and ensure that the deliverable is ready.
+b. Make team A a part of team B and ensure that the deliverable is ready.
 c. Request team B to immediately start this activity and deliver to team A.
 d. Ask team B to focus on their backlog and deliver based on their priority,
 
@@ -14618,7 +14618,7 @@ Answer: D
 Explanation: Need: listen to people needs. Option D (Produce a value-added product for the customer in each phase of the project.) fixes it."
 "Question 1364
 
-A project manager noticed that the functional manager is not cooperating with staff assignment schedules and is always finding excuses not fo release the requested staff. What should the project manager do first?
+A project manager noticed that the functional manager is not cooperating with staff assignment schedules and is always finding excuses not to release the requested staff. What should the project manager do first?
 a. Ask the leadership team for help obtaining the needed staff.
 b. Check with human resources (HR) regarding the availability of staff.
 c. Have a direct talk with the functional manager to understand the reasons behind their attitude.
@@ -15214,9 +15214,9 @@ Explanation: Need: listen to people needs. Option B (Arrange for a workshop with
 "Question 1418
 
 A project manager is managing a project with team members who are working all over the globe. The project manager notices that each team member's deliverables do not meet the requirements. What should the project manager do first?
-a. Assemble the project team via conference call to tell them that disciplinary action will be taken if any more noncompliant deliverables aresubmitted.
+a. Assemble the project team via conference call to tell them that disciplinary action will be taken if any more noncompliant deliverables are submitted.
 b. Discuss the process used to create the noncompliant deliverables with the project team to see if there was a potential misunderstanding.
-c. Schedule time with the project sponsor to inform them that the project schedule is slipping due to the time it will take to rework thedeliverables.
+c. Schedule time with the project sponsor to inform them that the project schedule is slipping due to the time it will take to rework the deliverables.
 d. Meet with the project team to explain that noncompliant deliverables must be reworked and submitted immediately to avoid project delays.
 
 Answer: B
@@ -15423,7 +15423,7 @@ Answer: C
 Explanation: Need: listen to people needs. Option C (Evaluate the stakeholder engagement assessment matrix.) fixes it."
 "Question 1437
 
-Anew engineer was assigned to a project. Although the engineer has adequate skills for the job, they always wait for authorization from the project manager before acting. What should the project manager do?
+A new engineer was assigned to a project. Although the engineer has adequate skills for the job, they always wait for authorization from the project manager before acting. What should the project manager do?
 a. Obtain related training for the new team member.
 b. Determine the appropriate level of decision-making authority and empower the engineer.
 c. Make all of the decisions for the engineer in order to keep the workflow on track.
@@ -15533,7 +15533,7 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Engage the main stakeholders in the upcoming sprint review sessions.) fixes it."
 "Question 1447
 
-A project team has installed software for the client, passed the knowledge to operations, sent the final report, and celebrated. Then 1 week later, the client sendsa list of requirements that have not been met. The client is requesting to fix the issues quickly and within the initial budget. What should the project manager have done to prevent this from happening?
+A project team has installed software for the client, passed the knowledge to operations, sent the final report, and celebrated. Then 1 week later, the client sends a list of requirements that have not been met. The client is requesting to fix the issues quickly and within the initial budget. What should the project manager have done to prevent this from happening?
 a. Reviewed the acceptance criteria and obtained client approval.
 b. Allocated a risk budget for any post-release improvements.
 c. Conducted a pilot to understand the client's performance parameters.
@@ -15643,7 +15643,7 @@ Answer: C
 Explanation: Need: listen to people needs. Option C (Communicate the decision to the stakeholder who requested the change.) fixes it."
 "Question 1457
 
-A project is near completion but it is behind schedule. The contingency budget has already being used, although the remaining budget should be enough to complete the project. The only subject matter expert (SME) assigned to the project has been asked by their manager to solve a problem in the operations department. What should the project manager do?
+A project is near completion but it is behind schedule. The contingency budget has already been used, although the remaining budget should be enough to complete the project. The only subject matter expert (SME) assigned to the project has been asked by their manager to solve a problem in the operations department. What should the project manager do?
 a. Escalate the situation to the project sponsor.
 b. Free the resource to handle the operations priority.
 c. Ask the manager to submit a change request.
@@ -15766,20 +15766,20 @@ Explanation: Need: protect value and acceptance. Option A (Review the change con
 
 A project manager is assigned to a project where a vendor has been engaged to build a new system. One week before user acceptance testing (UAT) is scheduled the vendor informs the project manager that they can only deliver half of the promised functions by the UAT start date. What should the project manager do next?
 a. Wait until the vendor cannot deliver and then invoke liquidated damages based on the contract
-b. Escalate to management and prepare tor project closure by canceling the contract with this vendor
-c. Adjust the protect schedule to accommodate the current development progress of the vendor
-d. Communicate with the vendor and project team and explore possibilities lor resolving the issue
+b. Escalate to management and prepare for project closure by canceling the contract with this vendor
+c. Adjust the project schedule to accommodate the current development progress of the vendor
+d. Communicate with the vendor and project team and explore possibilities for resolving the issue
 
 Answer: D
 
-Explanation: Need: listen to people needs. Option D (Communicate with the vendor and project team and explore possibilities lor resolving the issue) fixes it."
+Explanation: Need: listen to people needs. Option D (Communicate with the vendor and project team and explore possibilities for resolving the issue) fixes it."
 "Question 1469
 
-A company just started managing a project using an agile approach Due to this change, the general manager is worried about the scope definition process for upcoming projects. What should the project manager do to ensure the project scope is completely defined?
+A company just started managing a project using an agile approach. Due to this change, the general manager is worried about the scope definition process for upcoming projects. What should the project manager do to ensure the project scope is completely defined?
 a. Help sponsors and stakeholders craft the product vision, and bring the team and product owner together to clarify expectations
 b. Meet with the general manager and convince them to return to using predictive approaches to avoid any risk
 c. Ask for a budget increase to implement a double-check process to ensure every business need is included in the requirements
-d. Ask the general manager to review every requirement to ensure an projects will deliver the requested products
+d. Ask the general manager to review every requirement to ensure all projects will deliver the requested products
 
 Answer: A
 
@@ -15788,16 +15788,16 @@ Explanation: Need: listen to people needs. Option A (Help sponsors and stakehold
 
 How can agile measurements improve upon predictive measurements in cases where the final 10% of a project takes longer than planned?
 a. By scheduling iterative meetings with the product owner to improve project tracking
-b. By focusing on the delivery of incremental working products lo the customer
+b. By focusing on the delivery of incremental working products to the customer
 c. By reviewing burnup charts to determine the effort required against estimated earned value
 d. By conducting daily standups to more accurately track project deliverables
 
 Answer: B
 
-Explanation: Need: listen to people needs. Option B (By focusing on the delivery of incremental working products lo the customer) fixes it."
+Explanation: Need: listen to people needs. Option B (By focusing on the delivery of incremental working products to the customer) fixes it."
 "Question 1471
 
-A new file vault system vendor is being considered by a protect sponsor who has supported several projects over the previous year. What should the project manager review to assist the sponsor on the decision?
+A new file vault system vendor is being considered by a project sponsor who has supported several projects over the previous year. What should the project manager review to assist the sponsor on the decision?
 a. Lessons learned database
 b. Procurement strategy
 c. Vendor's website
@@ -15812,14 +15812,14 @@ A project manager has been approached by the project sponsor about adding to the
 a. Update the project team about the change request
 b. Disregard the request since the project scope is finalized
 c. Adjust the project schedule to accommodate the new project scope requests
-d. Create a change request lor the change control board (CCB) to review
+d. Create a change request for the change control board (CCB) to review
 
 Answer: D
 
-Explanation: Need: listen to people needs. Option D (Create a change request lor the change control board (CCB) to review) fixes it."
+Explanation: Need: listen to people needs. Option D (Create a change request for the change control board (CCB) to review) fixes it."
 "Question 1473
 
-After a recent status review meeting, the project manager becomes aware that an influential stakeholder is unclear about the purpose and benefits of the project Consequently, the stakeholder has questioned the viability of continuing the project. What should the project manager do next to address the situation?
+After a recent status review meeting, the project manager becomes aware that an influential stakeholder is unclear about the purpose and benefits of the project. Consequently, the stakeholder has questioned the viability of continuing the project. What should the project manager do next to address the situation?
 a. Speak with the project sponsor to find out if the stakeholder would agree to a one-on-one review session
 b. Log the stakeholder's comments in the risk register as a high-impact threat to the project's completion
 c. Consider the stakeholder's concerns and review the project charter with the project sponsor.
@@ -15830,10 +15830,10 @@ Answer: C
 Explanation: Need: listen to people needs. Option C (Consider the stakeholder's concerns and review the project charter with the project sponsor.) fixes it."
 "Question 1474
 
-A protect team is working remotely on a solution. The client wants the solution as soon as possible and is uncomfortable because the team members are not colocated. In addition the client expressed concerns about the understanding of the project context and the team's decision-making process. What should the project manager do?
+A project team is working remotely on a solution. The client wants the solution as soon as possible and is uncomfortable because the team members are not colocated. In addition, the client expressed concerns about the understanding of the project context and the team's decision-making process. What should the project manager do?
 a. Update the communications management plan to satisfy the client's request
 b. Request the client to attend the daily meetings with the project team
-c. Encourage the client to interact with the protect collaboration platform
+c. Encourage the client to interact with the project collaboration platform
 d. Ask the product owner to frequently communicate with the stakeholders
 
 Answer: A
@@ -15863,7 +15863,7 @@ Answer: A
 Explanation: Need: keep plans flexible. Option A (Reprioritize the backlog based on value and cost of delay divided by duration.) fixes it."
 "Question 1479
 
-A project team Is trying to meet the milestone target dates in order to receive a bonus promised by the project sponsor. Unforeseen challenges and poor communication among the team members resulted in mistakes and delays. Tensions are high, and the sponsor is concerned. What should the project manager do?
+A project team is trying to meet the milestone target dates in order to receive a bonus promised by the project sponsor. Unforeseen challenges and poor communication among the team members resulted in mistakes and delays. Tensions are high, and the sponsor is concerned. What should the project manager do?
 a. Discuss with the team how the project objectives can be met.
 b. Request that the sponsor increase the bonus for high performers.
 c. Schedule a team-building activity to boost the team's morale.
@@ -15886,7 +15886,7 @@ Explanation: Need: guide and calm the team. Option A (Work with the procurement 
 "Question 1481
 
 A project manager is part of an organization that is assessing the use of agile delivery approaches. A new project management office (PMO) manager who had a bad experience with a Scrum approach recommended that the project board replace Scrum with a predictive approach. What should the project manager do?
-a. Define a risk management plan (or the new approach, as needed.
+a. Define a risk management plan for the new approach, as needed.
 b. Review the benefits realization plan to include the cost of the change.
 c. Define a project management plan for the new approach, as needed.
 d. Review the communications management plan to identity new stakeholders.
@@ -15896,7 +15896,7 @@ Answer: C
 Explanation: Need: keep plans flexible. Option C (Define a project management plan for the new approach, as needed.) fixes it."
 "Question 1482
 
-A project manager is leading a software development project that will assist in maintenance management for a power plant. The project manager is analyzing project performance data and trying to forecast if the project will have any slippage in the future. What should the protect manager do?
+A project manager is leading a software development project that will assist in maintenance management for a power plant. The project manager is analyzing project performance data and trying to forecast if the project will have any slippage in the future. What should the project manager do?
 a. Perform quality control analysis.
 b. Perform root cause analysis (RCA).
 c. Perform trend analysis.
@@ -15907,7 +15907,7 @@ Answer: C
 Explanation: Need: keep plans flexible. Option C (Perform trend analysis.) fixes it."
 "Question 1483
 
-An important national project is in (he execution phase. A time constraint activity must be conducted on-site by a specialist from another country. Due to travel restrictions, the specialist cannot perform the activity on-site. The activity cannot be completed without the specialist's expertise. The project team is actively seeking assistance in order to complete the job on time. What should the project manager do to help the project team?
+An important national project is in the execution phase. A time constraint activity must be conducted on-site by a specialist from another country. Due to travel restrictions, the specialist cannot perform the activity on-site. The activity cannot be completed without the specialist's expertise. The project team is actively seeking assistance in order to complete the job on time. What should the project manager do to help the project team?
 a. Reschedule the project until the local travel restrictions are lifted.
 b. Schedule virtual sessions with the specialist to guide the team in completing the activity.
 c. Seek additional budget to train the project team on the required skill set.
@@ -15922,7 +15922,7 @@ During the execution stage, the project manager discovered that one team member 
 a. Request the team member's manager to find a solution.
 b. Discuss with the team and assess the reasons that led to the delay.
 c. Discuss with senior management and seek their guidance.
-d. Assign more resources form other teams on the late work.
+d. Assign more resources from other teams on the late work.
 
 Answer: B
 
@@ -16011,11 +16011,11 @@ a. Interview the most resistant team members to persuade them to try to accept a
 b. Conduct training sessions with the team so that the team can understand what the agile approach and mindset are.
 c. Ask the team to identify the product backlog and create a kanban board for the team to manage and follow the approach.
 d. Meet with management to explain the team's resistance to the agile approach and request that they formally ask the team to implement agile.
-e. Brainstorm with the team to understand the specifics of the team's project and to identity possible alternative approaches for the team.
+e. Brainstorm with the team to understand the specifics of the team's project and to identify possible alternative approaches for the team.
 
 Answer: B,E
 
-Explanation: Need: guide and calm the team. Options B and E (Conduct training sessions with the team so that the team can understand what the agile approach and mindset are.; Brainstorm with the team to understand the specifics of the team's project and to identity possible alternative approaches for the team.) work together."
+Explanation: Need: guide and calm the team. Options B and E (Conduct training sessions with the team so that the team can understand what the agile approach and mindset are.; Brainstorm with the team to understand the specifics of the team's project and to identify possible alternative approaches for the team.) work together."
 "Question 1493
 
 A customer is concerned with the quality of the product delivery, as the production deployment is approaching. What should the project manager do next to ensure acceptance of the deliverables?
@@ -16768,7 +16768,7 @@ Answer: A
 Explanation: Need: listen to people needs. Option A (Discuss the issue with the team member in a one-on-one meeting.) fixes it."
 "Question 1562
 
-A customer reviewed the plan for a project with high uncertainty. The customer expressed concerned about the work requiring SO many iterations with a risk of not reaching the mandatory delivery date. Which approach should the project manager use in this situation?
+A customer reviewed the plan for a project with high uncertainty. The customer expressed concern about the work requiring so many iterations with a risk of not reaching the mandatory delivery date. Which approach should the project manager use in this situation?
 a. Hybrid approach
 b. Predictive approach
 c. Kanban approach
@@ -17065,7 +17065,7 @@ Answer: D
 Explanation: Need: guide and calm the team. Option D (Meet with the team together and in one-on-one meetings to set clear, shared targets.) fixes it."
 "Question 1589
 
-A project is starting its sixth iteration out seven. During the daily meeting, a team member explains that a key function will take longer to complete than originally anticipated. What should the project manager do?
+A project is starting its sixth iteration out of seven. During the daily meeting, a team member explains that a key function will take longer to complete than originally anticipated. What should the project manager do?
 a. Update the issue log and escalate the problem to the project sponsor.
 b. Ask for a project extension to deliver the committed scope.
 c. Review the options and possible solutions with the project team.
@@ -17198,7 +17198,7 @@ Answer: C
 Explanation: Need: guide and calm the team. Option C (Choose a reward for the team member that aligns with their personal goals.) fixes it."
 "Question 1601
 
-During a monthly review meeting, a high-performing team member raised a concern about the quality feedback mechanism. The team member expressed that they are not able to deliver highquality output. What should the project manager do first?
+During a monthly review meeting, a high-performing team member raised a concern about the quality feedback mechanism. The team member expressed that they are not able to deliver high-quality output. What should the project manager do first?
 a. Assign the work based on the skill sets of team members.
 b. Request feedback from stakeholders about the quality delivery.
 c. Assign the work in consultation with the functional manager.
@@ -17220,15 +17220,15 @@ Answer: C
 Explanation: Need: guide and calm the team. Option C (Meet with the purchasing manager to find the source of the delays and agree on a purchasing schedule.) fixes it."
 "Question 1603
 
-A large project requires new equipment to support the project execution. The procurement manager communicated to the project manager that the delivery of the newly purchased equipment will be delayed. The project manager is concerned that this will directly effect the project schedule. What should the project manager do next?
+A large project requires new equipment to support the project execution. The procurement manager communicated to the project manager that the delivery of the newly purchased equipment will be delayed. The project manager is concerned that this will directly affect the project schedule. What should the project manager do next?
 a. Validate the information and update the risk management plan.
-b. Update the risk register and discuss it with the project stakeholders. b
+b. Update the risk register and discuss it with the project stakeholders.
 c. Source second-hand equipment in order to prepare for any delivery delays.
 d. Update the sponsor of the potential issue and ask for any suggestions.
 
 Answer: B
 
-Explanation: Need: listen to people needs. Option B (Update the risk register and discuss it with the project stakeholders. b) fixes it."
+Explanation: Need: listen to people needs. Option B (Update the risk register and discuss it with the project stakeholders.) fixes it."
 "Question 1604
 
 A company is going through structural changes. A couple of people will leave the company as their positions were made redundant. The team members are unhappy as they do not understand why the changes are being made when the project is on track. What should the project manager do?
@@ -17253,7 +17253,7 @@ Answer: B
 Explanation: Need: guide and calm the team. Option B (Discuss the situation with the team member's functional manager to see if the schedule can be adjusted.) fixes it."
 "Question 1606
 
-A project manager is managing a large project. During a review meeting, the project manager discovers that one of the team members who use to be a high performer was not able to complete their work on time. What should the project manager do?
+A project manager is managing a large project. During a review meeting, the project manager discovers that one of the team members who used to be a high performer was not able to complete their work on time. What should the project manager do?
 a. Talk to the team member to determine why their performance changed.
 b. Talk to the team member and a human resources (HR) representative.
 c. Talk to the team member's manager to provide more training.
@@ -17364,7 +17364,7 @@ Explanation: Need: listen to people needs. Option B (Set up a stakeholder sessio
 "Question 1616
 
 A key project team member is out on sick leave in the middle of a critical project iteration. The project sponsor learns that any delay with the end-of-iteration release will displease the business stakeholders. Although all team members are cross-functional, they are also working close to full capacity. What should the project manager do to address this situation?
-a. Discuss the issues with the sponsor to fully convey the problem of the unavailable resource and the amount of work being done. shared.
+a. Discuss the issues with the sponsor to fully convey the problem of the unavailable resource and the amount of work being done.
 b. Discuss this with the sponsor and hold a meeting with the stakeholders so all of the team challenges can be shared.
 c. Discuss this with the team so they can complete the work of the unavailable team member and aim for the release deadline.
 d. Discuss this with the team so they are able to reprioritize critical tasks and aim for the release deadline.
@@ -17616,7 +17616,7 @@ Answer: B
 Explanation: Need: listen to people needs. Option B (Schedule a meeting with the project team and the key stakeholder as soon as possible to discuss and agree on an approach.) fixes it."
 "Question 1641
 
-During iteration two of a project with two teams {A and B), the project manager is concerned that there are two critical activities from team A that must be started in iteration four. Additionally, these two activities are dependent on an activity from team B that has not yet been prioritized. What should the project manager do?
+During iteration two of a project with two teams (A and B), the project manager is concerned that there are two critical activities from team A that must be started in iteration four. Additionally, these two activities are dependent on an activity from team B that has not yet been prioritized. What should the project manager do?
 a. Ensure team B prioritizes the dependent activity in iteration three.
 b. Include the dependent activity in the current iteration for team B.
 c. Assign the two critical activities to team B in iteration two.
@@ -17661,7 +17661,7 @@ Explanation: Need: guide and calm the team. Option C (Praise the team for self-o
 "Question 1645
 
 In a daily standup meeting, a project manager notices that a team member's reports include incomplete tasks with no impediments. A colleague informs the project manager that this team member is experiencing a personal issue. What should the project manager do?
-a. Coach the team member on how to keep work and personal issues scjparate.
+a. Coach the team member on how to keep work and personal issues separate.
 b. Ask the human resources (HR) manager to speak with this team member.
 c. Reallocate this team member's tasks to others for the immediate future.
 d. Understand the team member's personal issue and offer them support.
@@ -17741,7 +17741,7 @@ A project manager has been transferred to another country to work on a key proje
 a. Adjust the communications management plan to gain stakeholder trust.
 b. Change the communication mode from emails to meetings to reduce stakeholders complaints.
 c. Determine the level of influence of the stakeholders who are complaining.
-d. Explain 1c the sponsor that the communication model being used is from company headquarters.
+d. Explain to the sponsor that the communication model being used is from company headquarters.
 
 Answer: A
 
@@ -18012,7 +18012,7 @@ Answer: D
 Explanation: Need: protect benefits for users. Option D (Negotiate special arrangements for an agile pilot project.) fixes it."
 "Question 1677
 
-A project manager is acting as a servant leader and is struggling to make deadlines on a critical roadway construction project that is falling behind schedule due to a lowperforming team. In order to get the project back on track, what should the project manager do first?
+A project manager is acting as a servant leader and is struggling to make deadlines on a critical roadway construction project that is falling behind schedule due to a low-performing team. In order to get the project back on track, what should the project manager do first?
 a. Empower the team members to conduct their job activities and hold each person accountable to improve the schedule.
 b. Notify the project sponsor that the team is underperforming and request additional resources to compress the schedule,
 c. Contact each team member to inform them that further schedule slips will not be tolerated by the project sponsor.
