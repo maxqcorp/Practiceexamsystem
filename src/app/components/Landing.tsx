@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
-import { BookOpen, FileText, Zap, Target, Youtube, LogOut, User, GraduationCap } from 'lucide-react';
+import { BookOpen, FileText, Zap, Target, Youtube, LogOut, User, GraduationCap, ScrollText } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 
 export default function Landing() {
@@ -254,6 +254,28 @@ export default function Landing() {
               <span>Your progress is automatically saved across sessions</span>
             </li>
           </ul>
+        </div>
+
+        {/* Footer */}
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-gray-400 border-t border-gray-200 pt-6">
+          <div>
+            Developed by{' '}
+            <a
+              href="https://www.linkedin.com/in/abdulhadimohamad/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-600 font-semibold hover:underline"
+            >
+              Max
+            </a>
+          </div>
+          <Link
+            to="/release-notes"
+            className="flex items-center gap-1.5 text-indigo-500 hover:text-indigo-700 font-medium transition-colors"
+          >
+            <ScrollText className="size-4" />
+            Release Notes
+          </Link>
         </div>
       </div>
     </div>

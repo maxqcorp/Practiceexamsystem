@@ -12,6 +12,7 @@ import DavidYTExam from "./components/DavidYTExam";
 import ReviewExam from "./components/ReviewExam";
 import PMPSimulation from "./components/pmp/PMPSimulation";
 import PMPExam from "./components/pmp/PMPExam";
+import ReleaseNotes from "./components/ReleaseNotes";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { AuthProvider } from "./contexts/AuthContext";
 
@@ -78,6 +79,10 @@ export const router = createBrowserRouter([
       {
         path: "/pmp-exam/:mode",
         element: <ProtectedRoute><PMPExam /></ProtectedRoute>,
+      },
+      {
+        path: "/release-notes",
+        element: <ProtectedRoute><ReleaseNotes /></ProtectedRoute>,
       },
     ],
   },
