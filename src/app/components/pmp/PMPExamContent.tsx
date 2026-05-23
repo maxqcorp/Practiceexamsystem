@@ -518,29 +518,53 @@ function CalculatorModal({ onClose }: { onClose: () => void }) {
   const [prevValue, setPrevValue] = useState<number | null>(null);
   const [operation, setOperation] = useState<string | null>(null);
   const [waitingForOperand, setWaitingForOperand] = useState(false);
-  const [pos, setPos] = useState({ x: window.innerWidth - 300, y: 80 });
+
+  const isMobile = window.innerWidth < 768;
+  const initX = isMobile ? Math.max(0, (window.innerWidth - 260) / 2) : window.innerWidth - 300;
+  const [pos, setPos] = useState({ x: initX, y: 80 });
   const dragging = useRef(false);
   const dragOffset = useRef({ x: 0, y: 0 });
 
-  const onHeaderMouseDown = (e: React.MouseEvent) => {
+  const startDrag = (clientX: number, clientY: number) => {
     dragging.current = true;
-    dragOffset.current = { x: e.clientX - pos.x, y: e.clientY - pos.y };
+    dragOffset.current = { x: clientX - pos.x, y: clientY - pos.y };
+  };
+
+  const moveDrag = (clientX: number, clientY: number) => {
+    if (!dragging.current) return;
+    const x = Math.min(Math.max(0, clientX - dragOffset.current.x), window.innerWidth - 260);
+    const y = Math.min(Math.max(0, clientY - dragOffset.current.y), window.innerHeight - 360);
+    setPos({ x, y });
+  };
+
+  const onHeaderMouseDown = (e: React.MouseEvent) => {
+    startDrag(e.clientX, e.clientY);
     e.preventDefault();
   };
 
+  const onHeaderTouchStart = (e: React.TouchEvent) => {
+    const t = e.touches[0];
+    startDrag(t.clientX, t.clientY);
+  };
+
   useEffect(() => {
-    const onMouseMove = (e: MouseEvent) => {
-      if (!dragging.current) return;
-      const x = Math.min(Math.max(0, e.clientX - dragOffset.current.x), window.innerWidth - 260);
-      const y = Math.min(Math.max(0, e.clientY - dragOffset.current.y), window.innerHeight - 360);
-      setPos({ x, y });
-    };
+    const onMouseMove = (e: MouseEvent) => moveDrag(e.clientX, e.clientY);
     const onMouseUp = () => { dragging.current = false; };
+    const onTouchMove = (e: TouchEvent) => {
+      if (!dragging.current) return;
+      e.preventDefault();
+      moveDrag(e.touches[0].clientX, e.touches[0].clientY);
+    };
+    const onTouchEnd = () => { dragging.current = false; };
     document.addEventListener('mousemove', onMouseMove);
     document.addEventListener('mouseup', onMouseUp);
+    document.addEventListener('touchmove', onTouchMove, { passive: false });
+    document.addEventListener('touchend', onTouchEnd);
     return () => {
       document.removeEventListener('mousemove', onMouseMove);
       document.removeEventListener('mouseup', onMouseUp);
+      document.removeEventListener('touchmove', onTouchMove);
+      document.removeEventListener('touchend', onTouchEnd);
     };
   }, []);
 
@@ -612,10 +636,16 @@ function CalculatorModal({ onClose }: { onClose: () => void }) {
       <div
         className="modal-header"
         onMouseDown={onHeaderMouseDown}
+        onTouchStart={onHeaderTouchStart}
         style={{ cursor: 'grab', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}
       >
         <span className="modal-title">&#8862; Calculator</span>
-        <button className="modal-close" onMouseDown={e => e.stopPropagation()} onClick={onClose}>&#10005;</button>
+        <button
+          className="modal-close"
+          onMouseDown={e => e.stopPropagation()}
+          onTouchStart={e => e.stopPropagation()}
+          onClick={onClose}
+        >&#10005;</button>
       </div>
       <div style={{ padding: '12px' }}>
         <div className="calculator-display">

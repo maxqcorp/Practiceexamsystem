@@ -33,23 +33,29 @@ export default function PMPReview({
     <div className="review-container">
 
       {/* ── HEADER ── */}
-      <div className="exam-header" style={{ justifyContent: 'space-between', paddingRight: '20px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+      <div className="exam-header" style={{ justifyContent: 'space-between', paddingRight: '20px', flexWrap: 'wrap', gap: '8px', height: 'auto', minHeight: '52px', paddingTop: '6px', paddingBottom: '6px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexShrink: 0 }}>
           <span className="exam-header-badge">PMP</span>
           <h1 style={{ margin: 0 }}>Review — Set {currentSet + 1} of 3</h1>
         </div>
-        <div style={{ display: 'flex', gap: '16px', fontSize: '12.5px', alignItems: 'center' }}>
-          <span style={{ color: 'rgba(255,255,255,0.9)', fontWeight: 500 }}>{totalAnswered}/{questions.length} answered</span>
+        <div style={{ display: 'flex', gap: '10px', fontSize: '12.5px', alignItems: 'center', flexWrap: 'wrap' }}>
+          <span style={{ color: 'rgba(255,255,255,0.9)', fontWeight: 500 }}>
+            {totalAnswered}/{questions.length}<span className="pmp-review-stat-label"> answered</span>
+          </span>
           {unanswered > 0 && (
-            <span style={{ color: '#fca5a5', fontWeight: 600 }}>{unanswered} unanswered</span>
+            <span style={{ color: '#fca5a5', fontWeight: 600 }}>
+              {unanswered}<span className="pmp-review-stat-label"> unanswered</span>
+            </span>
           )}
           {flaggedQuestions.length > 0 && (
-            <span style={{ color: '#fde68a', fontWeight: 500 }}>{flaggedQuestions.length} flagged</span>
+            <span style={{ color: '#fde68a', fontWeight: 500 }}>
+              {flaggedQuestions.length}<span className="pmp-review-stat-label"> flagged</span>
+            </span>
           )}
           <button
             onClick={() => setShowQuitConfirm(true)}
             style={{
-              height: '30px', padding: '0 14px',
+              height: '30px', padding: '0 12px',
               background: 'rgba(255,255,255,0.12)',
               border: '1px solid rgba(255,255,255,0.25)', borderRadius: '4px',
               color: 'rgba(255,255,255,0.85)', fontSize: '12.5px', cursor: 'pointer',

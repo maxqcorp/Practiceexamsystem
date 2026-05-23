@@ -203,12 +203,9 @@ export default function PMPExam() {
   }, []);
 
   const sharedHeader = (
-    <div style={{
-      height: '52px', background: '#1d4ed8',
-      display: 'flex', alignItems: 'center', padding: '0 20px', gap: '14px', flexShrink: 0,
-    }}>
-      <span style={{ background: 'rgba(255,255,255,0.2)', color: '#fff', fontSize: '10.5px', fontWeight: 800, padding: '3px 9px', borderRadius: '3px', letterSpacing: '0.12em' }}>PMP</span>
-      <span style={{ color: '#fff', fontSize: '13.5px', fontWeight: 600, flex: 1 }}>PROJECT MANAGEMENT PROFESSIONAL EXAMINATION</span>
+    <div className="exam-header" style={{ flexShrink: 0 }}>
+      <span className="exam-header-badge">PMP</span>
+      <h1>PROJECT MANAGEMENT PROFESSIONAL EXAMINATION</h1>
       <button
         onClick={() => setShowQuit(true)}
         style={{
@@ -216,7 +213,7 @@ export default function PMPExam() {
           background: 'rgba(255,255,255,0.12)',
           border: '1px solid rgba(255,255,255,0.25)', borderRadius: '4px',
           color: 'rgba(255,255,255,0.85)', fontSize: '12.5px', cursor: 'pointer',
-          fontFamily: 'inherit', fontWeight: 500,
+          fontFamily: 'inherit', fontWeight: 500, flexShrink: 0, whiteSpace: 'nowrap',
         }}
       >
         Quit
@@ -248,10 +245,10 @@ export default function PMPExam() {
         fontFamily: "'Segoe UI', system-ui, sans-serif",
       }}>
         {sharedHeader}
-        <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
+        <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '16px' }}>
           <div style={{
             background: '#fff', border: '1px solid #e2e8f0',
-            borderRadius: '8px', padding: '40px 48px',
+            borderRadius: '8px', padding: 'clamp(20px, 5vw, 48px)',
             maxWidth: '460px', width: '100%', textAlign: 'center',
             boxShadow: '0 4px 24px rgba(0,0,0,0.07)',
           }}>
@@ -309,10 +306,10 @@ export default function PMPExam() {
         fontFamily: "'Segoe UI', system-ui, sans-serif",
       }}>
         {sharedHeader}
-        <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
+        <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '16px' }}>
           <div style={{
             background: '#fff', border: '1px solid #e2e8f0',
-            borderRadius: '8px', padding: '40px 48px',
+            borderRadius: '8px', padding: 'clamp(20px, 5vw, 48px)',
             maxWidth: '420px', width: '100%', textAlign: 'center',
             boxShadow: '0 4px 24px rgba(0,0,0,0.07)',
           }}>
@@ -354,17 +351,14 @@ export default function PMPExam() {
         display: 'flex', flexDirection: 'column',
         fontFamily: "'Segoe UI', system-ui, sans-serif",
       }}>
-        <div style={{
-          height: '52px', background: '#1d4ed8',
-          display: 'flex', alignItems: 'center', padding: '0 20px', gap: '14px', flexShrink: 0,
-        }}>
-          <span style={{ background: 'rgba(255,255,255,0.2)', color: '#fff', fontSize: '10.5px', fontWeight: 800, padding: '3px 9px', borderRadius: '3px', letterSpacing: '0.12em' }}>PMP</span>
-          <span style={{ color: '#fff', fontSize: '13.5px', fontWeight: 600 }}>PROJECT MANAGEMENT PROFESSIONAL EXAMINATION</span>
+        <div className="exam-header" style={{ flexShrink: 0 }}>
+          <span className="exam-header-badge">PMP</span>
+          <h1>PROJECT MANAGEMENT PROFESSIONAL EXAMINATION</h1>
         </div>
-        <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
+        <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '16px' }}>
           <div style={{
             background: '#fff', border: '1px solid #e2e8f0',
-            borderRadius: '8px', padding: '48px 56px',
+            borderRadius: '8px', padding: 'clamp(24px, 5vw, 56px)',
             maxWidth: '500px', width: '100%', textAlign: 'center',
             boxShadow: '0 4px 24px rgba(0,0,0,0.07)',
           }}>

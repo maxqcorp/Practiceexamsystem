@@ -11,29 +11,30 @@ export default function Landing() {
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 p-6">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-end mb-4">
-          <div className="bg-white rounded-lg shadow-md px-4 py-2 flex items-center gap-4">
-            <div className="flex items-center gap-2">
-              <User className="size-5 text-indigo-600" />
-              <span className="font-medium text-gray-900">{user?.name}</span>
+          <div className="bg-white rounded-lg shadow-md px-3 py-2 flex items-center gap-3 max-w-full">
+            <div className="flex items-center gap-2 min-w-0">
+              <User className="size-4 sm:size-5 text-indigo-600 flex-shrink-0" />
+              <span className="font-medium text-gray-900 text-sm sm:text-base truncate max-w-[120px] sm:max-w-none">{user?.name}</span>
             </div>
             <Button
               variant="outline"
               size="sm"
               onClick={logout}
-              className="text-red-600 border-red-300 hover:bg-red-50"
+              className="text-red-600 border-red-300 hover:bg-red-50 flex-shrink-0"
             >
-              <LogOut className="size-4 mr-2" />
-              Logout
+              <LogOut className="size-4 mr-1 sm:mr-2" />
+              <span className="hidden sm:inline">Logout</span>
+              <span className="sm:hidden">Out</span>
             </Button>
           </div>
         </div>
 
-        <div className="text-center mb-12 mt-12">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <BookOpen className="size-16 text-indigo-600" />
-            <h1 className="text-5xl font-bold text-gray-900">Practice Exam System</h1>
+        <div className="text-center mb-8 mt-8 sm:mb-12 sm:mt-12">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mb-4">
+            <BookOpen className="size-10 sm:size-16 text-indigo-600" />
+            <h1 className="text-3xl sm:text-5xl font-bold text-gray-900">Practice Exam System</h1>
           </div>
-          <p className="text-xl text-gray-600 mb-2">
+          <p className="text-base sm:text-xl text-gray-600 mb-2">
             Project Management MCQ Questions
           </p>
           <p className="text-sm text-gray-500">
@@ -44,31 +45,35 @@ export default function Landing() {
         {/* PMP Simulation Mode */}
         <div className="mb-8">
           <Card className="bg-gradient-to-r from-indigo-900 to-indigo-800 text-white border-2 border-indigo-500 hover:shadow-2xl hover:shadow-indigo-500/30 transition-all">
-            <CardContent className="p-8">
-              <div className="flex items-center justify-between flex-wrap gap-4">
+            <CardContent className="p-6 sm:p-8">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+                {/* Left: icon + title */}
                 <div className="flex items-center gap-4">
-                  <div className="bg-indigo-500/30 p-3 rounded-full">
+                  <div className="bg-indigo-500/30 p-3 rounded-full flex-shrink-0">
                     <GraduationCap className="size-10 text-indigo-200" />
                   </div>
                   <div>
-                    <CardTitle className="text-3xl mb-1">PMP Exam Simulation</CardTitle>
-                    <CardDescription className="text-indigo-200 text-lg">
+                    <CardTitle className="text-2xl sm:text-3xl mb-1">PMP Exam Simulation</CardTitle>
+                    <CardDescription className="text-indigo-200 text-base sm:text-lg">
                       Full exam simulation with timer, breaks, and review
                     </CardDescription>
                   </div>
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="text-right">
-                    <p className="text-sm text-indigo-200">180 questions</p>
-                    <p className="text-sm text-indigo-200">240 minutes</p>
+                {/* Right: stats + button */}
+                <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+                  <div className="flex items-center gap-4">
+                    <div>
+                      <p className="text-sm text-indigo-200">180 questions</p>
+                      <p className="text-sm text-indigo-200">240 minutes</p>
+                    </div>
+                    <div className="h-8 w-px bg-indigo-500/50" />
+                    <div>
+                      <p className="text-sm text-indigo-200">60 questions</p>
+                      <p className="text-sm text-indigo-200">80 minutes</p>
+                    </div>
                   </div>
-                  <div className="h-10 w-px bg-indigo-500/50" />
-                  <div className="text-right">
-                    <p className="text-sm text-indigo-200">60 questions</p>
-                    <p className="text-sm text-indigo-200">80 minutes</p>
-                  </div>
-                  <Link to="/pmp-simulation">
-                    <Button className="bg-white text-indigo-900 hover:bg-indigo-50 text-lg px-8 py-6 font-semibold">
+                  <Link to="/pmp-simulation" className="w-full sm:w-auto">
+                    <Button className="w-full sm:w-auto bg-white text-indigo-900 hover:bg-indigo-50 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 font-semibold">
                       <GraduationCap className="size-5 mr-2" />
                       Start Simulation
                     </Button>

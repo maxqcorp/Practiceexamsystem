@@ -51,20 +51,17 @@ export default function PMPSimulation() {
     }}>
 
       {/* ── HEADER ── */}
-      <div style={{
-        height: '52px', background: '#1d4ed8',
-        display: 'flex', alignItems: 'center', padding: '0 24px',
-        gap: '14px', flexShrink: 0,
-      }}>
+      <div className="pmp-sim-header">
         <span style={{
           background: 'rgba(255,255,255,0.2)', color: '#fff',
           fontSize: '10.5px', fontWeight: 800,
           padding: '3px 9px', borderRadius: '3px', letterSpacing: '0.12em',
+          flexShrink: 0,
         }}>PMP</span>
-        <span style={{ color: '#fff', fontSize: '13.5px', fontWeight: 600, flex: 1 }}>
+        <span style={{ color: '#fff', fontSize: '13.5px', fontWeight: 600, flex: 1, minWidth: 0, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
           EXAM SIMULATION CENTRE
         </span>
-        <span style={{ color: 'rgba(255,255,255,0.75)', fontSize: '13px' }}>{user?.name}</span>
+        <span style={{ color: 'rgba(255,255,255,0.75)', fontSize: '13px', flexShrink: 0 }} className="exam-header-candidate">{user?.name}</span>
         <button
           onClick={() => navigate('/')}
           style={{
@@ -72,7 +69,7 @@ export default function PMPSimulation() {
             background: 'rgba(255,255,255,0.12)',
             border: '1px solid rgba(255,255,255,0.25)', borderRadius: '4px',
             color: 'rgba(255,255,255,0.85)', fontSize: '12.5px', cursor: 'pointer', fontFamily: 'inherit',
-            fontWeight: 500,
+            fontWeight: 500, flexShrink: 0, whiteSpace: 'nowrap',
           }}
         >
           ← Main Page
@@ -84,7 +81,7 @@ export default function PMPSimulation() {
             background: 'rgba(255,255,255,0.15)',
             border: '1px solid rgba(255,255,255,0.25)', borderRadius: '4px',
             color: '#fff', fontSize: '12.5px', cursor: 'pointer', fontFamily: 'inherit',
-            transition: 'background 0.1s',
+            flexShrink: 0, whiteSpace: 'nowrap',
           }}
         >
           Sign out
@@ -106,7 +103,7 @@ export default function PMPSimulation() {
           </div>
 
           {/* Mode cards */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '24px' }}>
+          <div className="pmp-mode-grid">
             {MODES.map(mode => (
               <div
                 key={mode.key}
@@ -164,25 +161,15 @@ export default function PMPSimulation() {
           </div>
 
           {/* Feature strip */}
-          <div style={{
-            background: '#fff', border: '1px solid #e2e8f0',
-            borderRadius: '8px', padding: '16px 20px',
-            display: 'flex', gap: '0', flexWrap: 'wrap',
-          }}>
+          <div className="pmp-feature-strip">
             {[
               { icon: '⏱', text: 'Countdown timer with low-time warning' },
               { icon: '⚑', text: 'Flag questions for review' },
               { icon: '✎', text: 'Highlight & strikethrough text' },
               { icon: '⊞', text: 'Full question navigator' },
-            ].map((item, i) => (
-              <div key={item.text} style={{
-                display: 'flex', alignItems: 'center', gap: '8px',
-                flex: '1 1 45%', padding: '6px 0',
-                borderRight: i % 2 === 0 ? '1px solid #f1f5f9' : 'none',
-                paddingRight: i % 2 === 0 ? '20px' : '0',
-                paddingLeft: i % 2 === 1 ? '20px' : '0',
-              }}>
-                <span style={{ fontSize: '16px' }}>{item.icon}</span>
+            ].map(item => (
+              <div key={item.text} className="pmp-feature-item">
+                <span style={{ fontSize: '16px', flexShrink: 0 }}>{item.icon}</span>
                 <span style={{ fontSize: '12.5px', color: '#64748b' }}>{item.text}</span>
               </div>
             ))}
