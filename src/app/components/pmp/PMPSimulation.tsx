@@ -66,6 +66,18 @@ export default function PMPSimulation() {
         </span>
         <span style={{ color: 'rgba(255,255,255,0.75)', fontSize: '13px' }}>{user?.name}</span>
         <button
+          onClick={() => navigate('/')}
+          style={{
+            height: '30px', padding: '0 14px',
+            background: 'rgba(255,255,255,0.12)',
+            border: '1px solid rgba(255,255,255,0.25)', borderRadius: '4px',
+            color: 'rgba(255,255,255,0.85)', fontSize: '12.5px', cursor: 'pointer', fontFamily: 'inherit',
+            fontWeight: 500,
+          }}
+        >
+          ← Main Page
+        </button>
+        <button
           onClick={logout}
           style={{
             height: '30px', padding: '0 14px',

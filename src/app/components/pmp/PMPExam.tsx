@@ -4,8 +4,7 @@ import { examSets } from '../../data/questions';
 import { useAuth } from '../../contexts/AuthContext';
 import PMPExamContent from './PMPExamContent';
 import PMPReview from './PMPReview';
-import PMPResult from './PMPResult';
-import { Coffee, Play } from 'lucide-react';
+import { Coffee, Play, CheckCircle } from 'lucide-react';
 
 export interface TextAnnotation {
   id: string;
@@ -13,6 +12,7 @@ export interface TextAnnotation {
   end: number;
   type: 'highlight' | 'strikethrough';
   color?: string;
+  targetId?: string; // 'question' | 'opt_0' | 'opt_1' | 'opt_2' | 'opt_3'
 }
 
 export interface ExamConfig {
@@ -24,6 +24,39 @@ export interface ExamConfig {
 
 const FULL_CONFIG: ExamConfig = { totalQuestions: 180, perSet: 60, totalTime: 14400, label: 'Full Exam' };
 const QUICK_CONFIG: ExamConfig = { totalQuestions: 60, perSet: 20, totalTime: 4800, label: 'Quick Exam' };
+
+function QuitConfirmModal({ onCancel, onConfirm }: { onCancel: () => void; onConfirm: () => void }) {
+  return (
+    <div className="modal-overlay" onClick={onCancel}>
+      <div className="modal-box modal-box-sm" onClick={e => e.stopPropagation()}>
+        <div className="modal-header">
+          <span className="modal-title">Quit Simulation?</span>
+          <button className="modal-close" onClick={onCancel}>✕</button>
+        </div>
+        <div className="modal-body">
+          <p style={{ margin: '0 0 10px', fontSize: '14.5px', color: '#1e293b', fontWeight: 600 }}>
+            Are you sure you want to quit?
+          </p>
+          <p style={{ margin: 0, fontSize: '13.5px', color: '#475569', lineHeight: '1.6' }}>
+            Your progress will be lost and you will be returned to the simulation selection screen.
+          </p>
+        </div>
+        <div className="modal-footer">
+          <button
+            className="nav-btn"
+            style={{ color: '#374151', background: '#f1f5f9', border: '1px solid #d1d5db' }}
+            onClick={onCancel}
+          >
+            Cancel
+          </button>
+          <button className="submit-btn danger" onClick={onConfirm}>
+            Yes, Quit
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function PMPExam() {
   const { mode } = useParams<{ mode: string }>();
@@ -49,7 +82,7 @@ export default function PMPExam() {
     allQuestions.slice(config.perSet * 2, config.perSet * 3),
   ], [allQuestions, config.perSet]);
 
-  const [phase, setPhase] = useState<'exam' | 'review' | 'post-submit' | 'break' | 'results'>('exam');
+  const [phase, setPhase] = useState<'exam' | 'review' | 'post-submit' | 'break' | 'completed'>('exam');
   const [currentSet, setCurrentSet] = useState(0);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<number, number>>({});
@@ -61,9 +94,12 @@ export default function PMPExam() {
   const [annotations, setAnnotations] = useState<Record<string, TextAnnotation[]>>({});
   const [activeTool, setActiveTool] = useState<'none' | 'strikethrough' | 'highlight'>('none');
   const [highlightColor, setHighlightColor] = useState('#FFEB3B');
+  const [showQuit, setShowQuit] = useState(false);
+
+  const handleQuit = useCallback(() => navigate('/pmp-simulation'), [navigate]);
 
   useEffect(() => {
-    if (phase === 'results' || isBreakActive) return;
+    if (phase === 'completed' || isBreakActive) return;
     const interval = setInterval(() => {
       setRemainingTime(prev => Math.max(0, prev - 1));
     }, 1000);
@@ -99,7 +135,7 @@ export default function PMPExam() {
   const currentQuestion = currentQuestions[currentQuestionIndex];
   const globalQuestionNum = currentSet * config.perSet + currentQuestionIndex + 1;
   const isLastQuestionOfSet = currentQuestionIndex === totalInSet - 1;
-  const lastQuestionAnswered = isLastQuestionOfSet && currentQuestion && answers[currentQuestion.id] !== undefined;
+  const lastQuestionAnswered = isLastQuestionOfSet;
 
   const handleAnswer = useCallback((questionId: number, optionIndex: number) => {
     setAnswers(prev => ({ ...prev, [questionId]: optionIndex }));
@@ -138,7 +174,7 @@ export default function PMPExam() {
 
   const handleSubmitReview = useCallback(() => {
     if (currentSet >= 2) {
-      setPhase('results');
+      setPhase('completed');
     } else {
       setPhase('post-submit');
     }
@@ -166,6 +202,28 @@ export default function PMPExam() {
     }));
   }, []);
 
+  const sharedHeader = (
+    <div style={{
+      height: '52px', background: '#1d4ed8',
+      display: 'flex', alignItems: 'center', padding: '0 20px', gap: '14px', flexShrink: 0,
+    }}>
+      <span style={{ background: 'rgba(255,255,255,0.2)', color: '#fff', fontSize: '10.5px', fontWeight: 800, padding: '3px 9px', borderRadius: '3px', letterSpacing: '0.12em' }}>PMP</span>
+      <span style={{ color: '#fff', fontSize: '13.5px', fontWeight: 600, flex: 1 }}>PROJECT MANAGEMENT PROFESSIONAL EXAMINATION</span>
+      <button
+        onClick={() => setShowQuit(true)}
+        style={{
+          height: '30px', padding: '0 14px',
+          background: 'rgba(255,255,255,0.12)',
+          border: '1px solid rgba(255,255,255,0.25)', borderRadius: '4px',
+          color: 'rgba(255,255,255,0.85)', fontSize: '12.5px', cursor: 'pointer',
+          fontFamily: 'inherit', fontWeight: 500,
+        }}
+      >
+        Quit
+      </button>
+    </div>
+  );
+
   if (phase === 'review') {
     return (
       <PMPReview
@@ -177,6 +235,7 @@ export default function PMPExam() {
         config={config}
         onBack={() => setPhase('exam')}
         onSubmit={handleSubmitReview}
+        onQuit={handleQuit}
       />
     );
   }
@@ -188,13 +247,7 @@ export default function PMPExam() {
         display: 'flex', flexDirection: 'column',
         fontFamily: "'Segoe UI', system-ui, sans-serif",
       }}>
-        <div style={{
-          height: '52px', background: '#1d4ed8',
-          display: 'flex', alignItems: 'center', padding: '0 20px', gap: '14px', flexShrink: 0,
-        }}>
-          <span style={{ background: 'rgba(255,255,255,0.2)', color: '#fff', fontSize: '10.5px', fontWeight: 800, padding: '3px 9px', borderRadius: '3px', letterSpacing: '0.12em' }}>PMP</span>
-          <span style={{ color: '#fff', fontSize: '13.5px', fontWeight: 600 }}>PROJECT MANAGEMENT PROFESSIONAL EXAMINATION</span>
-        </div>
+        {sharedHeader}
         <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
           <div style={{
             background: '#fff', border: '1px solid #e2e8f0',
@@ -217,8 +270,7 @@ export default function PMPExam() {
               <button
                 onClick={handleStartBreak}
                 style={{
-                  background: '#fff', color: '#374151',
-                  border: '1px solid #e2e8f0',
+                  background: '#fff', color: '#374151', border: '1px solid #e2e8f0',
                   borderRadius: '6px', height: '44px', fontSize: '14px', fontWeight: 500,
                   cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
                   fontFamily: 'inherit',
@@ -240,6 +292,7 @@ export default function PMPExam() {
             </div>
           </div>
         </div>
+        {showQuit && <QuitConfirmModal onCancel={() => setShowQuit(false)} onConfirm={handleQuit} />}
       </div>
     );
   }
@@ -255,13 +308,7 @@ export default function PMPExam() {
         display: 'flex', flexDirection: 'column',
         fontFamily: "'Segoe UI', system-ui, sans-serif",
       }}>
-        <div style={{
-          height: '52px', background: '#1d4ed8',
-          display: 'flex', alignItems: 'center', padding: '0 20px', gap: '14px', flexShrink: 0,
-        }}>
-          <span style={{ background: 'rgba(255,255,255,0.2)', color: '#fff', fontSize: '10.5px', fontWeight: 800, padding: '3px 9px', borderRadius: '3px', letterSpacing: '0.12em' }}>PMP</span>
-          <span style={{ color: '#fff', fontSize: '13.5px', fontWeight: 600 }}>PROJECT MANAGEMENT PROFESSIONAL EXAMINATION</span>
-        </div>
+        {sharedHeader}
         <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
           <div style={{
             background: '#fff', border: '1px solid #e2e8f0',
@@ -295,22 +342,56 @@ export default function PMPExam() {
             </button>
           </div>
         </div>
+        {showQuit && <QuitConfirmModal onCancel={() => setShowQuit(false)} onConfirm={handleQuit} />}
       </div>
     );
   }
 
-  if (phase === 'results') {
+  if (phase === 'completed') {
     return (
-      <PMPResult
-        allQuestions={allQuestions}
-        sets={sets}
-        answers={answers}
-        flags={flags}
-        remainingTime={remainingTime}
-        config={config}
-        userName={user?.name || 'Candidate'}
-        onRestart={() => navigate('/pmp-simulation')}
-      />
+      <div style={{
+        width: '100%', minHeight: '100vh', background: '#f8fafc',
+        display: 'flex', flexDirection: 'column',
+        fontFamily: "'Segoe UI', system-ui, sans-serif",
+      }}>
+        <div style={{
+          height: '52px', background: '#1d4ed8',
+          display: 'flex', alignItems: 'center', padding: '0 20px', gap: '14px', flexShrink: 0,
+        }}>
+          <span style={{ background: 'rgba(255,255,255,0.2)', color: '#fff', fontSize: '10.5px', fontWeight: 800, padding: '3px 9px', borderRadius: '3px', letterSpacing: '0.12em' }}>PMP</span>
+          <span style={{ color: '#fff', fontSize: '13.5px', fontWeight: 600 }}>PROJECT MANAGEMENT PROFESSIONAL EXAMINATION</span>
+        </div>
+        <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px' }}>
+          <div style={{
+            background: '#fff', border: '1px solid #e2e8f0',
+            borderRadius: '8px', padding: '48px 56px',
+            maxWidth: '500px', width: '100%', textAlign: 'center',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.07)',
+          }}>
+            <CheckCircle size={52} style={{ color: '#16a34a', margin: '0 auto 20px', display: 'block' }} />
+            <p style={{ fontSize: '24px', fontWeight: 700, color: '#111827', margin: '0 0 10px 0' }}>
+              Simulation Complete
+            </p>
+            <p style={{ fontSize: '14.5px', color: '#64748b', margin: '0 0 8px 0', lineHeight: '1.7' }}>
+              You have completed all 3 sets of the {config.label}.
+            </p>
+            <p style={{ fontSize: '13.5px', color: '#94a3b8', margin: '0 0 36px 0', lineHeight: '1.6' }}>
+              Thank you for completing this practice simulation. Your responses have been recorded.
+            </p>
+            <button
+              onClick={() => navigate('/pmp-simulation')}
+              style={{
+                background: '#1d4ed8', color: '#fff', border: 'none',
+                borderRadius: '6px', height: '44px', fontSize: '14px', fontWeight: 600,
+                cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                gap: '8px', width: '100%', fontFamily: 'inherit',
+              }}
+            >
+              ← Back to Simulation Centre
+            </button>
+          </div>
+        </div>
+      </div>
     );
   }
 
@@ -342,6 +423,7 @@ export default function PMPExam() {
       onAddAnnotation={handleAddAnnotation}
       onActiveToolChange={setActiveTool}
       onHighlightColorChange={setHighlightColor}
+      onQuit={handleQuit}
     />
   );
 }

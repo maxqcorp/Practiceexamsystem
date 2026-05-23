@@ -38,6 +38,7 @@ interface Props {
   onAddAnnotation: (questionId: number, annotation: TextAnnotation) => void;
   onActiveToolChange: (tool: 'none' | 'strikethrough' | 'highlight') => void;
   onHighlightColorChange: (color: string) => void;
+  onQuit: () => void;
 }
 
 function formatTime(seconds: number): string {
@@ -75,13 +76,14 @@ export default function PMPExamContent(props: Props) {
     answers, flags, comments, annotations, activeTool, highlightColor,
     remainingTime, userName, lastQuestionAnswered, currentQuestionIndex, totalInSet,
     onAnswer, onFlagToggle, onCommentChange, onNext, onPrevious,
-    onGoToQuestion, onReview, onAddAnnotation, onActiveToolChange, onHighlightColorChange,
+    onGoToQuestion, onReview, onAddAnnotation, onActiveToolChange, onHighlightColorChange, onQuit,
   } = props;
 
   const [showNavigator, setShowNavigator] = useState(false);
   const [showCalculator, setShowCalculator] = useState(false);
   const [showComment, setShowComment] = useState(false);
   const [showHighlightPicker, setShowHighlightPicker] = useState(false);
+  const [showQuitConfirm, setShowQuitConfirm] = useState(false);
   const [commentText, setCommentText] = useState('');
   const questionTextRef = useRef<HTMLDivElement>(null);
   const pickerRef = useRef<HTMLDivElement>(null);
@@ -107,18 +109,46 @@ export default function PMPExamContent(props: Props) {
     const range = sel.getRangeAt(0);
     const text = range.toString();
     if (!text.trim()) return;
-    const container = questionTextRef.current;
+
+    // Determine which element contains the selection
+    const ancestor = range.commonAncestorContainer;
+
+    // Check question text container
+    const questionEl = questionTextRef.current;
+    const isInQuestion = questionEl && (questionEl === ancestor || questionEl.contains(ancestor));
+
+    // Check option text spans (data-option-idx)
+    let optionIdx = -1;
+    let optionContainer: Element | null = null;
+    if (!isInQuestion) {
+      let node: Node | null = ancestor instanceof Element ? ancestor : ancestor.parentElement;
+      while (node && node instanceof Element) {
+        if (node.hasAttribute('data-option-idx')) {
+          optionIdx = parseInt(node.getAttribute('data-option-idx')!);
+          optionContainer = node;
+          break;
+        }
+        node = node.parentElement;
+      }
+    }
+
+    const container: Element | null = isInQuestion ? questionEl : optionContainer;
     if (!container) return;
+
     const preCaretRange = range.cloneRange();
     preCaretRange.selectNodeContents(container);
     preCaretRange.setEnd(range.startContainer, range.startOffset);
     const start = preCaretRange.toString().length;
+
+    const targetId = isInQuestion ? 'question' : `opt_${optionIdx}`;
+
     onAddAnnotation(currentQuestion.id, {
       id: `ann_${Date.now()}`,
       start,
       end: start + text.length,
       type: activeTool as 'highlight' | 'strikethrough',
       color: activeTool === 'highlight' ? highlightColor : undefined,
+      targetId,
     });
     sel.removeAllRanges();
     onActiveToolChange('none');
@@ -134,7 +164,9 @@ export default function PMPExamContent(props: Props) {
 
   const selectedAnswer = answers[currentQuestion.id];
   const isFlagged = flags.includes(currentQuestion.id);
-  const questionAnns = annotations[String(currentQuestion.id)] || [];
+  const allAnns = annotations[String(currentQuestion.id)] || [];
+  // Filter annotations per element so strikethrough/highlight only affect the selected target
+  const questionAnns = allAnns.filter(a => !a.targetId || a.targetId === 'question');
   const startNum = currentSet * config.perSet + 1;
   const isTimeLow = remainingTime < 600;
 
@@ -146,6 +178,18 @@ export default function PMPExamContent(props: Props) {
         <span className="exam-header-badge">PMP</span>
         <h1>PROJECT MANAGEMENT PROFESSIONAL EXAMINATION</h1>
         <span className="exam-header-candidate">{userName}</span>
+        <button
+          onClick={() => setShowQuitConfirm(true)}
+          style={{
+            height: '30px', padding: '0 14px',
+            background: 'rgba(255,255,255,0.12)',
+            border: '1px solid rgba(255,255,255,0.25)', borderRadius: '4px',
+            color: 'rgba(255,255,255,0.85)', fontSize: '12.5px', cursor: 'pointer',
+            fontFamily: 'inherit', fontWeight: 500, flexShrink: 0,
+          }}
+        >
+          Quit
+        </button>
       </div>
 
       {/* ── TOOLBAR ── */}
@@ -162,7 +206,7 @@ export default function PMPExamContent(props: Props) {
           <button
             className={`tool-btn ${activeTool === 'strikethrough' ? 'active' : ''}`}
             onClick={() => onActiveToolChange(activeTool === 'strikethrough' ? 'none' : 'strikethrough')}
-            title="Select text to strikethrough"
+            title="Select text then release to strikethrough"
           >
             {activeTool === 'strikethrough' ? '✓ ' : ''}Strikethrough
           </button>
@@ -211,7 +255,7 @@ export default function PMPExamContent(props: Props) {
 
           <button
             className="tool-btn"
-            onClick={() => setShowCalculator(true)}
+            onClick={() => setShowCalculator(v => !v)}
             title="Open calculator"
           >
             ⊞ Calculator
@@ -253,6 +297,7 @@ export default function PMPExamContent(props: Props) {
             )}
           </div>
 
+          {/* Question text — annotated only with question-level annotations */}
           <div
             ref={questionTextRef}
             className="question-text"
@@ -264,6 +309,8 @@ export default function PMPExamContent(props: Props) {
           <div>
             {currentQuestion.options.map((option, idx) => {
               const isSelected = selectedAnswer === idx;
+              // Only annotations that target this specific option
+              const optAnns = allAnns.filter(a => a.targetId === `opt_${idx}`);
               return (
                 <button
                   key={idx}
@@ -271,8 +318,13 @@ export default function PMPExamContent(props: Props) {
                   onClick={() => onAnswer(currentQuestion.id, idx)}
                 >
                   <span className="option-label">{String.fromCharCode(65 + idx)}</span>
-                  <span className="option-text">
-                    {renderAnnotatedText(option, questionAnns)}
+                  {/* data-option-idx lets handleTextMouseUp detect which option was selected */}
+                  <span
+                    className="option-text"
+                    data-option-idx={idx}
+                    style={{ userSelect: activeTool !== 'none' ? 'text' : undefined }}
+                  >
+                    {renderAnnotatedText(option, optAnns)}
                   </span>
                 </button>
               );
@@ -289,6 +341,12 @@ export default function PMPExamContent(props: Props) {
 
       {/* ── FOOTER ── */}
       <div className="exam-footer">
+        {currentQuestionIndex === totalInSet - 1 && (
+          <button className="review-question-btn" onClick={onReview}>
+            Review Questions
+          </button>
+        )}
+        <div className="nav-spacer" />
         <button
           className="nav-btn"
           onClick={onPrevious}
@@ -302,12 +360,6 @@ export default function PMPExamContent(props: Props) {
         >
           ⊞ Navigator
         </button>
-        <div className="nav-spacer" />
-        {lastQuestionAnswered && (
-          <button className="review-question-btn" onClick={onReview}>
-            Review & Submit →
-          </button>
-        )}
         <button
           className="nav-btn"
           onClick={onNext}
@@ -422,8 +474,40 @@ export default function PMPExamContent(props: Props) {
         </div>
       )}
 
-      {/* ── CALCULATOR ── */}
+      {/* ── CALCULATOR (draggable floating panel) ── */}
       {showCalculator && <CalculatorModal onClose={() => setShowCalculator(false)} />}
+
+      {/* ── QUIT CONFIRM ── */}
+      {showQuitConfirm && (
+        <div className="modal-overlay" onClick={() => setShowQuitConfirm(false)}>
+          <div className="modal-box modal-box-sm" onClick={e => e.stopPropagation()}>
+            <div className="modal-header">
+              <span className="modal-title">Quit Simulation?</span>
+              <button className="modal-close" onClick={() => setShowQuitConfirm(false)}>✕</button>
+            </div>
+            <div className="modal-body">
+              <p style={{ margin: '0 0 10px', fontSize: '14.5px', color: '#1e293b', fontWeight: 600 }}>
+                Are you sure you want to quit?
+              </p>
+              <p style={{ margin: 0, fontSize: '13.5px', color: '#475569', lineHeight: '1.6' }}>
+                Your progress will be lost and you will be returned to the simulation selection screen.
+              </p>
+            </div>
+            <div className="modal-footer">
+              <button
+                className="nav-btn"
+                style={{ color: '#374151', background: '#f1f5f9', border: '1px solid #d1d5db' }}
+                onClick={() => setShowQuitConfirm(false)}
+              >
+                Cancel
+              </button>
+              <button className="submit-btn danger" onClick={onQuit}>
+                Yes, Quit
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -434,6 +518,31 @@ function CalculatorModal({ onClose }: { onClose: () => void }) {
   const [prevValue, setPrevValue] = useState<number | null>(null);
   const [operation, setOperation] = useState<string | null>(null);
   const [waitingForOperand, setWaitingForOperand] = useState(false);
+  const [pos, setPos] = useState({ x: window.innerWidth - 300, y: 80 });
+  const dragging = useRef(false);
+  const dragOffset = useRef({ x: 0, y: 0 });
+
+  const onHeaderMouseDown = (e: React.MouseEvent) => {
+    dragging.current = true;
+    dragOffset.current = { x: e.clientX - pos.x, y: e.clientY - pos.y };
+    e.preventDefault();
+  };
+
+  useEffect(() => {
+    const onMouseMove = (e: MouseEvent) => {
+      if (!dragging.current) return;
+      const x = Math.min(Math.max(0, e.clientX - dragOffset.current.x), window.innerWidth - 260);
+      const y = Math.min(Math.max(0, e.clientY - dragOffset.current.y), window.innerHeight - 360);
+      setPos({ x, y });
+    };
+    const onMouseUp = () => { dragging.current = false; };
+    document.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('mouseup', onMouseUp);
+    return () => {
+      document.removeEventListener('mousemove', onMouseMove);
+      document.removeEventListener('mouseup', onMouseUp);
+    };
+  }, []);
 
   const inputDigit = (d: string) => {
     if (waitingForOperand) { setDisplay(d); setWaitingForOperand(false); }
@@ -490,36 +599,47 @@ function CalculatorModal({ onClose }: { onClose: () => void }) {
   };
 
   return (
-    <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-box modal-box-sm" onClick={e => e.stopPropagation()}>
-        <div className="modal-header">
-          <span className="modal-title">Calculator</span>
-          <button className="modal-close" onClick={onClose}>✕</button>
+    <div
+      style={{
+        position: 'fixed', left: pos.x, top: pos.y, zIndex: 1100,
+        width: '260px',
+        background: '#fff', borderRadius: '8px', overflow: 'hidden',
+        boxShadow: '0 8px 32px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.1)',
+        border: '1px solid #e2e8f0',
+        userSelect: 'none',
+      }}
+    >
+      <div
+        className="modal-header"
+        onMouseDown={onHeaderMouseDown}
+        style={{ cursor: 'grab', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}
+      >
+        <span className="modal-title">&#8862; Calculator</span>
+        <button className="modal-close" onMouseDown={e => e.stopPropagation()} onClick={onClose}>&#10005;</button>
+      </div>
+      <div style={{ padding: '12px' }}>
+        <div className="calculator-display">
+          <div className="calculator-expr">{expr || ' '}</div>
+          <div className="calculator-value">{display}</div>
         </div>
-        <div className="modal-body" style={{ padding: '12px' }}>
-          <div className="calculator-display">
-            <div className="calculator-expr">{expr || ' '}</div>
-            <div className="calculator-value">{display}</div>
-          </div>
-          <div className="calculator-grid">
-            <button className="clear-btn" onClick={clear}>C</button>
-            <button className="op-btn" onClick={() => performOp('÷')}>÷</button>
-            <button className="op-btn" onClick={() => performOp('×')}>×</button>
-            <button className="op-btn" onClick={() => performOp('−')}>−</button>
-            <button onClick={() => inputDigit('7')}>7</button>
-            <button onClick={() => inputDigit('8')}>8</button>
-            <button onClick={() => inputDigit('9')}>9</button>
-            <button className="op-btn" style={{ gridRow: 'span 2' }} onClick={() => performOp('+')}>+</button>
-            <button onClick={() => inputDigit('4')}>4</button>
-            <button onClick={() => inputDigit('5')}>5</button>
-            <button onClick={() => inputDigit('6')}>6</button>
-            <button onClick={() => inputDigit('1')}>1</button>
-            <button onClick={() => inputDigit('2')}>2</button>
-            <button onClick={() => inputDigit('3')}>3</button>
-            <button className="equals-btn" style={{ gridRow: 'span 2' }} onClick={handleEquals}>=</button>
-            <button style={{ gridColumn: 'span 2' }} onClick={() => inputDigit('0')}>0</button>
-            <button onClick={inputDecimal}>.</button>
-          </div>
+        <div className="calculator-grid">
+          <button className="clear-btn" onClick={clear}>C</button>
+          <button className="op-btn" onClick={() => performOp('÷')}>&divide;</button>
+          <button className="op-btn" onClick={() => performOp('×')}>&times;</button>
+          <button className="op-btn" onClick={() => performOp('−')}>&#8722;</button>
+          <button onClick={() => inputDigit('7')}>7</button>
+          <button onClick={() => inputDigit('8')}>8</button>
+          <button onClick={() => inputDigit('9')}>9</button>
+          <button className="op-btn" style={{ gridRow: 'span 2' }} onClick={() => performOp('+')}>+</button>
+          <button onClick={() => inputDigit('4')}>4</button>
+          <button onClick={() => inputDigit('5')}>5</button>
+          <button onClick={() => inputDigit('6')}>6</button>
+          <button onClick={() => inputDigit('1')}>1</button>
+          <button onClick={() => inputDigit('2')}>2</button>
+          <button onClick={() => inputDigit('3')}>3</button>
+          <button className="equals-btn" style={{ gridRow: 'span 2' }} onClick={handleEquals}>=</button>
+          <button style={{ gridColumn: 'span 2' }} onClick={() => inputDigit('0')}>0</button>
+          <button onClick={inputDecimal}>.</button>
         </div>
       </div>
     </div>

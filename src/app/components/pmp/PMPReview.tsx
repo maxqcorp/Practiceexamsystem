@@ -12,13 +12,15 @@ interface Props {
   config: ExamConfig;
   onBack: () => void;
   onSubmit: () => void;
+  onQuit: () => void;
 }
 
 export default function PMPReview({
-  questions, answers, flags, comments, currentSet, config, onBack, onSubmit
+  questions, answers, flags, comments, currentSet, config, onBack, onSubmit, onQuit
 }: Props) {
   const [activeTab, setActiveTab] = useState<'all' | 'flagged'>('all');
   const [showConfirm, setShowConfirm] = useState(false);
+  const [showQuitConfirm, setShowQuitConfirm] = useState(false);
 
   const flaggedQuestions = questions.filter(q => flags.includes(q.id));
   const totalAnswered = questions.filter(q => answers[q.id] !== undefined).length;
@@ -36,7 +38,7 @@ export default function PMPReview({
           <span className="exam-header-badge">PMP</span>
           <h1 style={{ margin: 0 }}>Review — Set {currentSet + 1} of 3</h1>
         </div>
-        <div style={{ display: 'flex', gap: '16px', fontSize: '12.5px' }}>
+        <div style={{ display: 'flex', gap: '16px', fontSize: '12.5px', alignItems: 'center' }}>
           <span style={{ color: 'rgba(255,255,255,0.9)', fontWeight: 500 }}>{totalAnswered}/{questions.length} answered</span>
           {unanswered > 0 && (
             <span style={{ color: '#fca5a5', fontWeight: 600 }}>{unanswered} unanswered</span>
@@ -44,6 +46,18 @@ export default function PMPReview({
           {flaggedQuestions.length > 0 && (
             <span style={{ color: '#fde68a', fontWeight: 500 }}>{flaggedQuestions.length} flagged</span>
           )}
+          <button
+            onClick={() => setShowQuitConfirm(true)}
+            style={{
+              height: '30px', padding: '0 14px',
+              background: 'rgba(255,255,255,0.12)',
+              border: '1px solid rgba(255,255,255,0.25)', borderRadius: '4px',
+              color: 'rgba(255,255,255,0.85)', fontSize: '12.5px', cursor: 'pointer',
+              fontFamily: 'inherit', fontWeight: 500,
+            }}
+          >
+            Quit
+          </button>
         </div>
       </div>
 
@@ -174,6 +188,38 @@ export default function PMPReview({
           Submit Set {currentSet + 1}
         </button>
       </div>
+
+      {/* ── QUIT CONFIRM ── */}
+      {showQuitConfirm && (
+        <div className="modal-overlay" onClick={() => setShowQuitConfirm(false)}>
+          <div className="modal-box modal-box-sm" onClick={e => e.stopPropagation()}>
+            <div className="modal-header">
+              <span className="modal-title">Quit Simulation?</span>
+              <button className="modal-close" onClick={() => setShowQuitConfirm(false)}>✕</button>
+            </div>
+            <div className="modal-body">
+              <p style={{ margin: '0 0 10px', fontSize: '14.5px', color: '#1e293b', fontWeight: 600 }}>
+                Are you sure you want to quit?
+              </p>
+              <p style={{ margin: 0, fontSize: '13.5px', color: '#475569', lineHeight: '1.6' }}>
+                Your progress will be lost and you will be returned to the simulation selection screen.
+              </p>
+            </div>
+            <div className="modal-footer">
+              <button
+                className="nav-btn"
+                style={{ color: '#374151', background: '#f1f5f9', border: '1px solid #d1d5db' }}
+                onClick={() => setShowQuitConfirm(false)}
+              >
+                Cancel
+              </button>
+              <button className="submit-btn danger" onClick={onQuit}>
+                Yes, Quit
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* ── CONFIRM DIALOG ── */}
       {showConfirm && (
