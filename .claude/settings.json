@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/applyBatch*.py)",
+      "Bash(node scripts/applyBatch*.mjs)",
+      "Bash(node scripts/updateExplanations.mjs)"
+    ]
+  }
+}
